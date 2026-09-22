@@ -5,6 +5,8 @@ export type Product = {
   name: string;
   collection: Exclude<Collection, "Todos">;
   price: number;
+  compareAtPrice?: number;
+  sizes?: readonly string[];
   description: string;
   story: string;
   images?: readonly string[];
@@ -39,7 +41,7 @@ export const storeContent = {
   ],
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   products: [
-    { id: "gato-cosmico", name: "Gato Cósmico", collection: "Cósmico", price: 699, description: "Playera blanca con gráfica felina en azul, magenta y negro.", story: "Un visitante felino cruza una órbita de color para observar el mundo desde otra frecuencia.", images: ["/catalogo/gato-cosmico/01.webp", "/catalogo/gato-cosmico/02.webp", "/catalogo/gato-cosmico/03.webp", "/catalogo/gato-cosmico/04.webp", "/catalogo/gato-cosmico/05.webp"] },
+    { id: "gato-cosmico", name: "Gato Cósmico", collection: "Cósmico", price: 199, compareAtPrice: 299, sizes: ["CH", "M", "G", "EG"], description: "Playera blanca con gráfica felina en azul, magenta y negro.", story: "Un visitante felino cruza una órbita de color para observar el mundo desde otra frecuencia.", images: ["/catalogo/gato-cosmico/01.webp", "/catalogo/gato-cosmico/02.webp", "/catalogo/gato-cosmico/03.webp", "/catalogo/gato-cosmico/04.webp", "/catalogo/gato-cosmico/05.webp"] },
     { id: "sol-lento", name: "Sol lento", collection: "Naturaleza", price: 620, description: "Corte relajado con sol coral al centro.", story: "Un recordatorio gráfico de que la luz también sabe esperar.", art: { kind: "sun", ink: "#ef6a5b", accent: "#161616" } },
     { id: "orbita-03", name: "Órbita 03", collection: "Cósmico", price: 680, description: "Gráfica orbital de líneas precisas.", story: "Tres recorridos que nunca se cruzan y aun así forman un sistema.", art: { kind: "orbit", ink: "#202b52", accent: "#ef6a5b" } },
     { id: "marea-interior", name: "Marea interior", collection: "Abstracto", price: 640, description: "Ondas cobalto en impresión frontal.", story: "El movimiento del agua traducido a una señal mínima.", art: { kind: "wave", ink: "#2460a7", accent: "#ef6a5b" } },

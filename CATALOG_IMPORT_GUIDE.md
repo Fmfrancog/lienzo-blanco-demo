@@ -52,7 +52,9 @@ Si estos datos no se proporcionan, cualquier nombre, descripción, precio o cate
   id: "gato-cosmico",
   name: "Gato Cósmico",
   collection: "Cósmico",
-  price: 699,
+  price: 199,
+  compareAtPrice: 299,
+  sizes: ["CH", "M", "G", "EG"],
   description: "Playera blanca con gráfica felina en azul, magenta y negro.",
   story: "Un visitante felino cruza una órbita de color para observar el mundo desde otra frecuencia.",
   images: [
