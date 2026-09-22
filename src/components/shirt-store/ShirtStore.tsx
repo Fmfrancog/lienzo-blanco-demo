@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useEffect, useMemo, useState } from "react";
+import Image from "next/image";
 import { ArrowDown, ArrowRight, Check, Menu, Minus, Plus, Search, ShoppingBag, User, X } from "lucide-react";
 import { formatPrice, Product, storeContent, type Collection } from "@/data/store-content";
 
@@ -10,6 +11,10 @@ type CartLine = { product: Product; size: string; quantity: number };
 const scrollToId = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
 
 function ProductArtwork({ product, large = false }: { product: Product; large?: boolean }) {
+  if (product.images?.length) {
+    return <div className={`artwork artwork--photo ${large ? "artwork--large" : ""}`}><Image src={product.images[0]} alt={`Playera ${product.name}`} width={619} height={800} loading={large || product.id === "gato-cosmico" ? "eager" : "lazy"} sizes={large ? "(max-width: 800px) 100vw, 50vw" : "(max-width: 520px) 100vw, (max-width: 1100px) 33vw, 25vw"} /></div>;
+  }
+  if (!product.art) return null;
   const { kind, ink, accent } = product.art;
   return (
     <div className={`artwork ${large ? "artwork--large" : ""}`} aria-label={`Mockup de camiseta ${product.name}`} role="img">
@@ -34,6 +39,17 @@ function ProductArtwork({ product, large = false }: { product: Product; large?: 
       </svg>
     </div>
   );
+}
+
+function ProductGallery({ product }: { product: Product }) {
+  const [activeImage, setActiveImage] = useState(0);
+  if (!product.images?.length) return <ProductArtwork product={product} large />;
+  return <div className="product-gallery">
+    <div className="gallery-main"><Image data-testid="gallery-main-image" src={product.images[activeImage]} alt={`${product.name}, vista ${activeImage + 1}`} width={619} height={800} sizes="(max-width: 800px) 100vw, 50vw" /></div>
+    <div className="gallery-thumbnails" aria-label={`Galería de ${product.name}`}>
+      {product.images.map((image, index) => <button data-testid="gallery-thumbnail" aria-label={`Ver imagen ${index + 1} de ${product.name}`} aria-pressed={activeImage === index} key={image} onClick={() => setActiveImage(index)}><Image src={image} alt="" width={120} height={155} sizes="90px" /></button>)}
+    </div>
+  </div>;
 }
 
 function Modal({ name, title, onClose, children, className = "" }: { name: string; title: string; onClose: () => void; children: React.ReactNode; className?: string }) {
@@ -113,14 +129,14 @@ export function ShirtStore() {
     <main id="inicio">
       <section className="hero shell">
         <div className="hero-copy"><span className="kicker">{storeContent.hero.eyebrow}</span><h1>{storeContent.hero.title}</h1><p>{storeContent.hero.body}</p><div className="button-row"><button data-action="hero-explore" className="button button--dark" onClick={() => scrollToId("catalogo")}>{storeContent.hero.primary}<ArrowDown/></button><button data-action="hero-customize" className="button button--line" onClick={() => scrollToId("personaliza")}>{storeContent.hero.secondary}<ArrowRight/></button></div></div>
-        <div className="hero-stage"><span className="stage-note">CAMISETA / BLANCO ÓPTICO</span><ProductArtwork product={storeContent.products[8]} large/><span className="stage-edition">01<br/>/12</span></div>
+        <div className="hero-stage"><span className="stage-note">CAMISETA / BLANCO ÓPTICO</span><ProductArtwork product={storeContent.products[0]} large/><span className="stage-edition">01<br/>/{storeContent.products.length}</span></div>
       </section>
 
       <div className="ticker" aria-label="Anuncios"><div>{[...storeContent.announcements,...storeContent.announcements].map((item,i)=><span key={`${item}-${i}`}>✦ {item}</span>)}</div></div>
 
       <section id="colecciones" className="section shell"><header className="section-head"><div><span className="kicker">TRES FORMAS DE EMPEZAR</span><h2>Colecciones</h2></div><p>Selecciona un universo visual y salta al catálogo filtrado.</p></header><div className="collection-grid">{storeContent.collections.map((item)=><button data-action={`filter-collection-${item.number}`} className="collection-card" key={item.name} onClick={()=>{setCollection(item.filter); scrollToId("catalogo");}}><span>{item.number}</span><div><h3>{item.name}</h3><p>{item.description}</p></div><ArrowRight/></button>)}</div></section>
 
-      <section id="catalogo" className="section catalog shell"><header className="section-head"><div><span className="kicker">CATÁLOGO COMPLETO</span><h2>Doce ideas sobre blanco</h2></div><p>{filtered.length} {filtered.length === 1 ? "diseño" : "diseños"} · precios sintéticos MXN</p></header>
+      <section id="catalogo" className="section catalog shell"><header className="section-head"><div><span className="kicker">CATÁLOGO COMPLETO</span><h2>Diseños sobre blanco</h2></div><p>{filtered.length} {filtered.length === 1 ? "diseño" : "diseños"} · precios MXN</p></header>
         <div className="filters" role="group" aria-label="Filtrar por colección">{storeContent.categories.map((item)=><button data-action={`filter-${item.toLowerCase()}`} aria-pressed={collection===item} className={collection===item?"active":""} key={item} onClick={()=>setCollection(item)}>{item}</button>)}</div>
         {filtered.length ? <div className="product-grid">{filtered.map((product)=><article className="product-card" data-testid="product-card" key={product.id}><button data-action={`open-product-art-${product.id}`} className="product-art-button" onClick={()=>openProduct(product)} aria-label={`Vista de camiseta ${product.name}`}><ProductArtwork product={product}/><span className="product-number">{String(storeContent.products.indexOf(product)+1).padStart(2,"0")}</span></button><div className="product-info"><div><span>{product.collection}</span><h3>{product.name}</h3></div><strong>{formatPrice(product.price)}</strong></div><p>{product.description}</p><button data-action={`open-product-${product.id}`} className="card-action" onClick={()=>openProduct(product)}>Ver diseño <ArrowRight/></button></article>)}</div> : <div className="empty-state"><h3>No encontramos esa gráfica.</h3><p>Prueba otra palabra o vuelve a ver todos los diseños.</p><button data-action="clear-search" className="button button--dark" onClick={()=>{setQuery("");setCollection("Todos");}}>Restablecer catálogo</button></div>}
       </section>
@@ -134,7 +150,7 @@ export function ShirtStore() {
 
     <footer><div className="shell footer-grid"><div className="footer-brand"><span className="brand-mark">{storeContent.brand.mark}</span><h2>{storeContent.brand.name}</h2><p>{storeContent.brand.description}</p></div>{storeContent.footer.columns.map((column)=><div className="footer-column" key={column.title}><h3>{column.title}</h3>{column.links.map((link)=><button data-action={`footer-${link.toLowerCase().replaceAll(" ","-")}`} key={link} onClick={()=>footerAction(link)}>{link}</button>)}</div>)}</div><div className="shell footer-bottom"><span>{storeContent.footer.legal}</span><button data-action="back-to-top" onClick={()=>scrollToId("inicio")}>Volver arriba ↑</button></div></footer>
 
-    {dialog === "product" && <Modal name="Detalle de producto" title={selected.name} onClose={()=>setDialog(null)} className="product-modal"><div className="detail-grid"><ProductArtwork product={selected} large/><div className="detail-copy"><span className="kicker">{selected.collection} · {selected.id.toUpperCase()}</span><p className="detail-price">{formatPrice(selected.price)}</p><p>{selected.description}</p><blockquote>“{selected.story}”</blockquote><fieldset><legend>Talla</legend><div className="size-grid">{storeContent.sizes.map((item)=><button data-action={`select-size-${item}`} aria-pressed={size===item} key={item} onClick={()=>setSize(item)}>{item}</button>)}</div></fieldset><div className="quantity"><span>Cantidad</span><div><button data-action="decrease-product-quantity" aria-label="Reducir cantidad" onClick={()=>setQuantity((n)=>Math.max(1,n-1))}><Minus/></button><b>{quantity}</b><button data-action="increase-product-quantity" aria-label="Aumentar cantidad" onClick={()=>setQuantity((n)=>n+1)}><Plus/></button></div></div><button data-action="add-to-cart" className="button button--coral button--wide" onClick={addToCart}>Agregar a la bolsa · {formatPrice(selected.price*quantity)}</button><small>{storeContent.shipping} Compra de demostración, sin cobro.</small></div></div></Modal>}
+    {dialog === "product" && <Modal name="Detalle de producto" title={selected.name} onClose={()=>setDialog(null)} className="product-modal"><div className="detail-grid"><ProductGallery key={selected.id} product={selected}/><div className="detail-copy"><span className="kicker">{selected.collection} · {selected.id.toUpperCase()}</span><p className="detail-price">{formatPrice(selected.price)}</p><p>{selected.description}</p><blockquote>“{selected.story}”</blockquote><fieldset><legend>Talla</legend><div className="size-grid">{storeContent.sizes.map((item)=><button data-action={`select-size-${item}`} aria-pressed={size===item} key={item} onClick={()=>setSize(item)}>{item}</button>)}</div></fieldset><div className="quantity"><span>Cantidad</span><div><button data-action="decrease-product-quantity" aria-label="Reducir cantidad" onClick={()=>setQuantity((n)=>Math.max(1,n-1))}><Minus/></button><b>{quantity}</b><button data-action="increase-product-quantity" aria-label="Aumentar cantidad" onClick={()=>setQuantity((n)=>n+1)}><Plus/></button></div></div><button data-action="add-to-cart" className="button button--coral button--wide" onClick={addToCart}>Agregar a la bolsa · {formatPrice(selected.price*quantity)}</button><small>{storeContent.shipping} Compra de demostración, sin cobro.</small></div></div></Modal>}
 
     {dialog === "cart" && <Modal name="Tu bolsa" title={`${cartCount} ${cartCount===1?"artículo":"artículos"}`} onClose={()=>setDialog(null)}>{cart.length ? <><div className="cart-lines">{cart.map((line,index)=><div className="cart-line" key={`${line.product.id}-${line.size}`}><ProductArtwork product={line.product}/><div><h3>{line.product.name}</h3><span>Talla {line.size}</span><strong>{formatPrice(line.product.price*line.quantity)}</strong></div><div className="line-quantity"><button data-action={`decrease-cart-${line.product.id}`} aria-label={`Reducir ${line.product.name}`} onClick={()=>updateLine(index,-1)}><Minus/></button><b>{line.quantity}</b><button data-action={`increase-cart-${line.product.id}`} aria-label={`Aumentar ${line.product.name}`} onClick={()=>updateLine(index,1)}><Plus/></button></div></div>)}</div><div className="cart-total"><span>Total de demostración</span><strong>{formatPrice(cartTotal)}</strong></div><button data-action="simulate-checkout" className="button button--coral button--wide" onClick={()=>setToast("Checkout simulado: no se realizó ningún cobro.")}>Simular checkout</button></> : <div className="empty-state"><ShoppingBag/><h3>Tu bolsa está vacía</h3><p>Agrega un diseño para probar el flujo local.</p><button data-action="cart-go-catalog" className="button button--dark" onClick={()=>{setDialog(null);scrollToId("catalogo");}}>Ir al catálogo</button></div>}</Modal>}
 

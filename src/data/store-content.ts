@@ -7,7 +7,8 @@ export type Product = {
   price: number;
   description: string;
   story: string;
-  art: { kind: "sun" | "orbit" | "wave" | "flora" | "type" | "grid" | "eye" | "mountain" | "alien" | "hand" | "moon" | "fruit"; ink: string; accent: string };
+  images?: readonly string[];
+  art?: { kind: "sun" | "orbit" | "wave" | "flora" | "type" | "grid" | "eye" | "mountain" | "alien" | "hand" | "moon" | "fruit"; ink: string; accent: string };
 };
 
 export const storeContent = {
@@ -26,7 +27,7 @@ export const storeContent = {
   hero: {
     eyebrow: "EDICIÓN 01 — EL BLANCO COMO PUNTO DE PARTIDA",
     title: "Tu idea, sobre blanco.",
-    body: "Doce gráficas originales para una sola prenda esencial. Explora, elige tu talla o construye una versión propia.",
+    body: "Gráficas originales para una sola prenda esencial. Explora, elige tu talla o construye una versión propia.",
     primary: "Explorar diseños",
     secondary: "Crear la mía",
   },
@@ -38,6 +39,7 @@ export const storeContent = {
   ],
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   products: [
+    { id: "gato-cosmico", name: "Gato Cósmico", collection: "Cósmico", price: 699, description: "Playera blanca con gráfica felina en azul, magenta y negro.", story: "Un visitante felino cruza una órbita de color para observar el mundo desde otra frecuencia.", images: ["/catalogo/gato-cosmico/01.webp", "/catalogo/gato-cosmico/02.webp", "/catalogo/gato-cosmico/03.webp", "/catalogo/gato-cosmico/04.webp", "/catalogo/gato-cosmico/05.webp"] },
     { id: "sol-lento", name: "Sol lento", collection: "Naturaleza", price: 620, description: "Corte relajado con sol coral al centro.", story: "Un recordatorio gráfico de que la luz también sabe esperar.", art: { kind: "sun", ink: "#ef6a5b", accent: "#161616" } },
     { id: "orbita-03", name: "Órbita 03", collection: "Cósmico", price: 680, description: "Gráfica orbital de líneas precisas.", story: "Tres recorridos que nunca se cruzan y aun así forman un sistema.", art: { kind: "orbit", ink: "#202b52", accent: "#ef6a5b" } },
     { id: "marea-interior", name: "Marea interior", collection: "Abstracto", price: 640, description: "Ondas cobalto en impresión frontal.", story: "El movimiento del agua traducido a una señal mínima.", art: { kind: "wave", ink: "#2460a7", accent: "#ef6a5b" } },
@@ -64,7 +66,7 @@ export const storeContent = {
       "Lienzo Blanco es una marca ficticia creada para demostrar una experiencia de comercio editable, accesible y local.",
       "Cada diseño parte de una camiseta blanca, una paleta breve y una historia que cabe en el pecho.",
     ],
-    facts: ["12 diseños de muestra", "6 tallas", "0 transacciones reales"],
+    facts: ["13 diseños de muestra", "6 tallas", "0 transacciones reales"],
   },
   shipping: "Envío simulado de 3 a 5 días hábiles en México. Gratis desde $900 MXN.",
   returns: "Devoluciones de demostración dentro de 30 días. No se generan guías ni reembolsos reales.",

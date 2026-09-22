@@ -57,6 +57,8 @@ svg { display: block; }
 
 .artwork { position: relative; aspect-ratio: 7 / 8; background: #e5e0d6; overflow: hidden; }
 .artwork svg { width: 100%; height: 100%; }
+.artwork--photo { display: grid; place-items: center; background: #f7f7f7; }
+.artwork--photo img { width: 100%; height: 100%; object-fit: contain; }
 .artwork--large { width: min(78%, 590px); background: transparent; }
 .shirt-shadow { fill: rgba(0,0,0,.12); transform: translate(5px,8px); }
 .shirt { fill: #fff; stroke: #c5c1b8; stroke-width: 2; }
@@ -137,6 +139,13 @@ footer { padding-top: 70px; background: var(--ink); color: white; }
 .icon-button { display: grid; width: 44px; height: 44px; flex: none; place-items: center; border: 1px solid var(--ink); background: transparent; }
 .detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; }
 .detail-grid .artwork { width: 100%; }
+.product-gallery { min-width: 0; }
+.gallery-main { aspect-ratio: 619 / 800; display: grid; place-items: center; overflow: hidden; background: #f7f7f7; }
+.gallery-main img { width: 100%; height: 100%; object-fit: contain; }
+.gallery-thumbnails { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin-top: 10px; }
+.gallery-thumbnails button { aspect-ratio: 1; padding: 0; overflow: hidden; border: 1px solid var(--line); background: white; }
+.gallery-thumbnails button[aria-pressed="true"] { border: 3px solid var(--coral); }
+.gallery-thumbnails img { width: 100%; height: 100%; object-fit: cover; }
 .detail-copy > p, .detail-copy blockquote { color: var(--muted); line-height: 1.55; }
 .detail-copy blockquote { margin: 22px 0; padding: 16px 0; border-block: 1px solid var(--line); font: italic 20px Georgia, serif; }
 .detail-price { color: var(--ink) !important; font-size: 24px; font-weight: 800; }
