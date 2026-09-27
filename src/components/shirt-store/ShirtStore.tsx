@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useEffect, useMemo, useState } from "react";
+import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import { getCoverImageIndex } from "@/lib/product-cover";
 import { ArrowDown, ArrowRight, Check, Menu, Minus, Plus, Search, ShoppingBag, User, X } from "lucide-react";
@@ -10,6 +10,7 @@ type DialogName = "product" | "cart" | "account" | "help" | "custom" | null;
 type CartLine = { product: Product; size: string; quantity: number };
 
 const scrollToId = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+const normalizeSearch = (value: string) => value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
 
 function ProductArtwork({ product, large = false }: { product: Product; large?: boolean }) {
   if (product.images?.length) {
@@ -71,6 +72,7 @@ function Modal({ name, title, onClose, children, className = "" }: { name: strin
 
 export function ShirtStore() {
   const [query, setQuery] = useState("");
+  const searchInput = useRef<HTMLInputElement>(null);
   const [collection, setCollection] = useState<Collection>("Todos");
   const [dialog, setDialog] = useState<DialogName>(null);
   const [selected, setSelected] = useState<Product>(storeContent.products[0]);
@@ -83,8 +85,8 @@ export function ShirtStore() {
 
   const filtered = useMemo(() => storeContent.products.filter((product) => {
     const matchesCollection = collection === "Todos" || product.collection === collection;
-    const haystack = `${product.name} ${product.collection} ${product.description} ${product.story}`.toLowerCase();
-    return matchesCollection && haystack.includes(query.trim().toLowerCase());
+    const haystack = normalizeSearch(`${product.name} ${product.collection} ${product.description} ${product.story}`);
+    return matchesCollection && haystack.includes(normalizeSearch(query));
   }), [collection, query]);
   const cartCount = cart.reduce((sum, line) => sum + line.quantity, 0);
   const cartTotal = cart.reduce((sum, line) => sum + line.product.price * line.quantity, 0);
@@ -97,6 +99,13 @@ export function ShirtStore() {
   useEffect(() => { if (!toast) return; const timer = window.setTimeout(() => setToast(""), 2600); return () => window.clearTimeout(timer); }, [toast]);
 
   const openProduct = (product: Product) => { setSelected(product); setSize("M"); setQuantity(1); setDialog("product"); };
+  const clearSearch = () => { setQuery(""); setCollection("Todos"); searchInput.current?.focus({ preventScroll: true }); };
+  const submitSearch = (event: FormEvent) => {
+    event.preventDefault();
+    setMobileOpen(false);
+    searchInput.current?.blur();
+    scrollToId("catalogo");
+  };
   const navigate = (label: string) => {
     setMobileOpen(false);
     if (label === "Ayuda") return setDialog("help");
@@ -126,11 +135,19 @@ export function ShirtStore() {
         <button data-action="home" className="brand" onClick={() => scrollToId("inicio")} aria-label="Lienzo Blanco, ir al inicio"><span className="brand-mark">{storeContent.brand.mark}</span><span>{storeContent.brand.name}</span></button>
         <nav className={`main-nav ${mobileOpen ? "main-nav--open" : ""}`} aria-label="Navegación principal">{storeContent.navigation.map((label) => <button data-action={`nav-${label.toLowerCase()}`} key={label} onClick={() => navigate(label)}>{label}</button>)}</nav>
         <div className="header-tools">
-          <label className="search"><Search aria-hidden="true"/><input type="search" aria-label="Buscar diseños" placeholder="Buscar diseños" value={query} onChange={(e)=>{setQuery(e.target.value); scrollToId("catalogo");}}/></label>
+
           <button data-action="open-account" className="tool-button" onClick={() => setDialog("account")} aria-label="Mi cuenta"><User/><span>Mi cuenta</span></button>
           <button data-action="open-cart" className="tool-button cart-button" onClick={() => setDialog("cart")} aria-label={`Bolsa de compras, ${cartCount} artículos`}><ShoppingBag/><span>Bolsa de compras</span><b>{cartCount}</b></button>
           <button data-action="toggle-mobile-menu" className="mobile-button" onClick={() => setMobileOpen((open)=>!open)} aria-label="Abrir menú"><Menu/></button>
         </div>
+      </div>
+      <div className="header-search shell">
+        <form className="search" role="search" aria-label="Buscar en todo el catálogo" onSubmit={submitSearch}>
+          <input ref={searchInput} type="search" aria-label="Buscar diseños" aria-describedby="search-status" placeholder="Buscar productos" enterKeyHint="search" value={query} onChange={(e)=>{setQuery(e.target.value);setCollection("Todos");}}/>
+          {query && <button type="button" className="search-clear" aria-label="Limpiar búsqueda" onClick={clearSearch}><X aria-hidden="true"/></button>}
+          <button type="submit" className="search-submit" aria-label="Buscar productos"><Search aria-hidden="true"/><span>Buscar</span></button>
+        </form>
+        <p id="search-status" className="search-status" role="status" aria-live="polite" aria-atomic="true">{query.trim() ? (filtered.length ? `${filtered.length} ${filtered.length === 1 ? "resultado" : "resultados"} para “${query.trim()}”` : `Sin resultados para “${query.trim()}”`) : "Encuentra tu próximo diseño favorito"}</p>
       </div>
     </header>
 
