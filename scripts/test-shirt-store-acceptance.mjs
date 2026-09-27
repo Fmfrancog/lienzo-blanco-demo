@@ -1,5 +1,7 @@
 import { chromium as playwright } from 'playwright';
 import chromium from '@sparticuz/chromium';
+import fs from 'node:fs';
+const expectedCount=JSON.parse(fs.readFileSync(new URL('../src/data/drive-products.json',import.meta.url))).length+1;
 
 const browser = await playwright.launch({ args: chromium.args, executablePath: await chromium.executablePath(), headless: true });
 const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
@@ -8,7 +10,7 @@ page.on('console', (msg) => { if (msg.type()==='error') errors.push(msg.text());
 page.on('pageerror', (error) => errors.push(error.message));
 
 try {
-  await page.goto('http://127.0.0.1:3010', { waitUntil: 'networkidle', timeout: 120000 });
+  await page.goto(process.env.BASE_URL || 'http://127.0.0.1:3011', { waitUntil: 'networkidle', timeout: 120000 });
   const title=await page.title();
   if(!title.includes('Lienzo Blanco')) throw new Error(`Expected Lienzo Blanco title, received: ${title}`);
 
@@ -18,7 +20,7 @@ try {
 
   const products=page.locator('[data-testid="product-card"]');
   const productCount=await products.count();
-  if(productCount!==173) throw new Error(`Expected 173 photographic products, received ${productCount}`);
+  if(productCount!==expectedCount) throw new Error(`Expected ${expectedCount} photographic products, received ${productCount}`);
 
   await page.getByRole('searchbox',{name:/buscar diseños/i}).fill('alien');
   const filtered=await products.count();

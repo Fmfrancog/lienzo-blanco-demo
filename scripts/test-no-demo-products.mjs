@@ -8,8 +8,8 @@ const browser=await pw.launch({args:chromium.args,executablePath:await chromium.
 try {
  const page=await browser.newPage();
  await page.goto(process.env.BASE_URL||'http://127.0.0.1:3011',{waitUntil:'networkidle'});
- assert.equal(await page.locator('[data-testid="product-card"]').count(),173);
+ assert.equal(await page.locator('[data-testid="product-card"]').count(),manifest.length+1);
  for(const id of removed) assert.equal(await page.locator(`[data-action="open-product-${id}"]`).count(),0,id);
  for(const id of ['gato-cosmico',...manifest.map(p=>p.id)]) assert.equal(await page.locator(`[data-action="open-product-${id}"]`).count(),1,id);
- console.log(JSON.stringify({status:'ok',removed:removed.length,remaining:173,allPhotographicProductsPreserved:true}));
+ console.log(JSON.stringify({status:'ok',removed:removed.length,remaining:manifest.length+1,allPhotographicProductsPreserved:true}));
 } finally { await browser.close(); }

@@ -25,9 +25,9 @@ try {
   await button.click();
   const dialog=page.getByRole('dialog',{name:/detalle de producto/i});
   assert.equal(await dialog.locator('[data-testid="gallery-main-image"]').getAttribute("src"),cover);
-  assert.equal(await dialog.locator('[data-testid="gallery-thumbnail"]').count(),5);
+  assert.equal(await dialog.locator('[data-testid="gallery-thumbnail"]').count(),p.images.length);
   await dialog.locator('[data-testid="gallery-thumbnail"]').last().click();
-  assert.equal(await dialog.locator('[data-testid="gallery-main-image"]').getAttribute('src'),p.images[4]);
+  assert.equal(await dialog.locator('[data-testid="gallery-main-image"]').getAttribute('src'),p.images.at(-1));
   assert.match(await dialog.locator('[data-testid="product-pricing"]').innerText(),/299[\s\S]*199/);
   assert.deepEqual(await dialog.locator('[data-testid="product-size"]').allTextContents(),['CH','M','G','EG']);
   await dialog.getByRole('button',{name:'EG',exact:true}).click();
@@ -41,7 +41,7 @@ try {
   await page.keyboard.press('Escape');
   const assets=[];
   for(const image of p.images){const r=await page.request.get(base+image);assert.equal(r.status(),200,image);assets.push({url:image,status:r.status()});}
-  results.push({id,name:p.name,gallery:5,price:199,compareAtPrice:299,sizes:['CH','M','G','EG'],cart:'passed',assets});
+  results.push({id,name:p.name,gallery:p.images.length,price:199,compareAtPrice:299,sizes:['CH','M','G','EG'],cart:'passed',assets});
   fs.writeFileSync(`${reportDir}/browser-verification.json`,JSON.stringify({base,results,errors},null,2));
  }
  const search=page.getByRole('searchbox',{name:'Buscar diseños'});
@@ -63,5 +63,5 @@ try {
   await page.keyboard.press('Escape');
  }
  assert.deepEqual(errors,[]);
- console.log(JSON.stringify({status:'ok',products:results.length,assets:results.length*5,errors}));
+ console.log(JSON.stringify({status:'ok',products:results.length,assets:results.reduce((sum,p)=>sum+p.assets.length,0),errors}));
 } finally {await browser.close();}

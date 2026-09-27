@@ -1,0 +1,392 @@
+[
+  {
+    "id": "blanca-calavera-remolinos",
+    "name": "Blanca Calavera Remolinos",
+    "images": [
+      "/catalogo/blanca-calavera-remolinos/blanca-calavera-remolinos-01.webp",
+      "/catalogo/blanca-calavera-remolinos/blanca-calavera-remolinos-02.webp",
+      "/catalogo/blanca-calavera-remolinos/blanca-calavera-remolinos-03.webp",
+      "/catalogo/blanca-calavera-remolinos/blanca-calavera-remolinos-04.webp",
+      "/catalogo/blanca-calavera-remolinos/blanca-calavera-remolinos-05.webp"
+    ],
+    "sequences": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": "playera-blanca-calavera",
+    "name": "Playera Blanca Calavera",
+    "images": [
+      "/catalogo/playera-blanca-calavera/playera-blanca-calavera-01.webp",
+      "/catalogo/playera-blanca-calavera/playera-blanca-calavera-02.webp",
+      "/catalogo/playera-blanca-calavera/playera-blanca-calavera-03.webp",
+      "/catalogo/playera-blanca-calavera/playera-blanca-calavera-04.webp"
+    ],
+    "sequences": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "playera-blanca-bosque-calavera",
+    "name": "Playera Blanca Bosque Calavera",
+    "images": [
+      "/catalogo/playera-blanca-bosque-calavera/playera-blanca-bosque-calavera-01.webp",
+      "/catalogo/playera-blanca-bosque-calavera/playera-blanca-bosque-calavera-02.webp",
+      "/catalogo/playera-blanca-bosque-calavera/playera-blanca-bosque-calavera-03.webp",
+      "/catalogo/playera-blanca-bosque-calavera/playera-blanca-bosque-calavera-04.webp",
+      "/catalogo/playera-blanca-bosque-calavera/playera-blanca-bosque-calavera-05.webp"
+    ],
+    "sequences": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": "playera-blanca-calavera-luna",
+    "name": "Playera Blanca Calavera Luna",
+    "images": [
+      "/catalogo/playera-blanca-calavera-luna/playera-blanca-calavera-luna-01.webp",
+      "/catalogo/playera-blanca-calavera-luna/playera-blanca-calavera-luna-02.webp",
+      "/catalogo/playera-blanca-calavera-luna/playera-blanca-calavera-luna-03.webp",
+      "/catalogo/playera-blanca-calavera-luna/playera-blanca-calavera-luna-04.webp",
+      "/catalogo/playera-blanca-calavera-luna/playera-blanca-calavera-luna-05.webp"
+    ],
+    "sequences": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": "playera-blanca-calavera-dj",
+    "name": "Playera Blanca Calavera Dj",
+    "images": [
+      "/catalogo/playera-blanca-calavera-dj/playera-blanca-calavera-dj-01.webp",
+      "/catalogo/playera-blanca-calavera-dj/playera-blanca-calavera-dj-02.webp",
+      "/catalogo/playera-blanca-calavera-dj/playera-blanca-calavera-dj-03.webp",
+      "/catalogo/playera-blanca-calavera-dj/playera-blanca-calavera-dj-04.webp",
+      "/catalogo/playera-blanca-calavera-dj/playera-blanca-calavera-dj-05.webp"
+    ],
+    "sequences": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": "playera-blanca-de-chica-sexy-de-navidad-para-hombre",
+    "name": "Playera Blanca de Chica Sexy de Navidad para Hombre",
+    "images": [
+      "/catalogo/playera-blanca-de-chica-sexy-de-navidad-para-hombre/playera-blanca-de-chica-sexy-de-navidad-para-hombre-03.webp",
+      "/catalogo/playera-blanca-de-chica-sexy-de-navidad-para-hombre/playera-blanca-de-chica-sexy-de-navidad-para-hombre-04.webp",
+      "/catalogo/playera-blanca-de-chica-sexy-de-navidad-para-hombre/playera-blanca-de-chica-sexy-de-navidad-para-hombre-05.webp"
+    ],
+    "sequences": [
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": "playera-blanca-de-mujer-alien",
+    "name": "Playera Blanca de Mujer Alien",
+    "images": [
+      "/catalogo/playera-blanca-de-mujer-alien/playera-blanca-de-mujer-alien-01.webp",
+      "/catalogo/playera-blanca-de-mujer-alien/playera-blanca-de-mujer-alien-02.webp",
+      "/catalogo/playera-blanca-de-mujer-alien/playera-blanca-de-mujer-alien-03.webp",
+      "/catalogo/playera-blanca-de-mujer-alien/playera-blanca-de-mujer-alien-04.webp"
+    ],
+    "sequences": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-alien-psychedelic",
+    "name": "Playera Blanca para Hombre de Alien Psychedelic",
+    "images": [
+      "/catalogo/playera-blanca-para-hombre-de-alien-psychedelic/playera-blanca-para-hombre-de-alien-psychedelic-01.webp",
+      "/catalogo/playera-blanca-para-hombre-de-alien-psychedelic/playera-blanca-para-hombre-de-alien-psychedelic-02.webp",
+      "/catalogo/playera-blanca-para-hombre-de-alien-psychedelic/playera-blanca-para-hombre-de-alien-psychedelic-04.webp",
+      "/catalogo/playera-blanca-para-hombre-de-alien-psychedelic/playera-blanca-para-hombre-de-alien-psychedelic-05.webp"
+    ],
+    "sequences": [
+      1,
+      2,
+      4,
+      5
+    ]
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-bitcoin-de-oro",
+    "name": "Playera Blanca para Hombre de Bitcoin de Oro",
+    "images": [
+      "/catalogo/playera-blanca-para-hombre-de-bitcoin-de-oro/playera-blanca-para-hombre-de-bitcoin-de-oro-01.webp",
+      "/catalogo/playera-blanca-para-hombre-de-bitcoin-de-oro/playera-blanca-para-hombre-de-bitcoin-de-oro-02.webp",
+      "/catalogo/playera-blanca-para-hombre-de-bitcoin-de-oro/playera-blanca-para-hombre-de-bitcoin-de-oro-03.webp",
+      "/catalogo/playera-blanca-para-hombre-de-bitcoin-de-oro/playera-blanca-para-hombre-de-bitcoin-de-oro-04.webp"
+    ],
+    "sequences": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-astronauta-dj",
+    "name": "Playera Blanca para Hombre de Astronauta DJ",
+    "images": [
+      "/catalogo/playera-blanca-para-hombre-de-astronauta-dj/playera-blanca-para-hombre-de-astronauta-dj-01.webp",
+      "/catalogo/playera-blanca-para-hombre-de-astronauta-dj/playera-blanca-para-hombre-de-astronauta-dj-02.webp",
+      "/catalogo/playera-blanca-para-hombre-de-astronauta-dj/playera-blanca-para-hombre-de-astronauta-dj-03.webp",
+      "/catalogo/playera-blanca-para-hombre-de-astronauta-dj/playera-blanca-para-hombre-de-astronauta-dj-04.webp"
+    ],
+    "sequences": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-calavera-con-hongos-alucinante",
+    "name": "Playera Blanca para Hombre de Calavera con Hongos Alucinante",
+    "images": [
+      "/catalogo/playera-blanca-para-hombre-de-calavera-con-hongos-alucinante/playera-blanca-para-hombre-de-calavera-con-hongos-alucinante-02.webp",
+      "/catalogo/playera-blanca-para-hombre-de-calavera-con-hongos-alucinante/playera-blanca-para-hombre-de-calavera-con-hongos-alucinante-03.webp",
+      "/catalogo/playera-blanca-para-hombre-de-calavera-con-hongos-alucinante/playera-blanca-para-hombre-de-calavera-con-hongos-alucinante-04.webp",
+      "/catalogo/playera-blanca-para-hombre-de-calavera-con-hongos-alucinante/playera-blanca-para-hombre-de-calavera-con-hongos-alucinante-05.webp"
+    ],
+    "sequences": [
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-che-fc",
+    "name": "Playera Blanca para Hombre de CHE FC",
+    "images": [
+      "/catalogo/playera-blanca-para-hombre-de-che-fc/playera-blanca-para-hombre-de-che-fc-01.webp",
+      "/catalogo/playera-blanca-para-hombre-de-che-fc/playera-blanca-para-hombre-de-che-fc-03.webp",
+      "/catalogo/playera-blanca-para-hombre-de-che-fc/playera-blanca-para-hombre-de-che-fc-04.webp",
+      "/catalogo/playera-blanca-para-hombre-de-che-fc/playera-blanca-para-hombre-de-che-fc-05.webp"
+    ],
+    "sequences": [
+      1,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-chica-dark",
+    "name": "Playera Blanca para Hombre de Chica Dark",
+    "images": [
+      "/catalogo/playera-blanca-para-hombre-de-chica-dark/playera-blanca-para-hombre-de-chica-dark-01.webp",
+      "/catalogo/playera-blanca-para-hombre-de-chica-dark/playera-blanca-para-hombre-de-chica-dark-03.webp",
+      "/catalogo/playera-blanca-para-hombre-de-chica-dark/playera-blanca-para-hombre-de-chica-dark-04.webp",
+      "/catalogo/playera-blanca-para-hombre-de-chica-dark/playera-blanca-para-hombre-de-chica-dark-05.webp"
+    ],
+    "sequences": [
+      1,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-cubo-en-el-espacio",
+    "name": "Playera Blanca para Hombre de Cubo en el Espacio",
+    "images": [
+      "/catalogo/playera-blanca-para-hombre-de-cubo-en-el-espacio/playera-blanca-para-hombre-de-cubo-en-el-espacio-01.webp",
+      "/catalogo/playera-blanca-para-hombre-de-cubo-en-el-espacio/playera-blanca-para-hombre-de-cubo-en-el-espacio-03.webp",
+      "/catalogo/playera-blanca-para-hombre-de-cubo-en-el-espacio/playera-blanca-para-hombre-de-cubo-en-el-espacio-04.webp",
+      "/catalogo/playera-blanca-para-hombre-de-cubo-en-el-espacio/playera-blanca-para-hombre-de-cubo-en-el-espacio-05.webp"
+    ],
+    "sequences": [
+      1,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-gatos-psicodelicos",
+    "name": "Playera Blanca para Hombre de Gatos Psicodelicos",
+    "images": [
+      "/catalogo/playera-blanca-para-hombre-de-gatos-psicodelicos/playera-blanca-para-hombre-de-gatos-psicodelicos-01.webp",
+      "/catalogo/playera-blanca-para-hombre-de-gatos-psicodelicos/playera-blanca-para-hombre-de-gatos-psicodelicos-03.webp",
+      "/catalogo/playera-blanca-para-hombre-de-gatos-psicodelicos/playera-blanca-para-hombre-de-gatos-psicodelicos-04.webp",
+      "/catalogo/playera-blanca-para-hombre-de-gatos-psicodelicos/playera-blanca-para-hombre-de-gatos-psicodelicos-05.webp"
+    ],
+    "sequences": [
+      1,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-no-bpm-limit",
+    "name": "Playera Blanca para Hombre de NO BPM LIMIT",
+    "images": [
+      "/catalogo/playera-blanca-para-hombre-de-no-bpm-limit/playera-blanca-para-hombre-de-no-bpm-limit-01.webp",
+      "/catalogo/playera-blanca-para-hombre-de-no-bpm-limit/playera-blanca-para-hombre-de-no-bpm-limit-02.webp",
+      "/catalogo/playera-blanca-para-hombre-de-no-bpm-limit/playera-blanca-para-hombre-de-no-bpm-limit-03.webp",
+      "/catalogo/playera-blanca-para-hombre-de-no-bpm-limit/playera-blanca-para-hombre-de-no-bpm-limit-04.webp"
+    ],
+    "sequences": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-parkour",
+    "name": "Playera Blanca para Hombre de Parkour",
+    "images": [
+      "/catalogo/playera-blanca-para-hombre-de-parkour/playera-blanca-para-hombre-de-parkour-01.webp",
+      "/catalogo/playera-blanca-para-hombre-de-parkour/playera-blanca-para-hombre-de-parkour-03.webp",
+      "/catalogo/playera-blanca-para-hombre-de-parkour/playera-blanca-para-hombre-de-parkour-04.webp",
+      "/catalogo/playera-blanca-para-hombre-de-parkour/playera-blanca-para-hombre-de-parkour-05.webp"
+    ],
+    "sequences": [
+      1,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-skate-urbano",
+    "name": "Playera Blanca para Hombre de Skate Urbano",
+    "images": [
+      "/catalogo/playera-blanca-para-hombre-de-skate-urbano/playera-blanca-para-hombre-de-skate-urbano-01.webp",
+      "/catalogo/playera-blanca-para-hombre-de-skate-urbano/playera-blanca-para-hombre-de-skate-urbano-02.webp",
+      "/catalogo/playera-blanca-para-hombre-de-skate-urbano/playera-blanca-para-hombre-de-skate-urbano-03.webp",
+      "/catalogo/playera-blanca-para-hombre-de-skate-urbano/playera-blanca-para-hombre-de-skate-urbano-04.webp"
+    ],
+    "sequences": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "playera-blanca-para-hombre-diamantes-en-el-cielo",
+    "name": "Playera Blanca para Hombre Diamantes en el Cielo",
+    "images": [
+      "/catalogo/playera-blanca-para-hombre-diamantes-en-el-cielo/playera-blanca-para-hombre-diamantes-en-el-cielo-02.webp",
+      "/catalogo/playera-blanca-para-hombre-diamantes-en-el-cielo/playera-blanca-para-hombre-diamantes-en-el-cielo-03.webp",
+      "/catalogo/playera-blanca-para-hombre-diamantes-en-el-cielo/playera-blanca-para-hombre-diamantes-en-el-cielo-04.webp",
+      "/catalogo/playera-blanca-para-hombre-diamantes-en-el-cielo/playera-blanca-para-hombre-diamantes-en-el-cielo-05.webp"
+    ],
+    "sequences": [
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-alien-meditando",
+    "name": "Playera Blanca para Mujer de Alien Meditando",
+    "images": [
+      "/catalogo/playera-blanca-para-mujer-de-alien-meditando/playera-blanca-para-mujer-de-alien-meditando-01.webp",
+      "/catalogo/playera-blanca-para-mujer-de-alien-meditando/playera-blanca-para-mujer-de-alien-meditando-02.webp",
+      "/catalogo/playera-blanca-para-mujer-de-alien-meditando/playera-blanca-para-mujer-de-alien-meditando-03.webp",
+      "/catalogo/playera-blanca-para-mujer-de-alien-meditando/playera-blanca-para-mujer-de-alien-meditando-05.webp"
+    ],
+    "sequences": [
+      1,
+      2,
+      3,
+      5
+    ]
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-leona-con-rosas",
+    "name": "Playera Blanca para Mujer de Leona con Rosas",
+    "images": [
+      "/catalogo/playera-blanca-para-mujer-de-leona-con-rosas/playera-blanca-para-mujer-de-leona-con-rosas-01.webp",
+      "/catalogo/playera-blanca-para-mujer-de-leona-con-rosas/playera-blanca-para-mujer-de-leona-con-rosas-02.webp",
+      "/catalogo/playera-blanca-para-mujer-de-leona-con-rosas/playera-blanca-para-mujer-de-leona-con-rosas-04.webp",
+      "/catalogo/playera-blanca-para-mujer-de-leona-con-rosas/playera-blanca-para-mujer-de-leona-con-rosas-05.webp"
+    ],
+    "sequences": [
+      1,
+      2,
+      4,
+      5
+    ]
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-gato-con-aliens",
+    "name": "Playera Blanca para Mujer de Gato con Aliens",
+    "images": [
+      "/catalogo/playera-blanca-para-mujer-de-gato-con-aliens/playera-blanca-para-mujer-de-gato-con-aliens-01.webp",
+      "/catalogo/playera-blanca-para-mujer-de-gato-con-aliens/playera-blanca-para-mujer-de-gato-con-aliens-02.webp",
+      "/catalogo/playera-blanca-para-mujer-de-gato-con-aliens/playera-blanca-para-mujer-de-gato-con-aliens-03.webp",
+      "/catalogo/playera-blanca-para-mujer-de-gato-con-aliens/playera-blanca-para-mujer-de-gato-con-aliens-04.webp"
+    ],
+    "sequences": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-solo-psycho",
+    "name": "Playera Blanca para Mujer de Solo Psycho",
+    "images": [
+      "/catalogo/playera-blanca-para-mujer-de-solo-psycho/playera-blanca-para-mujer-de-solo-psycho-01.webp",
+      "/catalogo/playera-blanca-para-mujer-de-solo-psycho/playera-blanca-para-mujer-de-solo-psycho-02.webp",
+      "/catalogo/playera-blanca-para-mujer-de-solo-psycho/playera-blanca-para-mujer-de-solo-psycho-03.webp",
+      "/catalogo/playera-blanca-para-mujer-de-solo-psycho/playera-blanca-para-mujer-de-solo-psycho-04.webp"
+    ],
+    "sequences": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "playera-blanca-tocando",
+    "name": "Playera Blanca Tocando",
+    "images": [
+      "/catalogo/playera-blanca-tocando/playera-blanca-tocando-01.webp",
+      "/catalogo/playera-blanca-tocando/playera-blanca-tocando-02.webp",
+      "/catalogo/playera-blanca-tocando/playera-blanca-tocando-03.webp",
+      "/catalogo/playera-blanca-tocando/playera-blanca-tocando-04.webp"
+    ],
+    "sequences": [
+      1,
+      2,
+      3,
+      4
+    ]
+  }
+]
