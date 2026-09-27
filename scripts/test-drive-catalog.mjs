@@ -13,7 +13,7 @@ page.on('pageerror',e=>errors.push(e.message));
 page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
 try {
  await page.goto(base,{waitUntil:'networkidle',timeout:120000});
- assert.equal(await page.locator('[data-testid="product-card"]').count(),manifest.length+13,'All source designs once, preserving thirteen existing designs');
+ assert.equal(await page.locator('[data-testid="product-card"]').count(),manifest.length+1,'All source designs once, preserving Gato Cósmico');
  for (const p of manifest) {
   const id=p.existingId||p.id;
   const button=page.locator(`[data-action="open-product-${id}"]`);

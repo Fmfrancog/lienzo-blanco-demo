@@ -18,7 +18,7 @@ try {
 
   const products=page.locator('[data-testid="product-card"]');
   const productCount=await products.count();
-  if(productCount<12) throw new Error(`Expected at least 12 synthetic products, received ${productCount}`);
+  if(productCount!==173) throw new Error(`Expected 173 photographic products, received ${productCount}`);
 
   await page.getByRole('searchbox',{name:/buscar diseños/i}).fill('alien');
   const filtered=await products.count();
