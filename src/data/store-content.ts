@@ -1,4 +1,6 @@
-export type Collection = "Todos" | "Naturaleza" | "Cósmico" | "Tipográfico" | "Abstracto";
+import driveCatalog from "./drive-products.json";
+
+export type Collection = "Todos" | "Naturaleza" | "Cósmico" | "Tipográfico" | "Abstracto" | "Catálogo";
 
 export type Product = {
   id: string;
@@ -18,12 +20,12 @@ export const storeContent = {
     name: "Lienzo Blanco",
     mark: "LB/01",
     tagline: "Una camiseta blanca. Infinitas formas de decir algo.",
-    description: "Tienda conceptual de camisetas blancas con gráfica independiente. Todo el contenido, inventario y proceso de compra es sintético.",
+    description: "Catálogo fotográfico junto a diseños de demostración. El carrito es local y no procesa pagos; consulta disponibilidad antes de comprar.",
   },
-  demoNotice: "PROTOTIPO EDITABLE · CATÁLOGO SINTÉTICO · SIN PAGOS REALES",
+  demoNotice: "CATÁLOGO FOTOGRÁFICO Y DISEÑOS DE MUESTRA · SIN PAGOS REALES",
   announcements: [
     "Envío de demostración incluido desde $900 MXN",
-    "Tallas XS—XXL · algodón sintético de muestra",
+    "Catálogo fotográfico: CH · M · G · EG · consulta disponibilidad",
   ],
   navigation: ["Catálogo", "Colecciones", "Personaliza", "Nosotros", "Ayuda"],
   hero: {
@@ -33,7 +35,7 @@ export const storeContent = {
     primary: "Explorar diseños",
     secondary: "Crear la mía",
   },
-  categories: ["Todos", "Naturaleza", "Cósmico", "Tipográfico", "Abstracto"] as Collection[],
+  categories: ["Todos", "Catálogo", "Naturaleza", "Cósmico", "Tipográfico", "Abstracto"] as Collection[],
   collections: [
     { name: "Señales terrestres", filter: "Naturaleza" as Collection, number: "01", description: "Formas botánicas y horizontes imposibles." },
     { name: "Fuera de órbita", filter: "Cósmico" as Collection, number: "02", description: "Mensajes enviados desde otra coordenada." },
@@ -42,6 +44,7 @@ export const storeContent = {
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   products: [
     { id: "gato-cosmico", name: "Gato Cósmico", collection: "Cósmico", price: 199, compareAtPrice: 299, sizes: ["CH", "M", "G", "EG"], description: "Playera blanca con gráfica felina en azul, magenta y negro.", story: "Un visitante felino cruza una órbita de color para observar el mundo desde otra frecuencia.", images: ["/catalogo/gato-cosmico/01.webp", "/catalogo/gato-cosmico/02.webp", "/catalogo/gato-cosmico/03.webp", "/catalogo/gato-cosmico/04.webp", "/catalogo/gato-cosmico/05.webp"] },
+    ...driveCatalog.map((product): Product => ({ ...product, collection: "Catálogo" })),
     { id: "sol-lento", name: "Sol lento", collection: "Naturaleza", price: 620, description: "Corte relajado con sol coral al centro.", story: "Un recordatorio gráfico de que la luz también sabe esperar.", art: { kind: "sun", ink: "#ef6a5b", accent: "#161616" } },
     { id: "orbita-03", name: "Órbita 03", collection: "Cósmico", price: 680, description: "Gráfica orbital de líneas precisas.", story: "Tres recorridos que nunca se cruzan y aun así forman un sistema.", art: { kind: "orbit", ink: "#202b52", accent: "#ef6a5b" } },
     { id: "marea-interior", name: "Marea interior", collection: "Abstracto", price: 640, description: "Ondas cobalto en impresión frontal.", story: "El movimiento del agua traducido a una señal mínima.", art: { kind: "wave", ink: "#2460a7", accent: "#ef6a5b" } },
@@ -68,14 +71,14 @@ export const storeContent = {
       "Lienzo Blanco es una marca ficticia creada para demostrar una experiencia de comercio editable, accesible y local.",
       "Cada diseño parte de una camiseta blanca, una paleta breve y una historia que cabe en el pecho.",
     ],
-    facts: ["13 diseños de muestra", "6 tallas", "0 transacciones reales"],
+    facts: ["Catálogo fotográfico y diseños de muestra", "Tallas indicadas por producto", "0 transacciones reales"],
   },
   shipping: "Envío simulado de 3 a 5 días hábiles en México. Gratis desde $900 MXN.",
   returns: "Devoluciones de demostración dentro de 30 días. No se generan guías ni reembolsos reales.",
   faq: [
-    { question: "¿Estas camisetas existen?", answer: "No. Productos, disponibilidad, precios y pedidos son totalmente sintéticos." },
+    { question: "¿Estas camisetas existen?", answer: "La categoría Catálogo contiene fotografías del catálogo proporcionado. Los diseños de muestra se conservan aparte. Las existencias no están conectadas y deben confirmarse; el carrito no realiza pedidos reales." },
     { question: "¿Puedo pagar?", answer: "No. El carrito es una simulación local y nunca solicita datos bancarios." },
-    { question: "¿Cómo elijo talla?", answer: "Elige XS a XXL en el detalle. La guía es ilustrativa: XS 46 cm, S 49, M 52, L 55, XL 58, XXL 61." },
+    { question: "¿Cómo elijo talla?", answer: "Elige entre las tallas indicadas en cada producto. El catálogo fotográfico ofrece CH, M, G y EG; confirma medidas y disponibilidad antes de comprar." },
   ],
   account: { title: "Cuenta de demostración", body: "Aquí vivirían tus favoritos, pedidos y direcciones. No se crea ninguna cuenta real.", action: "Simular acceso" },
   footer: {
@@ -84,7 +87,7 @@ export const storeContent = {
       { title: "Información", links: ["Envíos", "Devoluciones", "Preguntas frecuentes"] },
       { title: "Marca", links: ["Nosotros", "Proceso", "Contacto demo"] },
     ],
-    legal: "© 2026 Lienzo Blanco. Experiencia sintética de demostración; no vende productos reales.",
+    legal: "© 2026 Lienzo Blanco. Catálogo fotográfico y diseños de muestra; carrito de demostración sin pagos reales.",
   },
 };
 
