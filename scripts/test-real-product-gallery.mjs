@@ -13,8 +13,8 @@ try {
   if (await product.count() !== 1) throw new Error('Expected one real product named Gato Cósmico');
 
   const cardImage = product.locator('img');
-  if (!((await cardImage.getAttribute('src')) || '').includes('/catalogo/gato-cosmico/01.webp')) {
-    throw new Error('Expected the first numbered product image in the catalog card');
+  if (!((await cardImage.getAttribute('src')) || '').includes('/catalogo/gato-cosmico/05.webp')) {
+    throw new Error('Expected image 05 in the catalog card');
   }
 
   await page.locator('[data-action="open-product-gato-cosmico"]').click();

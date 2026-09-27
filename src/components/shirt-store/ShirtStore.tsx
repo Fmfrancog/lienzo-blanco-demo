@@ -2,6 +2,7 @@
 
 import { FormEvent, useEffect, useMemo, useState } from "react";
 import Image from "next/image";
+import { getCoverImageIndex } from "@/lib/product-cover";
 import { ArrowDown, ArrowRight, Check, Menu, Minus, Plus, Search, ShoppingBag, User, X } from "lucide-react";
 import { formatPrice, Product, storeContent, type Collection } from "@/data/store-content";
 
@@ -12,7 +13,7 @@ const scrollToId = (id: string) => document.getElementById(id)?.scrollIntoView({
 
 function ProductArtwork({ product, large = false }: { product: Product; large?: boolean }) {
   if (product.images?.length) {
-    return <div className={`artwork artwork--photo ${large ? "artwork--large" : ""}`}><Image src={product.images[0]} alt={`Playera ${product.name}`} width={619} height={800} loading={large || product.id === "gato-cosmico" ? "eager" : "lazy"} sizes={large ? "(max-width: 800px) 100vw, 50vw" : "(max-width: 520px) 100vw, (max-width: 1100px) 33vw, 25vw"} /></div>;
+    return <div className={`artwork artwork--photo ${large ? "artwork--large" : ""}`}><Image src={product.images[getCoverImageIndex(product.images)]} alt={`Playera ${product.name}`} width={619} height={800} loading={large || product.id === "gato-cosmico" ? "eager" : "lazy"} sizes={large ? "(max-width: 800px) 100vw, 50vw" : "(max-width: 520px) 100vw, (max-width: 1100px) 33vw, 25vw"} /></div>;
   }
   if (!product.art) return null;
   const { kind, ink, accent } = product.art;
@@ -42,7 +43,7 @@ function ProductArtwork({ product, large = false }: { product: Product; large?: 
 }
 
 function ProductGallery({ product }: { product: Product }) {
-  const [activeImage, setActiveImage] = useState(0);
+  const [activeImage, setActiveImage] = useState(() => getCoverImageIndex(product.images));
   if (!product.images?.length) return <ProductArtwork product={product} large />;
   return <div className="product-gallery">
     <div className="gallery-main"><Image data-testid="gallery-main-image" src={product.images[activeImage]} alt={`${product.name}, vista ${activeImage + 1}`} width={619} height={800} sizes="(max-width: 800px) 100vw, 50vw" /></div>

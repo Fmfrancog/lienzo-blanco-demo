@@ -20,9 +20,11 @@ try {
   assert.equal(await button.count(),1,`one card: ${p.name}`);
   const card=button.locator('..');
   assert.equal(await card.locator('h3').innerText(),p.name);
-  assert.equal(await card.locator('img').getAttribute('src'),p.images[0]);
+  const cover=p.images.find(image=>/(?:\/|-)0?5\.[^.]+$/.test(image)) || p.images.find(image=>/(?:\/|-)0?4\.[^.]+$/.test(image)) || p.images[0];
+  assert.equal(await card.locator('img').getAttribute('src'),cover);
   await button.click();
   const dialog=page.getByRole('dialog',{name:/detalle de producto/i});
+  assert.equal(await dialog.locator('[data-testid="gallery-main-image"]').getAttribute("src"),cover);
   assert.equal(await dialog.locator('[data-testid="gallery-thumbnail"]').count(),5);
   await dialog.locator('[data-testid="gallery-thumbnail"]').last().click();
   assert.equal(await dialog.locator('[data-testid="gallery-main-image"]').getAttribute('src'),p.images[4]);
