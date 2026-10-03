@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Lienzo Blanco | Playeras blancas de diseño",
-  description: "Prototipo editable de una tienda de playeras blancas con diseños originales y contenido sintético.",
+  title: "PLUR | Playeras con diseño",
+  description: "Explora el catálogo fotográfico de playeras PLUR. Diseños, galerías y tallas por producto. Bolsa de demostración, sin pagos reales.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

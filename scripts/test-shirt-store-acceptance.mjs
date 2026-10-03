@@ -12,7 +12,7 @@ page.on('pageerror', (error) => errors.push(error.message));
 try {
   await page.goto(process.env.BASE_URL || 'http://127.0.0.1:3011', { waitUntil: 'networkidle', timeout: 120000 });
   const title=await page.title();
-  if(!title.includes('Lienzo Blanco')) throw new Error(`Expected Lienzo Blanco title, received: ${title}`);
+  if(!title.includes('PLUR')) throw new Error(`Expected PLUR title, received: ${title}`);
 
   for (const label of ['Catálogo','Colecciones','Personaliza','Nosotros','Ayuda']) {
     if(await page.getByRole('button',{name:label,exact:true}).count()===0) throw new Error(`Missing navigation button: ${label}`);

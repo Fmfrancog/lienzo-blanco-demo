@@ -5,7 +5,7 @@ const browser = await playwright.launch({ args: chromium.args, executablePath: a
 const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
 
 try {
-  await page.goto('http://127.0.0.1:3010', { waitUntil: 'domcontentloaded', timeout: 120000 });
+  await page.goto(process.env.BASE_URL || 'http://127.0.0.1:3011', { waitUntil: 'domcontentloaded', timeout: 120000 });
   await page.waitForTimeout(1500);
   await page.getByRole('searchbox', { name: /buscar diseños/i }).fill('gato cósmico');
 

@@ -17,29 +17,29 @@ export type Product = {
 
 export const storeContent = {
   brand: {
-    name: "Lienzo Blanco",
-    mark: "LB/01",
+    name: "PLUR",
+    mark: "PLUR",
     tagline: "Una camiseta blanca. Infinitas formas de decir algo.",
     description: "Catálogo fotográfico. El carrito es local y no procesa pagos; consulta disponibilidad antes de comprar.",
   },
   demoNotice: "CATÁLOGO FOTOGRÁFICO · SIN PAGOS REALES",
   announcements: [
-    "Envío de demostración incluido desde $900 MXN",
+    "Explora los diseños · encuentra el tuyo",
     "Catálogo fotográfico: CH · M · G · EG · consulta disponibilidad",
   ],
   navigation: ["Catálogo", "Colecciones", "Personaliza", "Nosotros", "Ayuda"],
   hero: {
-    eyebrow: "EDICIÓN 01 — EL BLANCO COMO PUNTO DE PARTIDA",
-    title: "Tu idea, sobre blanco.",
-    body: "Gráficas originales para una sola prenda esencial. Explora, elige tu talla o construye una versión propia.",
+    eyebrow: "PLUR / PLAYERAS CON DISEÑO",
+    title: "No pases desapercibido.",
+    body: "Gráficas que hablan por ti. Explora el catálogo, mira cada detalle y encuentra tu próxima playera.",
     primary: "Explorar diseños",
-    secondary: "Crear la mía",
+    secondary: "Cómo funciona",
   },
-  categories: ["Todos", "Catálogo", "Naturaleza", "Cósmico", "Tipográfico", "Abstracto"] as Collection[],
+  categories: ["Todos", "Catálogo", "Cósmico"] as Collection[],
   collections: [
-    { name: "Señales terrestres", filter: "Naturaleza" as Collection, number: "01", description: "Formas botánicas y horizontes imposibles." },
-    { name: "Fuera de órbita", filter: "Cósmico" as Collection, number: "02", description: "Mensajes enviados desde otra coordenada." },
-    { name: "Palabras en voz alta", filter: "Tipográfico" as Collection, number: "03", description: "Letras para vestir una postura." },
+    { name: "Todos los diseños", filter: "Todos" as Collection, number: "01", description: "Tu siguiente playera empieza aquí." },
+    { name: "Catálogo fotográfico", filter: "Catálogo" as Collection, number: "02", description: "Explora las fotos de cada diseño." },
+    { name: "Gato Cósmico", filter: "Cósmico" as Collection, number: "03", description: "Una mirada a Gato Cósmico." },
   ],
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   products: [
@@ -53,16 +53,16 @@ export const storeContent = {
     prompts: ["Una frase breve", "Un símbolo", "Una fecha importante"],
   },
   about: {
-    eyebrow: "MANIFIESTO",
-    title: "La camiseta como página en blanco.",
+    eyebrow: "ACERCA DE PLUR",
+    title: "El diseño es tuyo. La elección, también.",
     paragraphs: [
-      "Lienzo Blanco es una marca ficticia creada para demostrar una experiencia de comercio editable, accesible y local.",
-      "Cada diseño parte de una camiseta blanca, una paleta breve y una historia que cabe en el pecho.",
+      "PLUR reúne este catálogo de playeras para que explores sus gráficas, fotografías y tallas en un solo lugar.",
+      "Puedes probar la bolsa de compras, pero todavía no se generan pedidos ni se procesan pagos. Confirma disponibilidad y medidas antes de comprar.",
     ],
     facts: ["Catálogo fotográfico", "Tallas indicadas por producto", "0 transacciones reales"],
   },
-  shipping: "Envío simulado de 3 a 5 días hábiles en México. Gratis desde $900 MXN.",
-  returns: "Devoluciones de demostración dentro de 30 días. No se generan guías ni reembolsos reales.",
+  shipping: "Envíos aún no habilitados. Costos y tiempos por confirmar.",
+  returns: "Las condiciones de devolución están por confirmar. No se generan guías ni reembolsos reales.",
   faq: [
     { question: "¿Estas camisetas existen?", answer: "La categoría Catálogo contiene fotografías del catálogo proporcionado. Las existencias no están conectadas y deben confirmarse; el carrito no realiza pedidos reales." },
     { question: "¿Puedo pagar?", answer: "No. El carrito es una simulación local y nunca solicita datos bancarios." },
@@ -75,7 +75,7 @@ export const storeContent = {
       { title: "Información", links: ["Envíos", "Devoluciones", "Preguntas frecuentes"] },
       { title: "Marca", links: ["Nosotros", "Proceso", "Contacto demo"] },
     ],
-    legal: "© 2026 Lienzo Blanco. Catálogo fotográfico; carrito de demostración sin pagos reales.",
+    legal: "© 2026 PLUR. Catálogo fotográfico; carrito de demostración sin pagos reales.",
   },
 };
 
