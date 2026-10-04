@@ -46,10 +46,14 @@ try {
  }
  const search=page.getByRole('searchbox',{name:'Buscar diseños'});
  await search.fill(manifest[0].name);assert.equal(await page.locator('[data-testid="product-card"]').count(),1);
- await search.fill('');await page.locator('[data-action="filter-catálogo"]').click();assert.equal(await page.locator('[data-testid="product-card"]').count(),manifest.length);
+ await search.fill('');
+ const taxonomy=JSON.parse(fs.readFileSync(new URL('../src/data/product-taxonomy.json',import.meta.url),'utf8'));
+ const category=taxonomy.find(row=>row.id===manifest[0].id).category;
+ await page.locator(`[data-action="filter-${category.toLowerCase()}"]`).click();
+ assert.deepEqual(await page.locator('[data-testid="product-card"]').evaluateAll(els=>els.map(el=>el.dataset.productId)),taxonomy.filter(row=>row.category===category).map(row=>row.id));
  await page.locator('[data-action="filter-todos"]').click();
  for (const [label,viewport] of [['desktop',{width:1440,height:1000}],['mobile',{width:390,height:844}]]) {
-  // Search is desktop-only in the existing UI; filter before resizing.
+  // Use the same named-product search before capturing each viewport.
   await page.setViewportSize({width:1440,height:1000});
   await search.fill(manifest[0].name);
   await page.setViewportSize(viewport);

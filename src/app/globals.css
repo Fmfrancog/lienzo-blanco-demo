@@ -99,7 +99,12 @@ svg { display: block; }
 .collection-card p { margin: 0; color: inherit; line-height: 1.5; font-size: 13px; }
 .collection-card svg { width: 22px; }
 .catalog { border-top: 1px solid var(--line); }
+.filter-help { margin: 0 0 14px; color: var(--muted); font-size: 13px; }
 .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 38px; }
+.filter-count { margin-left: 8px; font-size: 12px; font-variant-numeric: tabular-nums; opacity: .75; }
+.product-tags { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; padding: 0; margin: 0 0 16px; }
+.product-tags li { max-width: 100%; padding: 5px 8px; border-radius: 4px; background: #edeee8; color: #45483e; font-size: 11px; line-height: 1.4; overflow-wrap: anywhere; }
+.detail-copy .product-tags li { font-size: 13px; }
 .filters button { min-height: 44px; padding: 8px 18px; border: 1px solid var(--ink); border-radius: 999px; background: transparent; }
 .filters button.active, .filters button:hover { background: var(--ink); color: white; }
 .product-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 36px 20px; }

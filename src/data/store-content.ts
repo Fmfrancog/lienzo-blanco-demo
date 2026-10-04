@@ -1,11 +1,15 @@
 import driveCatalog from "./drive-products.json";
+import productTaxonomy from "./product-taxonomy.json";
 
-export type Collection = "Todos" | "Naturaleza" | "Cósmico" | "Tipográfico" | "Abstracto" | "Catálogo";
+export const thematicCategories = ["Calaveras", "Navidad y fiestas", "Raíces y símbolos", "Aliens y espacio", "Arte y frases", "Animales", "Música", "Naturaleza y hongos", "Deportes", "Bitcoin"] as const;
+export type Collection = "Todos" | typeof thematicCategories[number];
+const taxonomyById = new Map(productTaxonomy.map((item) => [item.id, item]));
 
 export type Product = {
   id: string;
   name: string;
   collection: Exclude<Collection, "Todos">;
+  tags: readonly string[];
   price: number;
   compareAtPrice?: number;
   sizes?: readonly string[];
@@ -35,17 +39,21 @@ export const storeContent = {
     primary: "Explorar diseños",
     secondary: "Cómo funciona",
   },
-  categories: ["Todos", "Catálogo", "Cósmico"] as Collection[],
+  categories: ["Todos", ...thematicCategories] as Collection[],
   collections: [
-    { name: "Todos los diseños", filter: "Todos" as Collection, number: "01", description: "Tu siguiente playera empieza aquí." },
-    { name: "Catálogo fotográfico", filter: "Catálogo" as Collection, number: "02", description: "Explora las fotos de cada diseño." },
-    { name: "Gato Cósmico", filter: "Cósmico" as Collection, number: "03", description: "Una mirada a Gato Cósmico." },
+    { name: "Calaveras", filter: "Calaveras" as Collection, number: "01", description: "Rosas, hongos y gráficas de otro mundo." },
+    { name: "Aliens y espacio", filter: "Aliens y espacio" as Collection, number: "02", description: "Encuentros con aliens, planetas y astronautas." },
+    { name: "Animales", filter: "Animales" as Collection, number: "03", description: "Felinos, caballos y criaturas con personalidad." },
   ],
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   products: [
     { id: "gato-cosmico", name: "Gato Cósmico", collection: "Cósmico", price: 199, compareAtPrice: 299, sizes: ["CH", "M", "G", "EG"], description: "Playera blanca con gráfica felina en azul, magenta y negro.", story: "Un visitante felino cruza una órbita de color para observar el mundo desde otra frecuencia.", images: ["/catalogo/gato-cosmico/01.webp", "/catalogo/gato-cosmico/02.webp", "/catalogo/gato-cosmico/03.webp", "/catalogo/gato-cosmico/04.webp", "/catalogo/gato-cosmico/05.webp"] },
-    ...driveCatalog.map((product): Product => ({ ...product, collection: "Catálogo" })),
-  ] satisfies Product[],
+    ...driveCatalog,
+  ].map((product): Product => {
+    const taxonomy = taxonomyById.get(product.id);
+    if (!taxonomy) throw new Error(`Falta clasificación para ${product.id}`);
+    return { ...product, collection: taxonomy.category as Product["collection"], tags: taxonomy.tags };
+  }),
   customizer: {
     eyebrow: "ESTUDIO ABIERTO",
     title: "Hazla únicamente tuya.",
@@ -64,7 +72,7 @@ export const storeContent = {
   shipping: "Envíos aún no habilitados. Costos y tiempos por confirmar.",
   returns: "Las condiciones de devolución están por confirmar. No se generan guías ni reembolsos reales.",
   faq: [
-    { question: "¿Estas camisetas existen?", answer: "La categoría Catálogo contiene fotografías del catálogo proporcionado. Las existencias no están conectadas y deben confirmarse; el carrito no realiza pedidos reales." },
+    { question: "¿Estas camisetas existen?", answer: "El catálogo contiene fotografías de los diseños proporcionados. Las categorías y etiquetas describen sus temas, no materiales, licencias ni existencias. La disponibilidad debe confirmarse; el carrito no realiza pedidos reales." },
     { question: "¿Puedo pagar?", answer: "No. El carrito es una simulación local y nunca solicita datos bancarios." },
     { question: "¿Cómo elijo talla?", answer: "Elige entre las tallas indicadas en cada producto. El catálogo fotográfico ofrece CH, M, G y EG; confirma medidas y disponibilidad antes de comprar." },
   ],

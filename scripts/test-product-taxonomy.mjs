@@ -1,0 +1,34 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+const path = new URL('../src/data/product-taxonomy.json', import.meta.url);
+assert(fs.existsSync(path), '197 products must have a reviewed thematic taxonomy');
+const rows = JSON.parse(fs.readFileSync(path));
+const imported = JSON.parse(fs.readFileSync(new URL('../src/data/drive-products.json', import.meta.url)));
+const products = [{ id: 'gato-cosmico', name: 'Gato Cósmico' }, ...imported];
+assert.equal(rows.length, 197);
+assert.equal(new Set(rows.map(r => r.id)).size, 197);
+assert.deepEqual(rows.map(r => r.id), products.map(p => p.id));
+const categories = new Map();
+for (const [i, row] of rows.entries()) {
+  assert.equal(row.name, products[i].name);
+  assert(row.category && !['Todos', 'Catálogo'].includes(row.category));
+  assert(row.tags.length >= 3 && row.tags.length <= 5);
+  assert.equal(new Set(row.tags).size, row.tags.length);
+  assert(row.tags.every(tag => !/^(más vendido|nuevo|edición limitada|últimas piezas)$|algodón|oficial|licenciad|para hombre|para mujer/i.test(tag)));
+  assert(row.evidence.name === row.name && row.evidence.photo.startsWith('/catalogo/'));
+  assert(row.evidence.observation.length > 10);
+  assert(['alta', 'media'].includes(row.confidence));
+  assert.equal(row.reviewed, true);
+  assert.deepEqual(row.tagEvidence.map(t => t.tag), row.tags);
+  assert(row.tagEvidence.every(t => ['nombre', 'foto', 'nombre y foto'].includes(t.source)));
+  categories.set(row.category, (categories.get(row.category) || 0) + 1);
+}
+assert(categories.size >= 6 && categories.size <= 12);
+const checksum = crypto.createHash('sha256').update(fs.readFileSync(new URL('../src/data/drive-products.json', import.meta.url))).digest('hex');
+const fixture = JSON.parse(fs.readFileSync(new URL('./fixtures/catalog-integrity.json', import.meta.url)));
+assert.equal(checksum, fixture.driveSha256, 'source commerce, names, IDs, sizes, images and order unchanged');
+assert.equal(rows.find(r => r.id === 'gato-cosmico').category, 'Animales');
+assert(rows.find(r => r.name === 'Playera Blanca Tocando').tags.includes('batería'));
+assert(!rows.find(r => r.name.includes('Arte de Edicion Limitada')).tags.includes('edición limitada'));
+console.log(JSON.stringify({ status: 'PASS', reviewed: rows.length, categories: Object.fromEntries(categories), sourceIntegrity: checksum }, null, 2));

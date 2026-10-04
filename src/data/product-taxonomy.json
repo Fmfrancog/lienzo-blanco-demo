@@ -1,0 +1,6341 @@
+[
+  {
+    "id": "gato-cosmico",
+    "name": "Gato Cósmico",
+    "category": "Animales",
+    "tags": [
+      "gatos",
+      "psicodelia",
+      "azul",
+      "magenta"
+    ],
+    "evidence": {
+      "name": "Gato Cósmico",
+      "photo": "/catalogo/gato-cosmico/05.webp",
+      "contactSheet": "sheet-01.jpg",
+      "observation": "Gato azul sobre círculo azul y magenta."
+    },
+    "tagEvidence": [
+      {
+        "tag": "gatos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "psicodelia",
+        "source": "foto"
+      },
+      {
+        "tag": "azul",
+        "source": "foto"
+      },
+      {
+        "tag": "magenta",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "blanca-calavera-psicodelica",
+    "name": "Blanca Calavera Psicodelica",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "psicodelia",
+      "multicolor"
+    ],
+    "evidence": {
+      "name": "Blanca Calavera Psicodelica",
+      "photo": "/catalogo/blanca-calavera-psicodelica/blanca-calavera-psicodelica-05.webp",
+      "contactSheet": "sheet-01.jpg",
+      "observation": "Cráneo fragmentado con franjas de colores."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "psicodelia",
+        "source": "foto"
+      },
+      {
+        "tag": "multicolor",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "blanca-calavera-rosas",
+    "name": "Blanca Calavera Rosas",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "rosas",
+      "flores"
+    ],
+    "evidence": {
+      "name": "Blanca Calavera Rosas",
+      "photo": "/catalogo/blanca-calavera-rosas/blanca-calavera-rosas-05.webp",
+      "contactSheet": "sheet-01.jpg",
+      "observation": "Cráneo beige rodeado de rosas rojas."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "rosas",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "flores",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-calavera-antifaz",
+    "name": "Playera Blanca Calavera Antifaz",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "antifaz",
+      "ornamental"
+    ],
+    "evidence": {
+      "name": "Playera Blanca Calavera Antifaz",
+      "photo": "/catalogo/playera-blanca-calavera-antifaz/playera-blanca-calavera-antifaz-05.webp",
+      "contactSheet": "sheet-01.jpg",
+      "observation": "Cráneo con antifaz y adornos vegetales."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "antifaz",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "ornamental",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-calavera-abstracta",
+    "name": "Playera Blanca Calavera Abstracta",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "abstracto",
+      "magenta"
+    ],
+    "evidence": {
+      "name": "Playera Blanca Calavera Abstracta",
+      "photo": "/catalogo/playera-blanca-calavera-abstracta/playera-blanca-calavera-abstracta-05.webp",
+      "contactSheet": "sheet-01.jpg",
+      "observation": "Cráneo con manchas y fragmentos magenta."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "abstracto",
+        "source": "foto"
+      },
+      {
+        "tag": "magenta",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-calavera-hongos",
+    "name": "Playera Blanca Calavera Hongos",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "cannabis",
+      "verde"
+    ],
+    "evidence": {
+      "name": "Playera Blanca Calavera Hongos",
+      "photo": "/catalogo/playera-blanca-calavera-hongos/playera-blanca-calavera-hongos-05.webp",
+      "contactSheet": "sheet-01.jpg",
+      "observation": "Cráneo rodeado de hojas palmeadas verdes; nombre dice Hongos, no se usa como etiqueta visual."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "cannabis",
+        "source": "foto"
+      },
+      {
+        "tag": "verde",
+        "source": "foto"
+      }
+    ],
+    "confidence": "media",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-calavera-palmera",
+    "name": "Playera Blanca Calavera Palmera",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "palmeras",
+      "tropical"
+    ],
+    "evidence": {
+      "name": "Playera Blanca Calavera Palmera",
+      "photo": "/catalogo/playera-blanca-calavera-palmera/playera-blanca-calavera-palmera-05.webp",
+      "contactSheet": "sheet-01.jpg",
+      "observation": "Cráneo azul bajo palmeras."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "palmeras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "tropical",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-calavera-tenebrosa",
+    "name": "Playera Blanca Calavera Tenebrosa",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "cuernos",
+      "verde"
+    ],
+    "evidence": {
+      "name": "Playera Blanca Calavera Tenebrosa",
+      "photo": "/catalogo/playera-blanca-calavera-tenebrosa/playera-blanca-calavera-tenebrosa-05.webp",
+      "contactSheet": "sheet-01.jpg",
+      "observation": "Cráneo verde con cuernos bajo otro morado."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "cuernos",
+        "source": "foto"
+      },
+      {
+        "tag": "verde",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-calavera-penacho",
+    "name": "Playera Blanca Calavera Penacho",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "penacho",
+      "azul"
+    ],
+    "evidence": {
+      "name": "Playera Blanca Calavera Penacho",
+      "photo": "/catalogo/playera-blanca-calavera-penacho/playera-blanca-calavera-penacho-05.webp",
+      "contactSheet": "sheet-01.jpg",
+      "observation": "Cráneo de perfil con penacho azul."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "penacho",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "azul",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-calavera-india",
+    "name": "Playera Blanca Calavera India",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "plumas",
+      "turquesa"
+    ],
+    "evidence": {
+      "name": "Playera Blanca Calavera India",
+      "photo": "/catalogo/playera-blanca-calavera-india/playera-blanca-calavera-india-05.webp",
+      "contactSheet": "sheet-01.jpg",
+      "observation": "Cráneo turquesa con tocado de plumas."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "plumas",
+        "source": "foto"
+      },
+      {
+        "tag": "turquesa",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-calavera-rosas",
+    "name": "Playera Blanca Calavera Rosas",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "rosas",
+      "dibujo lineal"
+    ],
+    "evidence": {
+      "name": "Playera Blanca Calavera Rosas",
+      "photo": "/catalogo/playera-blanca-calavera-rosas/playera-blanca-calavera-rosas-05.webp",
+      "contactSheet": "sheet-01.jpg",
+      "observation": "Cráneo delineado con rosas sobre la frente."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "rosas",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "dibujo lineal",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-calavera-huesos",
+    "name": "Playera Blanca Calavera Huesos",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "huesos",
+      "dibujo lineal"
+    ],
+    "evidence": {
+      "name": "Playera Blanca Calavera Huesos",
+      "photo": "/catalogo/playera-blanca-calavera-huesos/playera-blanca-calavera-huesos-05.webp",
+      "contactSheet": "sheet-01.jpg",
+      "observation": "Cráneo y dos huesos cruzados."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "huesos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "dibujo lineal",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-calavera-libro",
+    "name": "Playera Blanca Calavera Libro",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "libros",
+      "lectura"
+    ],
+    "evidence": {
+      "name": "Playera Blanca Calavera Libro",
+      "photo": "/catalogo/playera-blanca-calavera-libro/playera-blanca-calavera-libro-05.webp",
+      "contactSheet": "sheet-01.jpg",
+      "observation": "Esqueleto tras un libro abierto."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "libros",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "lectura",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-calavera-rockera",
+    "name": "Playera Blanca Calavera Rockera",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "rock",
+      "sombrero"
+    ],
+    "evidence": {
+      "name": "Playera Blanca Calavera Rockera",
+      "photo": "/catalogo/playera-blanca-calavera-rockera/playera-blanca-calavera-rockera-05.webp",
+      "contactSheet": "sheet-01.jpg",
+      "observation": "Cráneo oscuro con sombrero y acentos rosa."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "rock",
+        "source": "nombre"
+      },
+      {
+        "tag": "sombrero",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-calavera-tomando-vino",
+    "name": "Playera Blanca Calavera Tomando Vino",
+    "category": "Calaveras",
+    "tags": [
+      "esqueletos",
+      "vino",
+      "humor"
+    ],
+    "evidence": {
+      "name": "Playera Blanca Calavera Tomando Vino",
+      "photo": "/catalogo/playera-blanca-calavera-tomando-vino/playera-blanca-calavera-tomando-vino-05.webp",
+      "contactSheet": "sheet-01.jpg",
+      "observation": "Esqueleto sosteniendo una copa dentro de un marco."
+    },
+    "tagEvidence": [
+      {
+        "tag": "esqueletos",
+        "source": "foto"
+      },
+      {
+        "tag": "vino",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "humor",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-craneo-rosas",
+    "name": "Playera Blanca Craneo Rosas",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "rosas",
+      "flores"
+    ],
+    "evidence": {
+      "name": "Playera Blanca Craneo Rosas",
+      "photo": "/catalogo/playera-blanca-craneo-rosas/playera-blanca-craneo-rosas-05.webp",
+      "contactSheet": "sheet-01.jpg",
+      "observation": "Cráneo con rosas rosadas y hojas verdes."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "foto"
+      },
+      {
+        "tag": "rosas",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "flores",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-alien-nuevo-ano-para-hombre",
+    "name": "Playera Blanca de Alien Nuevo Ano para Hombre",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "aliens",
+      "año nuevo",
+      "tipografía"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Alien Nuevo Ano para Hombre",
+      "photo": "/catalogo/playera-blanca-de-alien-nuevo-ano-para-hombre/playera-blanca-de-alien-nuevo-ano-para-hombre-05.webp",
+      "contactSheet": "sheet-01.jpg",
+      "observation": "Alien verde con texto ALIEN'S NEW YEAR."
+    },
+    "tagEvidence": [
+      {
+        "tag": "aliens",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "año nuevo",
+        "source": "nombre"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-creneos-cool",
+    "name": "Playera Blanca Creneos Cool",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "círculos",
+      "amarillo"
+    ],
+    "evidence": {
+      "name": "Playera Blanca Creneos Cool",
+      "photo": "/catalogo/playera-blanca-creneos-cool/playera-blanca-creneos-cool-05.webp",
+      "contactSheet": "sheet-01.jpg",
+      "observation": "Cráneo con fondo circular verde y amarillo."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "foto"
+      },
+      {
+        "tag": "círculos",
+        "source": "foto"
+      },
+      {
+        "tag": "amarillo",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-craneos",
+    "name": "Playera Blanca Craneos",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "dibujo lineal",
+      "composición múltiple"
+    ],
+    "evidence": {
+      "name": "Playera Blanca Craneos",
+      "photo": "/catalogo/playera-blanca-craneos/playera-blanca-craneos-05.webp",
+      "contactSheet": "sheet-01.jpg",
+      "observation": "Varios cráneos dibujados en tonos neutros."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "foto"
+      },
+      {
+        "tag": "dibujo lineal",
+        "source": "foto"
+      },
+      {
+        "tag": "composición múltiple",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-alien-nuevo-ano-para-mujer",
+    "name": "Playera Blanca de Alien Nuevo Ano para Mujer",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "aliens",
+      "año nuevo",
+      "tipografía"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Alien Nuevo Ano para Mujer",
+      "photo": "/catalogo/playera-blanca-de-alien-nuevo-ano-para-mujer/playera-blanca-de-alien-nuevo-ano-para-mujer-05.webp",
+      "contactSheet": "sheet-01.jpg",
+      "observation": "Alien verde con texto ALIEN'S NEW YEAR."
+    },
+    "tagEvidence": [
+      {
+        "tag": "aliens",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "año nuevo",
+        "source": "nombre"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-arbol-de-perriltos-para-mujer",
+    "name": "Playera Blanca de Arbol de Perriltos para Mujer",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "perros",
+      "árbol navideño",
+      "copos de nieve"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Arbol de Perriltos para Mujer",
+      "photo": "/catalogo/playera-blanca-de-arbol-de-perriltos-para-mujer/playera-blanca-de-arbol-de-perriltos-para-mujer-05.webp",
+      "contactSheet": "sheet-02.jpg",
+      "observation": "Pequeños perros forman árbol entre copos dorados."
+    },
+    "tagEvidence": [
+      {
+        "tag": "perros",
+        "source": "foto"
+      },
+      {
+        "tag": "árbol navideño",
+        "source": "foto"
+      },
+      {
+        "tag": "copos de nieve",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-alien-santa-con-regalos-para-mujer",
+    "name": "Playera Blanca de Alien Santa con Regalos para Mujer",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "aliens",
+      "regalos",
+      "gorro navideño"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Alien Santa con Regalos para Mujer",
+      "photo": "/catalogo/playera-blanca-de-alien-santa-con-regalos-para-mujer/playera-blanca-de-alien-santa-con-regalos-para-mujer-05.webp",
+      "contactSheet": "sheet-02.jpg",
+      "observation": "Alien con gorro y cajas de regalo."
+    },
+    "tagEvidence": [
+      {
+        "tag": "aliens",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "regalos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "gorro navideño",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-anta-surfing-para-mujer",
+    "name": "Playera Blanca de anta Surfing para Mujer",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "Santa",
+      "surf",
+      "olas"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de anta Surfing para Mujer",
+      "photo": "/catalogo/playera-blanca-de-anta-surfing-para-mujer/playera-blanca-de-anta-surfing-para-mujer-05.webp",
+      "contactSheet": "sheet-02.jpg",
+      "observation": "Santa sobre tabla de surf delante de ola azul."
+    },
+    "tagEvidence": [
+      {
+        "tag": "Santa",
+        "source": "foto"
+      },
+      {
+        "tag": "surf",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "olas",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-buho-de-navidad-para-hombre",
+    "name": "Playera Blanca de Buho de Navidad para Hombre",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "búhos",
+      "gorro navideño",
+      "morado"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Buho de Navidad para Hombre",
+      "photo": "/catalogo/playera-blanca-de-buho-de-navidad-para-hombre/playera-blanca-de-buho-de-navidad-para-hombre-05.webp",
+      "contactSheet": "sheet-02.jpg",
+      "observation": "Búho oscuro con gorro navideño."
+    },
+    "tagEvidence": [
+      {
+        "tag": "búhos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "gorro navideño",
+        "source": "foto"
+      },
+      {
+        "tag": "morado",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-alien-santa-con-regalos-para-hombre",
+    "name": "Playera Blanca de Alien Santa con Regalos para Hombre",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "aliens",
+      "regalos",
+      "gorro navideño"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Alien Santa con Regalos para Hombre",
+      "photo": "/catalogo/playera-blanca-de-alien-santa-con-regalos-para-hombre/playera-blanca-de-alien-santa-con-regalos-para-hombre-05.webp",
+      "contactSheet": "sheet-02.jpg",
+      "observation": "Alien con gorro y cajas de regalo."
+    },
+    "tagEvidence": [
+      {
+        "tag": "aliens",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "regalos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "gorro navideño",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-calaca-de-navidad-para-mujer",
+    "name": "Playera Blanca de Calaca de Navidad para Mujer",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "esqueletos",
+      "tipografía",
+      "humor"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Calaca de Navidad para Mujer",
+      "photo": "/catalogo/playera-blanca-de-calaca-de-navidad-para-mujer/playera-blanca-de-calaca-de-navidad-para-mujer-05.webp",
+      "contactSheet": "sheet-02.jpg",
+      "observation": "Esqueleto navideño con composición tipográfica."
+    },
+    "tagEvidence": [
+      {
+        "tag": "esqueletos",
+        "source": "foto"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      },
+      {
+        "tag": "humor",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-calavera-de-navidad-para-mujer",
+    "name": "Playera Blanca de Calavera de Navidad para Mujer",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "calaveras",
+      "gorro navideño",
+      "tipografía"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Calavera de Navidad para Mujer",
+      "photo": "/catalogo/playera-blanca-de-calavera-de-navidad-para-mujer/playera-blanca-de-calavera-de-navidad-para-mujer-05.webp",
+      "contactSheet": "sheet-02.jpg",
+      "observation": "Cráneo con gorro bajo HORROR XMAS."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "gorro navideño",
+        "source": "foto"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-calavera-de-navidad-para-hombre",
+    "name": "Playera Blanca de Calavera de Navidad para Hombre",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "calaveras",
+      "gorro navideño",
+      "tipografía"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Calavera de Navidad para Hombre",
+      "photo": "/catalogo/playera-blanca-de-calavera-de-navidad-para-hombre/playera-blanca-de-calavera-de-navidad-para-hombre-05.webp",
+      "contactSheet": "sheet-02.jpg",
+      "observation": "Cráneo con gorro bajo HORROR XMAS."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "gorro navideño",
+        "source": "foto"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-calaca-de-navidad-para-hombre",
+    "name": "Playera Blanca de Calaca de Navidad para Hombre",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "esqueletos",
+      "tipografía",
+      "humor"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Calaca de Navidad para Hombre",
+      "photo": "/catalogo/playera-blanca-de-calaca-de-navidad-para-hombre/playera-blanca-de-calaca-de-navidad-para-hombre-05.webp",
+      "contactSheet": "sheet-02.jpg",
+      "observation": "Esqueleto navideño con composición tipográfica."
+    },
+    "tagEvidence": [
+      {
+        "tag": "esqueletos",
+        "source": "foto"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      },
+      {
+        "tag": "humor",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-buho-de-navidad-para-mujer",
+    "name": "Playera Blanca de Buho de Navidad para Mujer",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "búhos",
+      "gorro navideño",
+      "morado"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Buho de Navidad para Mujer",
+      "photo": "/catalogo/playera-blanca-de-buho-de-navidad-para-mujer/playera-blanca-de-buho-de-navidad-para-mujer-05.webp",
+      "contactSheet": "sheet-02.jpg",
+      "observation": "Búho oscuro con gorro navideño."
+    },
+    "tagEvidence": [
+      {
+        "tag": "búhos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "gorro navideño",
+        "source": "foto"
+      },
+      {
+        "tag": "morado",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-de-navidad-en-el-planeta-alienigena-para-hombre",
+    "name": "Playera Blanca de de Navidad en el Planeta Alienigena para Hombre",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "aliens",
+      "navidad",
+      "naranja"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de de Navidad en el Planeta Alienigena para Hombre",
+      "photo": "/catalogo/playera-blanca-de-de-navidad-en-el-planeta-alienigena-para-hombre/playera-blanca-de-de-navidad-en-el-planeta-alienigena-para-hombre-05.webp",
+      "contactSheet": "sheet-02.jpg",
+      "observation": "Rostro alienígena en composición naranja y oscura."
+    },
+    "tagEvidence": [
+      {
+        "tag": "aliens",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "navidad",
+        "source": "nombre"
+      },
+      {
+        "tag": "naranja",
+        "source": "foto"
+      }
+    ],
+    "confidence": "media",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-elefantes-sobre-tortuga",
+    "name": "Playera Blanca de Elefantes sobre Tortuga",
+    "category": "Animales",
+    "tags": [
+      "elefantes",
+      "tortugas",
+      "fantasía"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Elefantes sobre Tortuga",
+      "photo": "/catalogo/playera-blanca-de-elefantes-sobre-tortuga/playera-blanca-de-elefantes-sobre-tortuga-05.webp",
+      "contactSheet": "sheet-02.jpg",
+      "observation": "Elefantes sobre una gran tortuga y paisaje fantástico."
+    },
+    "tagEvidence": [
+      {
+        "tag": "elefantes",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "tortugas",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "fantasía",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-calavera-hipster-para-hombre",
+    "name": "Playera Blanca de Calavera Hipster para Hombre",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "calaveras",
+      "barba",
+      "gorro navideño"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Calavera Hipster para Hombre",
+      "photo": "/catalogo/playera-blanca-de-calavera-hipster-para-hombre/playera-blanca-de-calavera-hipster-para-hombre-05.webp",
+      "contactSheet": "sheet-02.jpg",
+      "observation": "Cráneo barbado con gorro rojo y bastones cruzados."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "barba",
+        "source": "foto"
+      },
+      {
+        "tag": "gorro navideño",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-chica-con-copa-de-navidad-para-hombre",
+    "name": "Playera Blanca de Chica con Copa de Navidad para Hombre",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "copa",
+      "gorro navideño",
+      "ilustración de personaje"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Chica con Copa de Navidad para Hombre",
+      "photo": "/catalogo/playera-blanca-de-chica-con-copa-de-navidad-para-hombre/playera-blanca-de-chica-con-copa-de-navidad-para-hombre-05.webp",
+      "contactSheet": "sheet-02.jpg",
+      "observation": "Personaje con atuendo navideño y copa."
+    },
+    "tagEvidence": [
+      {
+        "tag": "copa",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "gorro navideño",
+        "source": "foto"
+      },
+      {
+        "tag": "ilustración de personaje",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-feliz-navidad-sexy-para-hombre",
+    "name": "Playera Blanca de Feliz Navidad Sexy para Hombre",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "navidad",
+      "tipografía",
+      "ilustración de personaje"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Feliz Navidad Sexy para Hombre",
+      "photo": "/catalogo/playera-blanca-de-feliz-navidad-sexy-para-hombre/playera-blanca-de-feliz-navidad-sexy-para-hombre-05.webp",
+      "contactSheet": "sheet-02.jpg",
+      "observation": "Personaje navideño dentro de marco con letras."
+    },
+    "tagEvidence": [
+      {
+        "tag": "navidad",
+        "source": "nombre"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      },
+      {
+        "tag": "ilustración de personaje",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-gato-navideno-para-mujer",
+    "name": "Playera Blanca de Gato Navideno para Mujer",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "gatos",
+      "gorro navideño",
+      "humor"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Gato Navideno para Mujer",
+      "photo": "/catalogo/playera-blanca-de-gato-navideno-para-mujer/playera-blanca-de-gato-navideno-para-mujer-05.webp",
+      "contactSheet": "sheet-02.jpg",
+      "observation": "Gato con gorro y texto HO HO HO."
+    },
+    "tagEvidence": [
+      {
+        "tag": "gatos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "gorro navideño",
+        "source": "foto"
+      },
+      {
+        "tag": "humor",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-hombre-rasta",
+    "name": "Playera Blanca de Hombre Rasta",
+    "category": "Raíces y símbolos",
+    "tags": [
+      "rasta",
+      "retrato",
+      "barba"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Hombre Rasta",
+      "photo": "/catalogo/playera-blanca-de-hombre-rasta/playera-blanca-de-hombre-rasta-05.webp",
+      "contactSheet": "sheet-02.jpg",
+      "observation": "Retrato barbado con gorro multicolor."
+    },
+    "tagEvidence": [
+      {
+        "tag": "rasta",
+        "source": "nombre"
+      },
+      {
+        "tag": "retrato",
+        "source": "foto"
+      },
+      {
+        "tag": "barba",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-merryjuana-christmas-para-mujer",
+    "name": "Playera Blanca de Merryjuana Christmas para Mujer",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "cannabis",
+      "tipografía",
+      "patrón repetido"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Merryjuana Christmas para Mujer",
+      "photo": "/catalogo/playera-blanca-de-merryjuana-christmas-para-mujer/playera-blanca-de-merryjuana-christmas-para-mujer-05.webp",
+      "contactSheet": "sheet-02.jpg",
+      "observation": "MERRYJUANA CHRISTMAS con patrón de hojas verdes."
+    },
+    "tagEvidence": [
+      {
+        "tag": "cannabis",
+        "source": "foto"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      },
+      {
+        "tag": "patrón repetido",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-hombre-de-arte-de-bitcoin",
+    "name": "Playera Blanca de Hombre de Arte de Bitcoin",
+    "category": "Bitcoin",
+    "tags": [
+      "bitcoin",
+      "moneda",
+      "dibujo lineal"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Hombre de Arte de Bitcoin",
+      "photo": "/catalogo/playera-blanca-de-hombre-de-arte-de-bitcoin/playera-blanca-de-hombre-de-arte-de-bitcoin-05.webp",
+      "contactSheet": "sheet-02.jpg",
+      "observation": "Emblema circular de Bitcoin dibujado."
+    },
+    "tagEvidence": [
+      {
+        "tag": "bitcoin",
+        "source": "nombre"
+      },
+      {
+        "tag": "moneda",
+        "source": "foto"
+      },
+      {
+        "tag": "dibujo lineal",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-merryjuana-christmaspa-para-hombre",
+    "name": "Playera Blanca de Merryjuana Christmaspa para Hombre",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "cannabis",
+      "tipografía",
+      "patrón repetido"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Merryjuana Christmaspa para Hombre",
+      "photo": "/catalogo/playera-blanca-de-merryjuana-christmaspa-para-hombre/playera-blanca-de-merryjuana-christmaspa-para-hombre-05.webp",
+      "contactSheet": "sheet-02.jpg",
+      "observation": "MERRYJUANA CHRISTMAS con patrón de hojas verdes."
+    },
+    "tagEvidence": [
+      {
+        "tag": "cannabis",
+        "source": "foto"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      },
+      {
+        "tag": "patrón repetido",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-pug-navideno-para-hombre",
+    "name": "Playera Blanca de Pug Navideno para Hombre",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "perros",
+      "pug",
+      "gafas",
+      "gorro navideño"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Pug Navideno para Hombre",
+      "photo": "/catalogo/playera-blanca-de-pug-navideno-para-hombre/playera-blanca-de-pug-navideno-para-hombre-05.webp",
+      "contactSheet": "sheet-03.jpg",
+      "observation": "Perro con gafas y gorro rojo."
+    },
+    "tagEvidence": [
+      {
+        "tag": "perros",
+        "source": "foto"
+      },
+      {
+        "tag": "pug",
+        "source": "nombre"
+      },
+      {
+        "tag": "gafas",
+        "source": "foto"
+      },
+      {
+        "tag": "gorro navideño",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-perro-cool-navideno-para-mujer",
+    "name": "Playera Blanca de Perro Cool Navideno para Mujer",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "perros",
+      "gafas",
+      "gorro navideño"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Perro Cool Navideno para Mujer",
+      "photo": "/catalogo/playera-blanca-de-perro-cool-navideno-para-mujer/playera-blanca-de-perro-cool-navideno-para-mujer-05.webp",
+      "contactSheet": "sheet-03.jpg",
+      "observation": "Perro con gafas y gorro en composición navideña."
+    },
+    "tagEvidence": [
+      {
+        "tag": "perros",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "gafas",
+        "source": "foto"
+      },
+      {
+        "tag": "gorro navideño",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-pug-navideno-para-mujer",
+    "name": "Playera Blanca de Pug Navideno para Mujer",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "perros",
+      "pug",
+      "gafas",
+      "gorro navideño"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Pug Navideno para Mujer",
+      "photo": "/catalogo/playera-blanca-de-pug-navideno-para-mujer/playera-blanca-de-pug-navideno-para-mujer-05.webp",
+      "contactSheet": "sheet-03.jpg",
+      "observation": "Perro con gafas y gorro rojo."
+    },
+    "tagEvidence": [
+      {
+        "tag": "perros",
+        "source": "foto"
+      },
+      {
+        "tag": "pug",
+        "source": "nombre"
+      },
+      {
+        "tag": "gafas",
+        "source": "foto"
+      },
+      {
+        "tag": "gorro navideño",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-reno-de-navidad-para-mujer",
+    "name": "Playera Blanca de Reno de Navidad para Mujer",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "renos",
+      "ornamental",
+      "rojo"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Reno de Navidad para Mujer",
+      "photo": "/catalogo/playera-blanca-de-reno-de-navidad-para-mujer/playera-blanca-de-reno-de-navidad-para-mujer-05.webp",
+      "contactSheet": "sheet-03.jpg",
+      "observation": "Silueta de reno con patrones rojos."
+    },
+    "tagEvidence": [
+      {
+        "tag": "renos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "ornamental",
+        "source": "foto"
+      },
+      {
+        "tag": "rojo",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-reno-navideno-para-hombre",
+    "name": "Playera Blanca de Reno Navideno para Hombre",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "renos",
+      "bufanda",
+      "tipografía"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Reno Navideno para Hombre",
+      "photo": "/catalogo/playera-blanca-de-reno-navideno-para-hombre/playera-blanca-de-reno-navideno-para-hombre-05.webp",
+      "contactSheet": "sheet-03.jpg",
+      "observation": "Reno con bufanda bajo Christmas."
+    },
+    "tagEvidence": [
+      {
+        "tag": "renos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "bufanda",
+        "source": "foto"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-reno-navideno-para-mujer",
+    "name": "Playera Blanca de Reno Navideno para Mujer",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "renos",
+      "bufanda",
+      "tipografía"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Reno Navideno para Mujer",
+      "photo": "/catalogo/playera-blanca-de-reno-navideno-para-mujer/playera-blanca-de-reno-navideno-para-mujer-05.webp",
+      "contactSheet": "sheet-03.jpg",
+      "observation": "Reno con bufanda bajo Christmas."
+    },
+    "tagEvidence": [
+      {
+        "tag": "renos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "bufanda",
+        "source": "foto"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-santa-bailando-para-hombre",
+    "name": "Playera Blanca de Santa Bailando para Hombre",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "Santa",
+      "baile",
+      "gafas"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Santa Bailando para Hombre",
+      "photo": "/catalogo/playera-blanca-de-santa-bailando-para-hombre/playera-blanca-de-santa-bailando-para-hombre-05.webp",
+      "contactSheet": "sheet-03.jpg",
+      "observation": "Santa bailando con gafas."
+    },
+    "tagEvidence": [
+      {
+        "tag": "Santa",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "baile",
+        "source": "foto"
+      },
+      {
+        "tag": "gafas",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-santa-con-regalo-para-mujer",
+    "name": "Playera Blanca de Santa con Regalo para Mujer",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "Santa",
+      "regalos",
+      "tipografía"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Santa con Regalo para Mujer",
+      "photo": "/catalogo/playera-blanca-de-santa-con-regalo-para-mujer/playera-blanca-de-santa-con-regalo-para-mujer-05.webp",
+      "contactSheet": "sheet-03.jpg",
+      "observation": "Santa en marco oscuro con Merry Christmas."
+    },
+    "tagEvidence": [
+      {
+        "tag": "Santa",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "regalos",
+        "source": "nombre"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-santa-bailando-para-mujer",
+    "name": "Playera Blanca de Santa Bailando para Mujer",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "Santa",
+      "baile",
+      "gafas"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Santa Bailando para Mujer",
+      "photo": "/catalogo/playera-blanca-de-santa-bailando-para-mujer/playera-blanca-de-santa-bailando-para-mujer-05.webp",
+      "contactSheet": "sheet-03.jpg",
+      "observation": "Santa bailando con gafas."
+    },
+    "tagEvidence": [
+      {
+        "tag": "Santa",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "baile",
+        "source": "foto"
+      },
+      {
+        "tag": "gafas",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-santa-en-motocicleta-para-hombre",
+    "name": "Playera Blanca de Santa en Motocicleta para Hombre",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "Santa",
+      "motocicletas",
+      "azul"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Santa en Motocicleta para Hombre",
+      "photo": "/catalogo/playera-blanca-de-santa-en-motocicleta-para-hombre/playera-blanca-de-santa-en-motocicleta-para-hombre-05.webp",
+      "contactSheet": "sheet-03.jpg",
+      "observation": "Santa sobre motocicleta en escena azul oscura."
+    },
+    "tagEvidence": [
+      {
+        "tag": "Santa",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "motocicletas",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "azul",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-santa-twerking-para-mujer",
+    "name": "Playera Blanca de Santa Twerking para Mujer",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "Santa",
+      "baile",
+      "humor"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Santa Twerking para Mujer",
+      "photo": "/catalogo/playera-blanca-de-santa-twerking-para-mujer/playera-blanca-de-santa-twerking-para-mujer-05.webp",
+      "contactSheet": "sheet-03.jpg",
+      "observation": "Santa de espaldas en pose de baile."
+    },
+    "tagEvidence": [
+      {
+        "tag": "Santa",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "baile",
+        "source": "foto"
+      },
+      {
+        "tag": "humor",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-santa-malo-para-hombre",
+    "name": "Playera Blanca de Santa Malo para Hombre",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "Santa",
+      "calaveras",
+      "oscuro"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Santa Malo para Hombre",
+      "photo": "/catalogo/playera-blanca-de-santa-malo-para-hombre/playera-blanca-de-santa-malo-para-hombre-05.webp",
+      "contactSheet": "sheet-03.jpg",
+      "observation": "Santa de rostro cadavérico con abrigo oscuro."
+    },
+    "tagEvidence": [
+      {
+        "tag": "Santa",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "calaveras",
+        "source": "foto"
+      },
+      {
+        "tag": "oscuro",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-santa-zombie-para-hombre",
+    "name": "Playera Blanca de Santa Zombie para Hombre",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "Santa",
+      "zombies",
+      "verde"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Santa Zombie para Hombre",
+      "photo": "/catalogo/playera-blanca-de-santa-zombie-para-hombre/playera-blanca-de-santa-zombie-para-hombre-05.webp",
+      "contactSheet": "sheet-03.jpg",
+      "observation": "Rostro verde de Santa con gafas."
+    },
+    "tagEvidence": [
+      {
+        "tag": "Santa",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "zombies",
+        "source": "nombre"
+      },
+      {
+        "tag": "verde",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-santa-tomando-cerveza-para-hombre",
+    "name": "Playera Blanca de Santa tomando Cerveza para Hombre",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "Santa",
+      "cerveza",
+      "gafas"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Santa tomando Cerveza para Hombre",
+      "photo": "/catalogo/playera-blanca-de-santa-tomando-cerveza-para-hombre/playera-blanca-de-santa-tomando-cerveza-para-hombre-05.webp",
+      "contactSheet": "sheet-03.jpg",
+      "observation": "Santa con bebida y gafas en marco circular."
+    },
+    "tagEvidence": [
+      {
+        "tag": "Santa",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "cerveza",
+        "source": "nombre"
+      },
+      {
+        "tag": "gafas",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-marino-calavera-yoga",
+    "name": "Playera Blanca Marino Calavera Yoga",
+    "category": "Calaveras",
+    "tags": [
+      "esqueletos",
+      "yoga",
+      "meditación"
+    ],
+    "evidence": {
+      "name": "Playera Blanca Marino Calavera Yoga",
+      "photo": "/catalogo/playera-blanca-marino-calavera-yoga/playera-blanca-marino-calavera-yoga-05.webp",
+      "contactSheet": "sheet-03.jpg",
+      "observation": "Esqueleto sentado en postura de meditación."
+    },
+    "tagEvidence": [
+      {
+        "tag": "esqueletos",
+        "source": "foto"
+      },
+      {
+        "tag": "yoga",
+        "source": "nombre"
+      },
+      {
+        "tag": "meditación",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-alien-meditando",
+    "name": "Playera Blanca para Hombre de Alien Meditando",
+    "category": "Aliens y espacio",
+    "tags": [
+      "aliens",
+      "meditación",
+      "verde"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Alien Meditando",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-alien-meditando/playera-blanca-para-hombre-de-alien-meditando-05.webp",
+      "contactSheet": "sheet-03.jpg",
+      "observation": "Alien verde sentado con piernas cruzadas."
+    },
+    "tagEvidence": [
+      {
+        "tag": "aliens",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "meditación",
+        "source": "foto"
+      },
+      {
+        "tag": "verde",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-alien-domina-la-tierra",
+    "name": "Playera Blanca para Hombre de Alien domina la Tierra",
+    "category": "Aliens y espacio",
+    "tags": [
+      "aliens",
+      "Tierra",
+      "morado"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Alien domina la Tierra",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-alien-domina-la-tierra/playera-blanca-para-hombre-de-alien-domina-la-tierra-05.webp",
+      "contactSheet": "sheet-03.jpg",
+      "observation": "Alien morado sosteniendo el planeta Tierra."
+    },
+    "tagEvidence": [
+      {
+        "tag": "aliens",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "Tierra",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "morado",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-alien",
+    "name": "Playera Blanca para Hombre de Alien",
+    "category": "Aliens y espacio",
+    "tags": [
+      "aliens",
+      "tipografía",
+      "verde"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Alien",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-alien/playera-blanca-para-hombre-de-alien-05.webp",
+      "contactSheet": "sheet-03.jpg",
+      "observation": "Cabeza de alien verde bajo ALIENS."
+    },
+    "tagEvidence": [
+      {
+        "tag": "aliens",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      },
+      {
+        "tag": "verde",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-abduccion-de-alien",
+    "name": "Playera Blanca para Hombre de Abduccion de Alien",
+    "category": "Aliens y espacio",
+    "tags": [
+      "aliens",
+      "platillo volador",
+      "abducción"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Abduccion de Alien",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-abduccion-de-alien/playera-blanca-para-hombre-de-abduccion-de-alien-05.webp",
+      "contactSheet": "sheet-03.jpg",
+      "observation": "Alien frontal con formas de platillo y anillos."
+    },
+    "tagEvidence": [
+      {
+        "tag": "aliens",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "platillo volador",
+        "source": "foto"
+      },
+      {
+        "tag": "abducción",
+        "source": "nombre"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-alien-volando-en-hongo",
+    "name": "Playera Blanca para Hombre de Alien volando en Hongo",
+    "category": "Aliens y espacio",
+    "tags": [
+      "aliens",
+      "hongos",
+      "multicolor"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Alien volando en Hongo",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-alien-volando-en-hongo/playera-blanca-para-hombre-de-alien-volando-en-hongo-05.webp",
+      "contactSheet": "sheet-03.jpg",
+      "observation": "Alien y hongo multicolor en composición fantástica."
+    },
+    "tagEvidence": [
+      {
+        "tag": "aliens",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "hongos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "multicolor",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-alien-y-su-galaxia",
+    "name": "Playera Blanca para Hombre de Alien y su Galaxia",
+    "category": "Aliens y espacio",
+    "tags": [
+      "aliens",
+      "planetas",
+      "galaxia"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Alien y su Galaxia",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-alien-y-su-galaxia/playera-blanca-para-hombre-de-alien-y-su-galaxia-05.webp",
+      "contactSheet": "sheet-04.jpg",
+      "observation": "Alien verde rodeado de pequeños planetas."
+    },
+    "tagEvidence": [
+      {
+        "tag": "aliens",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "planetas",
+        "source": "foto"
+      },
+      {
+        "tag": "galaxia",
+        "source": "nombre"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-alien-verde-meditando",
+    "name": "Playera Blanca para Hombre de Alien Verde Meditando",
+    "category": "Aliens y espacio",
+    "tags": [
+      "aliens",
+      "meditación",
+      "platillo volador"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Alien Verde Meditando",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-alien-verde-meditando/playera-blanca-para-hombre-de-alien-verde-meditando-05.webp",
+      "contactSheet": "sheet-04.jpg",
+      "observation": "Alien verde meditando bajo platillo volador."
+    },
+    "tagEvidence": [
+      {
+        "tag": "aliens",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "meditación",
+        "source": "foto"
+      },
+      {
+        "tag": "platillo volador",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-astronauta-con-aliens",
+    "name": "Playera Blanca para Hombre de Astronauta con Aliens",
+    "category": "Aliens y espacio",
+    "tags": [
+      "astronautas",
+      "aliens",
+      "espacio"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Astronauta con Aliens",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-astronauta-con-aliens/playera-blanca-para-hombre-de-astronauta-con-aliens-05.webp",
+      "contactSheet": "sheet-04.jpg",
+      "observation": "Escena espacial oscura con astronauta."
+    },
+    "tagEvidence": [
+      {
+        "tag": "astronautas",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "aliens",
+        "source": "nombre"
+      },
+      {
+        "tag": "espacio",
+        "source": "foto"
+      }
+    ],
+    "confidence": "media",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-astronauta-jugando-basketball",
+    "name": "Playera Blanca para Hombre de Astronauta Jugando Basketball",
+    "category": "Aliens y espacio",
+    "tags": [
+      "astronautas",
+      "básquetbol",
+      "balón"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Astronauta Jugando Basketball",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-astronauta-jugando-basketball/playera-blanca-para-hombre-de-astronauta-jugando-basketball-05.webp",
+      "contactSheet": "sheet-04.jpg",
+      "observation": "Astronauta en movimiento sosteniendo balón."
+    },
+    "tagEvidence": [
+      {
+        "tag": "astronautas",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "básquetbol",
+        "source": "nombre"
+      },
+      {
+        "tag": "balón",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-ataque-de-los-malvaviscos",
+    "name": "Playera Blanca para Hombre de Ataque de los Malvaviscos",
+    "category": "Arte y frases",
+    "tags": [
+      "malvaviscos",
+      "monstruos",
+      "ciudad",
+      "tipografía"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Ataque de los Malvaviscos",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-ataque-de-los-malvaviscos/playera-blanca-para-hombre-de-ataque-de-los-malvaviscos-05.webp",
+      "contactSheet": "sheet-04.jpg",
+      "observation": "Monstruo de malvavisco entre edificios y letras ATTACK."
+    },
+    "tagEvidence": [
+      {
+        "tag": "malvaviscos",
+        "source": "nombre"
+      },
+      {
+        "tag": "monstruos",
+        "source": "foto"
+      },
+      {
+        "tag": "ciudad",
+        "source": "foto"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-bitcoin-en-la-luna",
+    "name": "Playera Blanca para Hombre de Bitcoin en la Luna",
+    "category": "Bitcoin",
+    "tags": [
+      "bitcoin",
+      "Luna",
+      "ilustración de personaje"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Bitcoin en la Luna",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-bitcoin-en-la-luna/playera-blanca-para-hombre-de-bitcoin-en-la-luna-05.webp",
+      "contactSheet": "sheet-04.jpg",
+      "observation": "Personaje con símbolo Bitcoin en escena lunar."
+    },
+    "tagEvidence": [
+      {
+        "tag": "bitcoin",
+        "source": "nombre"
+      },
+      {
+        "tag": "Luna",
+        "source": "nombre"
+      },
+      {
+        "tag": "ilustración de personaje",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-calavera-con-hongos-aterradora",
+    "name": "Playera Blanca para Hombre de Calavera con Hongos Aterradora",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "hongos",
+      "psicodelia"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Calavera con Hongos Aterradora",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-calavera-con-hongos-aterradora/playera-blanca-para-hombre-de-calavera-con-hongos-aterradora-05.webp",
+      "contactSheet": "sheet-04.jpg",
+      "observation": "Cráneo y hongos de colores con contornos fluidos."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "hongos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "psicodelia",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-buho-con-brujula",
+    "name": "Playera Blanca para Hombre de Buho con Brujula",
+    "category": "Animales",
+    "tags": [
+      "búhos",
+      "brújula",
+      "dibujo lineal"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Buho con Brujula",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-buho-con-brujula/playera-blanca-para-hombre-de-buho-con-brujula-05.webp",
+      "contactSheet": "sheet-04.jpg",
+      "observation": "Búho sobre brújula en dibujo gris."
+    },
+    "tagEvidence": [
+      {
+        "tag": "búhos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "brújula",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "dibujo lineal",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-buda",
+    "name": "Playera Blanca para Hombre de Buda",
+    "category": "Raíces y símbolos",
+    "tags": [
+      "Buda",
+      "retrato",
+      "magenta"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Buda",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-buda/playera-blanca-para-hombre-de-buda-05.webp",
+      "contactSheet": "sheet-04.jpg",
+      "observation": "Cabeza de Buda en magenta."
+    },
+    "tagEvidence": [
+      {
+        "tag": "Buda",
+        "source": "nombre"
+      },
+      {
+        "tag": "retrato",
+        "source": "foto"
+      },
+      {
+        "tag": "magenta",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-boris-brejcha",
+    "name": "Playera Blanca para Hombre de Boris Brejcha",
+    "category": "Música",
+    "tags": [
+      "Boris Brejcha",
+      "máscaras",
+      "arlequín"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Boris Brejcha",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-boris-brejcha/playera-blanca-para-hombre-de-boris-brejcha-05.webp",
+      "contactSheet": "sheet-04.jpg",
+      "observation": "Máscara con tocado de arlequín rojo."
+    },
+    "tagEvidence": [
+      {
+        "tag": "Boris Brejcha",
+        "source": "nombre"
+      },
+      {
+        "tag": "máscaras",
+        "source": "foto"
+      },
+      {
+        "tag": "arlequín",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-buho-en-piramide",
+    "name": "Playera Blanca para Hombre de Buho en Piramide",
+    "category": "Animales",
+    "tags": [
+      "búhos",
+      "pirámide",
+      "ornamental"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Buho en Piramide",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-buho-en-piramide/playera-blanca-para-hombre-de-buho-en-piramide-05.webp",
+      "contactSheet": "sheet-04.jpg",
+      "observation": "Búho ornamental sobre base escalonada."
+    },
+    "tagEvidence": [
+      {
+        "tag": "búhos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "pirámide",
+        "source": "nombre"
+      },
+      {
+        "tag": "ornamental",
+        "source": "foto"
+      }
+    ],
+    "confidence": "media",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-calavera-cannabis",
+    "name": "Playera Blanca para Hombre de Calavera Cannabis",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "cannabis",
+      "ornamental"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Calavera Cannabis",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-calavera-cannabis/playera-blanca-para-hombre-de-calavera-cannabis-05.webp",
+      "contactSheet": "sheet-04.jpg",
+      "observation": "Cráneo decorado con hojas y motivos multicolor."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "cannabis",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "ornamental",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-calavera-con-hongos-derretidos",
+    "name": "Playera Blanca para Hombre de Calavera con Hongos Derretidos",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "hongos",
+      "efecto derretido"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Calavera con Hongos Derretidos",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-calavera-con-hongos-derretidos/playera-blanca-para-hombre-de-calavera-con-hongos-derretidos-05.webp",
+      "contactSheet": "sheet-04.jpg",
+      "observation": "Cráneo y hongos con goteos de color."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "hongos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "efecto derretido",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-calavera-con-hongos-psicodelico",
+    "name": "Playera Blanca para Hombre de Calavera con Hongos Psicodelico",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "hongos",
+      "psicodelia"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Calavera con Hongos Psicodelico",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-calavera-con-hongos-psicodelico/playera-blanca-para-hombre-de-calavera-con-hongos-psicodelico-05.webp",
+      "contactSheet": "sheet-04.jpg",
+      "observation": "Cráneo azul verdoso con hongos y contornos fluidos."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "hongos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "psicodelia",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-calavera-con-hongos-psychedelic",
+    "name": "Playera Blanca para Hombre de Calavera con Hongos Psychedelic",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "hongos",
+      "psicodelia"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Calavera con Hongos Psychedelic",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-calavera-con-hongos-psychedelic/playera-blanca-para-hombre-de-calavera-con-hongos-psychedelic-05.webp",
+      "contactSheet": "sheet-04.jpg",
+      "observation": "Cráneo morado con hongos y goteos multicolor."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "hongos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "psicodelia",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-calavera-con-hongos-y-vomito-psicodelico",
+    "name": "Playera Blanca para Hombre de Calavera con Hongos y vomito Psicodelico",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "hongos",
+      "psicodelia"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Calavera con Hongos y vomito Psicodelico",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-calavera-con-hongos-y-vomito-psicodelico/playera-blanca-para-hombre-de-calavera-con-hongos-y-vomito-psicodelico-05.webp",
+      "contactSheet": "sheet-04.jpg",
+      "observation": "Cráneo con hongos y formas fluidas azules."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "hongos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "psicodelia",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-calavera-con-hongos-y-audifonos",
+    "name": "Playera Blanca para Hombre de Calavera con Hongos y Audifonos",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "hongos",
+      "audífonos"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Calavera con Hongos y Audifonos",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-calavera-con-hongos-y-audifonos/playera-blanca-para-hombre-de-calavera-con-hongos-y-audifonos-05.webp",
+      "contactSheet": "sheet-04.jpg",
+      "observation": "Cráneo con hongos y auriculares en tonos violeta."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "hongos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "audífonos",
+        "source": "nombre"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-calavera-psychedelic-trippy",
+    "name": "Playera Blanca para Hombre de Calavera Psychedelic Trippy",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "psicodelia",
+      "círculos"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Calavera Psychedelic Trippy",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-calavera-psychedelic-trippy/playera-blanca-para-hombre-de-calavera-psychedelic-trippy-05.webp",
+      "contactSheet": "sheet-04.jpg",
+      "observation": "Cráneo multicolor dentro de círculo fluido."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "psicodelia",
+        "source": "foto"
+      },
+      {
+        "tag": "círculos",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-calavera-con-hongos-trippy",
+    "name": "Playera Blanca para Hombre de Calavera con Hongos Trippy",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "hongos",
+      "psicodelia"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Calavera con Hongos Trippy",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-calavera-con-hongos-trippy/playera-blanca-para-hombre-de-calavera-con-hongos-trippy-05.webp",
+      "contactSheet": "sheet-04.jpg",
+      "observation": "Cráneo verde y morado con hongos."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "hongos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "psicodelia",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-duende-con-hongo-magico",
+    "name": "Playera Blanca para Hombre de Duende con Hongo Magico",
+    "category": "Naturaleza y hongos",
+    "tags": [
+      "duendes",
+      "hongos",
+      "fantasía"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Duende con Hongo Magico",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-duende-con-hongo-magico/playera-blanca-para-hombre-de-duende-con-hongo-magico-05.webp",
+      "contactSheet": "sheet-04.jpg",
+      "observation": "Personaje fantástico entre grandes hongos anaranjados."
+    },
+    "tagEvidence": [
+      {
+        "tag": "duendes",
+        "source": "nombre"
+      },
+      {
+        "tag": "hongos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "fantasía",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-cubo-derretido",
+    "name": "Playera Blanca para Hombre de Cubo Derretido",
+    "category": "Arte y frases",
+    "tags": [
+      "cubos",
+      "geometría",
+      "efecto derretido"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Cubo Derretido",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-cubo-derretido/playera-blanca-para-hombre-de-cubo-derretido-05.webp",
+      "contactSheet": "sheet-05.jpg",
+      "observation": "Cubo multicolor con base derretida."
+    },
+    "tagEvidence": [
+      {
+        "tag": "cubos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "geometría",
+        "source": "foto"
+      },
+      {
+        "tag": "efecto derretido",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-craneo-con-hongos-hippie",
+    "name": "Playera Blanca para Hombre de Craneo con Hongos Hippie",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "hongos",
+      "hippie"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Craneo con Hongos Hippie",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-craneo-con-hongos-hippie/playera-blanca-para-hombre-de-craneo-con-hongos-hippie-05.webp",
+      "contactSheet": "sheet-05.jpg",
+      "observation": "Cráneo con hongos dentro de marco verde."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "foto"
+      },
+      {
+        "tag": "hongos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "hippie",
+        "source": "nombre"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-combi-huichol",
+    "name": "Playera Blanca para Hombre de Combi Huichol",
+    "category": "Raíces y símbolos",
+    "tags": [
+      "combi",
+      "huichol",
+      "palmeras"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Combi Huichol",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-combi-huichol/playera-blanca-para-hombre-de-combi-huichol-05.webp",
+      "contactSheet": "sheet-05.jpg",
+      "observation": "Combi decorada delante de palmeras."
+    },
+    "tagEvidence": [
+      {
+        "tag": "combi",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "huichol",
+        "source": "nombre"
+      },
+      {
+        "tag": "palmeras",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-dj-con-flamas",
+    "name": "Playera Blanca para Hombre de DJ con Flamas",
+    "category": "Música",
+    "tags": [
+      "DJ",
+      "llamas",
+      "siluetas"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de DJ con Flamas",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-dj-con-flamas/playera-blanca-para-hombre-de-dj-con-flamas-05.webp",
+      "contactSheet": "sheet-05.jpg",
+      "observation": "Silueta ante equipo de DJ y llamas."
+    },
+    "tagEvidence": [
+      {
+        "tag": "DJ",
+        "source": "nombre"
+      },
+      {
+        "tag": "llamas",
+        "source": "foto"
+      },
+      {
+        "tag": "siluetas",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-craneo-guerrero-azteca",
+    "name": "Playera Blanca para Hombre de Craneo Guerrero Azteca",
+    "category": "Raíces y símbolos",
+    "tags": [
+      "calaveras",
+      "azteca",
+      "penacho"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Craneo Guerrero Azteca",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-craneo-guerrero-azteca/playera-blanca-para-hombre-de-craneo-guerrero-azteca-05.webp",
+      "contactSheet": "sheet-05.jpg",
+      "observation": "Cráneo de perfil con penacho multicolor."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "foto"
+      },
+      {
+        "tag": "azteca",
+        "source": "nombre"
+      },
+      {
+        "tag": "penacho",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-fullon-morning",
+    "name": "Playera Blanca para Hombre de Fullon Morning",
+    "category": "Música",
+    "tags": [
+      "fullon",
+      "tipografía",
+      "old school"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Fullon Morning",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-fullon-morning/playera-blanca-para-hombre-de-fullon-morning-05.webp",
+      "contactSheet": "sheet-05.jpg",
+      "observation": "Texto FULLON MORNING OLD SCHOOL en bloques."
+    },
+    "tagEvidence": [
+      {
+        "tag": "fullon",
+        "source": "nombre"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      },
+      {
+        "tag": "old school",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-gatito-psicodelico",
+    "name": "Playera Blanca para Hombre de Gatito Psicodelico",
+    "category": "Animales",
+    "tags": [
+      "gatos",
+      "psicodelia",
+      "azul",
+      "magenta"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Gatito Psicodelico",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-gatito-psicodelico/playera-blanca-para-hombre-de-gatito-psicodelico-05.webp",
+      "contactSheet": "sheet-05.jpg",
+      "observation": "Gato azul sobre círculo azul y magenta."
+    },
+    "tagEvidence": [
+      {
+        "tag": "gatos",
+        "source": "foto"
+      },
+      {
+        "tag": "psicodelia",
+        "source": "foto"
+      },
+      {
+        "tag": "azul",
+        "source": "foto"
+      },
+      {
+        "tag": "magenta",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-gato-cosmico",
+    "name": "Playera Blanca para Hombre de Gato Cosmico",
+    "category": "Animales",
+    "tags": [
+      "gatos",
+      "espacio",
+      "planetas"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Gato Cosmico",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-gato-cosmico/playera-blanca-para-hombre-de-gato-cosmico-05.webp",
+      "contactSheet": "sheet-05.jpg",
+      "observation": "Gato verde con cuerpos celestes en el torso."
+    },
+    "tagEvidence": [
+      {
+        "tag": "gatos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "espacio",
+        "source": "foto"
+      },
+      {
+        "tag": "planetas",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-guerrero-jaguar-con-penachos",
+    "name": "Playera Blanca para Hombre de Guerrero Jaguar con Penachos",
+    "category": "Raíces y símbolos",
+    "tags": [
+      "jaguar",
+      "guerrero",
+      "penacho"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Guerrero Jaguar con Penachos",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-guerrero-jaguar-con-penachos/playera-blanca-para-hombre-de-guerrero-jaguar-con-penachos-05.webp",
+      "contactSheet": "sheet-05.jpg",
+      "observation": "Rostro de guerrero con tocado y plumas."
+    },
+    "tagEvidence": [
+      {
+        "tag": "jaguar",
+        "source": "nombre"
+      },
+      {
+        "tag": "guerrero",
+        "source": "nombre"
+      },
+      {
+        "tag": "penacho",
+        "source": "nombre y foto"
+      }
+    ],
+    "confidence": "media",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-guerreros-maya",
+    "name": "Playera Blanca para Hombre de Guerreros Maya",
+    "category": "Raíces y símbolos",
+    "tags": [
+      "maya",
+      "guerreros",
+      "ornamental"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Guerreros Maya",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-guerreros-maya/playera-blanca-para-hombre-de-guerreros-maya-05.webp",
+      "contactSheet": "sheet-05.jpg",
+      "observation": "Figuras de guerreros con tocados ornamentales."
+    },
+    "tagEvidence": [
+      {
+        "tag": "maya",
+        "source": "nombre"
+      },
+      {
+        "tag": "guerreros",
+        "source": "nombre"
+      },
+      {
+        "tag": "ornamental",
+        "source": "foto"
+      }
+    ],
+    "confidence": "media",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-goku-meditando",
+    "name": "Playera Blanca para Hombre de Goku Meditando",
+    "category": "Raíces y símbolos",
+    "tags": [
+      "Goku",
+      "meditación",
+      "nubes"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Goku Meditando",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-goku-meditando/playera-blanca-para-hombre-de-goku-meditando-05.webp",
+      "contactSheet": "sheet-05.jpg",
+      "observation": "Personaje sentado sobre una nube naranja."
+    },
+    "tagEvidence": [
+      {
+        "tag": "Goku",
+        "source": "nombre"
+      },
+      {
+        "tag": "meditación",
+        "source": "foto"
+      },
+      {
+        "tag": "nubes",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-hongos-con-ojos-psicodelicos",
+    "name": "Playera Blanca para Hombre de Hongos con Ojos Psicodelicos",
+    "category": "Naturaleza y hongos",
+    "tags": [
+      "hongos",
+      "ojos",
+      "psicodelia"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Hongos con Ojos Psicodelicos",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-hongos-con-ojos-psicodelicos/playera-blanca-para-hombre-de-hongos-con-ojos-psicodelicos-05.webp",
+      "contactSheet": "sheet-05.jpg",
+      "observation": "Hongos con grandes ojos y goteos verdes."
+    },
+    "tagEvidence": [
+      {
+        "tag": "hongos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "ojos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "psicodelia",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-lobo-huichol",
+    "name": "Playera Blanca para Hombre de Lobo Huichol",
+    "category": "Raíces y símbolos",
+    "tags": [
+      "lobos",
+      "huichol",
+      "ornamental"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Lobo Huichol",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-lobo-huichol/playera-blanca-para-hombre-de-lobo-huichol-05.webp",
+      "contactSheet": "sheet-05.jpg",
+      "observation": "Cabeza de lobo decorada con patrones."
+    },
+    "tagEvidence": [
+      {
+        "tag": "lobos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "huichol",
+        "source": "nombre"
+      },
+      {
+        "tag": "ornamental",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-la-nasa-vintage",
+    "name": "Playera Blanca para Hombre de la Nasa Vintage",
+    "category": "Aliens y espacio",
+    "tags": [
+      "NASA",
+      "tipografía",
+      "vintage"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de la Nasa Vintage",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-la-nasa-vintage/playera-blanca-para-hombre-de-la-nasa-vintage-05.webp",
+      "contactSheet": "sheet-05.jpg",
+      "observation": "NASA repetido en degradado de colores."
+    },
+    "tagEvidence": [
+      {
+        "tag": "NASA",
+        "source": "nombre"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      },
+      {
+        "tag": "vintage",
+        "source": "nombre"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-la-musica-corre-por-mis-venas",
+    "name": "Playera Blanca para Hombre de la Musica Corre por mis Venas",
+    "category": "Música",
+    "tags": [
+      "música",
+      "tipografía",
+      "magenta"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de la Musica Corre por mis Venas",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-la-musica-corre-por-mis-venas/playera-blanca-para-hombre-de-la-musica-corre-por-mis-venas-05.webp",
+      "contactSheet": "sheet-05.jpg",
+      "observation": "Texto sobre música en composición magenta."
+    },
+    "tagEvidence": [
+      {
+        "tag": "música",
+        "source": "nombre"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      },
+      {
+        "tag": "magenta",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-la-nasa",
+    "name": "Playera Blanca para Hombre de la Nasa",
+    "category": "Aliens y espacio",
+    "tags": [
+      "NASA",
+      "emblema",
+      "azul"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de la Nasa",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-la-nasa/playera-blanca-para-hombre-de-la-nasa-05.webp",
+      "contactSheet": "sheet-05.jpg",
+      "observation": "Emblema circular azul con letras NASA."
+    },
+    "tagEvidence": [
+      {
+        "tag": "NASA",
+        "source": "nombre"
+      },
+      {
+        "tag": "emblema",
+        "source": "foto"
+      },
+      {
+        "tag": "azul",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-lucha-por-la-naturaleza",
+    "name": "Playera Blanca para Hombre de Lucha por la Naturaleza",
+    "category": "Naturaleza y hongos",
+    "tags": [
+      "árboles",
+      "naturaleza",
+      "dibujo lineal"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Lucha por la Naturaleza",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-lucha-por-la-naturaleza/playera-blanca-para-hombre-de-lucha-por-la-naturaleza-05.webp",
+      "contactSheet": "sheet-05.jpg",
+      "observation": "Árbol de raíces y ramas entrelazadas en verde."
+    },
+    "tagEvidence": [
+      {
+        "tag": "árboles",
+        "source": "foto"
+      },
+      {
+        "tag": "naturaleza",
+        "source": "nombre"
+      },
+      {
+        "tag": "dibujo lineal",
+        "source": "foto"
+      }
+    ],
+    "confidence": "media",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-mictlan",
+    "name": "Playera Blanca para Hombre de Mictlan",
+    "category": "Raíces y símbolos",
+    "tags": [
+      "Mictlán",
+      "calaveras",
+      "ornamental"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Mictlan",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-mictlan/playera-blanca-para-hombre-de-mictlan-05.webp",
+      "contactSheet": "sheet-05.jpg",
+      "observation": "Rostro cadavérico ornamentado en marco rectangular."
+    },
+    "tagEvidence": [
+      {
+        "tag": "Mictlán",
+        "source": "nombre"
+      },
+      {
+        "tag": "calaveras",
+        "source": "foto"
+      },
+      {
+        "tag": "ornamental",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-nave-de-la-nasa",
+    "name": "Playera Blanca para Hombre de Nave de la Nasa",
+    "category": "Aliens y espacio",
+    "tags": [
+      "NASA",
+      "cohetes",
+      "espacio"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Nave de la Nasa",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-nave-de-la-nasa/playera-blanca-para-hombre-de-nave-de-la-nasa-05.webp",
+      "contactSheet": "sheet-05.jpg",
+      "observation": "Cohete dentro de marco circular multicolor."
+    },
+    "tagEvidence": [
+      {
+        "tag": "NASA",
+        "source": "nombre"
+      },
+      {
+        "tag": "cohetes",
+        "source": "foto"
+      },
+      {
+        "tag": "espacio",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-marsianos-invasores",
+    "name": "Playera Blanca para Hombre de Marsianos Invasores",
+    "category": "Aliens y espacio",
+    "tags": [
+      "marcianos",
+      "espacio",
+      "tipografía"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Marsianos Invasores",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-marsianos-invasores/playera-blanca-para-hombre-de-marsianos-invasores-05.webp",
+      "contactSheet": "sheet-05.jpg",
+      "observation": "Figura espacial bajo gran astro con MARS INVADERS."
+    },
+    "tagEvidence": [
+      {
+        "tag": "marcianos",
+        "source": "nombre"
+      },
+      {
+        "tag": "espacio",
+        "source": "foto"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-ojo-astral",
+    "name": "Playera Blanca para Hombre de Ojo Astral",
+    "category": "Raíces y símbolos",
+    "tags": [
+      "ojos",
+      "ornamental",
+      "dibujo lineal"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Ojo Astral",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-ojo-astral/playera-blanca-para-hombre-de-ojo-astral-05.webp",
+      "contactSheet": "sheet-06.jpg",
+      "observation": "Ojo central dentro de composición ornamental."
+    },
+    "tagEvidence": [
+      {
+        "tag": "ojos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "ornamental",
+        "source": "foto"
+      },
+      {
+        "tag": "dibujo lineal",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-om-con-ramas",
+    "name": "Playera Blanca para Hombre de Om con Ramas",
+    "category": "Raíces y símbolos",
+    "tags": [
+      "Om",
+      "ramas",
+      "dibujo lineal"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Om con Ramas",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-om-con-ramas/playera-blanca-para-hombre-de-om-con-ramas-05.webp",
+      "contactSheet": "sheet-06.jpg",
+      "observation": "Símbolo Om rodeado de ramas negras."
+    },
+    "tagEvidence": [
+      {
+        "tag": "Om",
+        "source": "nombre"
+      },
+      {
+        "tag": "ramas",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "dibujo lineal",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-abduccion-de-alien",
+    "name": "Playera Blanca para Mujer de Abduccion de Alien",
+    "category": "Aliens y espacio",
+    "tags": [
+      "aliens",
+      "platillo volador",
+      "abducción"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Abduccion de Alien",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-abduccion-de-alien/playera-blanca-para-mujer-de-abduccion-de-alien-05.webp",
+      "contactSheet": "sheet-06.jpg",
+      "observation": "Platillo volador con haz de luz amarillo."
+    },
+    "tagEvidence": [
+      {
+        "tag": "aliens",
+        "source": "nombre"
+      },
+      {
+        "tag": "platillo volador",
+        "source": "foto"
+      },
+      {
+        "tag": "abducción",
+        "source": "nombre"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-psytrance",
+    "name": "Playera Blanca para Hombre de Psytrance",
+    "category": "Música",
+    "tags": [
+      "psytrance",
+      "tipografía",
+      "letras negras"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Psytrance",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-psytrance/playera-blanca-para-hombre-de-psytrance-05.webp",
+      "contactSheet": "sheet-06.jpg",
+      "observation": "PSY TRANCE distribuido en líneas negras."
+    },
+    "tagEvidence": [
+      {
+        "tag": "psytrance",
+        "source": "nombre"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      },
+      {
+        "tag": "letras negras",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-quetzalcoatl-serpiente-emplumada",
+    "name": "Playera Blanca para Hombre de Quetzalcoatl Serpiente Emplumada",
+    "category": "Raíces y símbolos",
+    "tags": [
+      "Quetzalcóatl",
+      "serpientes",
+      "plumas"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Quetzalcoatl Serpiente Emplumada",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-quetzalcoatl-serpiente-emplumada/playera-blanca-para-hombre-de-quetzalcoatl-serpiente-emplumada-05.webp",
+      "contactSheet": "sheet-06.jpg",
+      "observation": "Serpiente roja con cabeza emplumada."
+    },
+    "tagEvidence": [
+      {
+        "tag": "Quetzalcóatl",
+        "source": "nombre"
+      },
+      {
+        "tag": "serpientes",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "plumas",
+        "source": "nombre y foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-saltar-parkour",
+    "name": "Playera Blanca para Hombre de Saltar Parkour",
+    "category": "Deportes",
+    "tags": [
+      "parkour",
+      "siluetas",
+      "tipografía"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Saltar Parkour",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-saltar-parkour/playera-blanca-para-hombre-de-saltar-parkour-05.webp",
+      "contactSheet": "sheet-06.jpg",
+      "observation": "Figura saltando con letras rosa."
+    },
+    "tagEvidence": [
+      {
+        "tag": "parkour",
+        "source": "nombre"
+      },
+      {
+        "tag": "siluetas",
+        "source": "foto"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-skateboarding",
+    "name": "Playera Blanca para Hombre de Skateboarding",
+    "category": "Deportes",
+    "tags": [
+      "skate",
+      "tipografía",
+      "dibujo lineal"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Skateboarding",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-skateboarding/playera-blanca-para-hombre-de-skateboarding-05.webp",
+      "contactSheet": "sheet-06.jpg",
+      "observation": "Diseño de skate con letras y dibujo negro."
+    },
+    "tagEvidence": [
+      {
+        "tag": "skate",
+        "source": "nombre"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      },
+      {
+        "tag": "dibujo lineal",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-shiva",
+    "name": "Playera Blanca para Hombre de Shiva",
+    "category": "Raíces y símbolos",
+    "tags": [
+      "Shiva",
+      "retrato",
+      "dibujo lineal"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Shiva",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-shiva/playera-blanca-para-hombre-de-shiva-05.webp",
+      "contactSheet": "sheet-06.jpg",
+      "observation": "Rostro de Shiva dibujado en negro."
+    },
+    "tagEvidence": [
+      {
+        "tag": "Shiva",
+        "source": "nombre"
+      },
+      {
+        "tag": "retrato",
+        "source": "foto"
+      },
+      {
+        "tag": "dibujo lineal",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-tlaloc-azul",
+    "name": "Playera Blanca para Hombre de Tlaloc Azul",
+    "category": "Raíces y símbolos",
+    "tags": [
+      "Tláloc",
+      "azul",
+      "ornamental"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Tlaloc Azul",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-tlaloc-azul/playera-blanca-para-hombre-de-tlaloc-azul-05.webp",
+      "contactSheet": "sheet-06.jpg",
+      "observation": "Rostro de Tláloc en composición azul."
+    },
+    "tagEvidence": [
+      {
+        "tag": "Tláloc",
+        "source": "nombre"
+      },
+      {
+        "tag": "azul",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "ornamental",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-te-traigo-paz",
+    "name": "Playera Blanca para Hombre de Te Traigo Paz",
+    "category": "Aliens y espacio",
+    "tags": [
+      "aliens",
+      "paz",
+      "tipografía"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Te Traigo Paz",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-te-traigo-paz/playera-blanca-para-hombre-de-te-traigo-paz-05.webp",
+      "contactSheet": "sheet-06.jpg",
+      "observation": "Alien verde con letras de paz y amor."
+    },
+    "tagEvidence": [
+      {
+        "tag": "aliens",
+        "source": "foto"
+      },
+      {
+        "tag": "paz",
+        "source": "nombre"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-tigre-neon",
+    "name": "Playera Blanca para Hombre de Tigre Neon",
+    "category": "Animales",
+    "tags": [
+      "tigres",
+      "neón",
+      "multicolor"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Tigre Neon",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-tigre-neon/playera-blanca-para-hombre-de-tigre-neon-05.webp",
+      "contactSheet": "sheet-06.jpg",
+      "observation": "Cabeza de tigre con contornos azules y morados."
+    },
+    "tagEvidence": [
+      {
+        "tag": "tigres",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "neón",
+        "source": "nombre"
+      },
+      {
+        "tag": "multicolor",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-420",
+    "name": "Playera Blanca para Mujer de 420",
+    "category": "Naturaleza y hongos",
+    "tags": [
+      "cannabis",
+      "420",
+      "dibujo lineal"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de 420",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-420/playera-blanca-para-mujer-de-420-05.webp",
+      "contactSheet": "sheet-06.jpg",
+      "observation": "Hoja de cannabis sobre el número 420."
+    },
+    "tagEvidence": [
+      {
+        "tag": "cannabis",
+        "source": "foto"
+      },
+      {
+        "tag": "420",
+        "source": "nombre"
+      },
+      {
+        "tag": "dibujo lineal",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-xolotl",
+    "name": "Playera Blanca para Hombre de Xolotl",
+    "category": "Raíces y símbolos",
+    "tags": [
+      "Xólotl",
+      "ornamental",
+      "negro y rojo"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Xolotl",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-xolotl/playera-blanca-para-hombre-de-xolotl-05.webp",
+      "contactSheet": "sheet-06.jpg",
+      "observation": "Figura de orejas largas dentro de marco decorado."
+    },
+    "tagEvidence": [
+      {
+        "tag": "Xólotl",
+        "source": "nombre"
+      },
+      {
+        "tag": "ornamental",
+        "source": "foto"
+      },
+      {
+        "tag": "negro y rojo",
+        "source": "foto"
+      }
+    ],
+    "confidence": "media",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-alas-abstractas",
+    "name": "Playera Blanca para Mujer de Alas Abstractas",
+    "category": "Arte y frases",
+    "tags": [
+      "alas",
+      "abstracto",
+      "simetría"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Alas Abstractas",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-alas-abstractas/playera-blanca-para-mujer-de-alas-abstractas-05.webp",
+      "contactSheet": "sheet-06.jpg",
+      "observation": "Dos alas de colores a ambos lados de puntos."
+    },
+    "tagEvidence": [
+      {
+        "tag": "alas",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "abstracto",
+        "source": "nombre"
+      },
+      {
+        "tag": "simetría",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-alien-comiendo-hongos",
+    "name": "Playera Blanca para Mujer de Alien comiendo Hongos",
+    "category": "Aliens y espacio",
+    "tags": [
+      "aliens",
+      "hongos",
+      "amarillo"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Alien comiendo Hongos",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-alien-comiendo-hongos/playera-blanca-para-mujer-de-alien-comiendo-hongos-05.webp",
+      "contactSheet": "sheet-06.jpg",
+      "observation": "Alien amarillo junto a hongos."
+    },
+    "tagEvidence": [
+      {
+        "tag": "aliens",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "hongos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "amarillo",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-atrapasuenos",
+    "name": "Playera Blanca para Mujer de Atrapasuenos",
+    "category": "Raíces y símbolos",
+    "tags": [
+      "atrapasueños",
+      "plumas",
+      "rosa"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Atrapasuenos",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-atrapasuenos/playera-blanca-para-mujer-de-atrapasuenos-05.webp",
+      "contactSheet": "sheet-06.jpg",
+      "observation": "Atrapasueños circular con plumas rosadas."
+    },
+    "tagEvidence": [
+      {
+        "tag": "atrapasueños",
+        "source": "nombre"
+      },
+      {
+        "tag": "plumas",
+        "source": "foto"
+      },
+      {
+        "tag": "rosa",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-bong-con-alien",
+    "name": "Playera Blanca para Mujer de Bong con Alien",
+    "category": "Aliens y espacio",
+    "tags": [
+      "aliens",
+      "bong",
+      "turquesa"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Bong con Alien",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-bong-con-alien/playera-blanca-para-mujer-de-bong-con-alien-05.webp",
+      "contactSheet": "sheet-06.jpg",
+      "observation": "Alien turquesa en composición con bong."
+    },
+    "tagEvidence": [
+      {
+        "tag": "aliens",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "bong",
+        "source": "nombre"
+      },
+      {
+        "tag": "turquesa",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-caballo",
+    "name": "Playera Blanca para Mujer de Caballo",
+    "category": "Animales",
+    "tags": [
+      "caballos",
+      "rosas",
+      "dibujo lineal"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Caballo",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-caballo/playera-blanca-para-mujer-de-caballo-05.webp",
+      "contactSheet": "sheet-06.jpg",
+      "observation": "Cabeza de caballo delineada con flores."
+    },
+    "tagEvidence": [
+      {
+        "tag": "caballos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "rosas",
+        "source": "foto"
+      },
+      {
+        "tag": "dibujo lineal",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-arte-de-edicion-limitada",
+    "name": "Playera Blanca para Mujer de Arte de Edicion Limitada",
+    "category": "Arte y frases",
+    "tags": [
+      "esculturas",
+      "rayas",
+      "multicolor"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Arte de Edicion Limitada",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-arte-de-edicion-limitada/playera-blanca-para-mujer-de-arte-de-edicion-limitada-05.webp",
+      "contactSheet": "sheet-06.jpg",
+      "observation": "Bustos y torso de escultura con rayas; LIMITED EDITION es texto del diseño, no disponibilidad."
+    },
+    "tagEvidence": [
+      {
+        "tag": "esculturas",
+        "source": "foto"
+      },
+      {
+        "tag": "rayas",
+        "source": "foto"
+      },
+      {
+        "tag": "multicolor",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-buda-con-flor-de-loto",
+    "name": "Playera Blanca para Mujer de Buda con Flor de Loto",
+    "category": "Raíces y símbolos",
+    "tags": [
+      "Buda",
+      "loto",
+      "turquesa"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Buda con Flor de Loto",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-buda-con-flor-de-loto/playera-blanca-para-mujer-de-buda-con-flor-de-loto-05.webp",
+      "contactSheet": "sheet-06.jpg",
+      "observation": "Cabeza de Buda y manos sobre flor de loto rosa."
+    },
+    "tagEvidence": [
+      {
+        "tag": "Buda",
+        "source": "nombre"
+      },
+      {
+        "tag": "loto",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "turquesa",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-arbol-de-arcoiris",
+    "name": "Playera Blanca para Mujer de Arbol de Arcoiris",
+    "category": "Naturaleza y hongos",
+    "tags": [
+      "árboles",
+      "arcoíris",
+      "multicolor"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Arbol de Arcoiris",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-arbol-de-arcoiris/playera-blanca-para-mujer-de-arbol-de-arcoiris-05.webp",
+      "contactSheet": "sheet-07.jpg",
+      "observation": "Árbol de ramas multicolor."
+    },
+    "tagEvidence": [
+      {
+        "tag": "árboles",
+        "source": "foto"
+      },
+      {
+        "tag": "arcoíris",
+        "source": "nombre"
+      },
+      {
+        "tag": "multicolor",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-caballo-dibujado",
+    "name": "Playera Blanca para Mujer de Caballo Dibujado",
+    "category": "Animales",
+    "tags": [
+      "caballos",
+      "dibujo lineal",
+      "perfil"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Caballo Dibujado",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-caballo-dibujado/playera-blanca-para-mujer-de-caballo-dibujado-05.webp",
+      "contactSheet": "sheet-07.jpg",
+      "observation": "Perfil de cabeza de caballo dibujado en gris."
+    },
+    "tagEvidence": [
+      {
+        "tag": "caballos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "dibujo lineal",
+        "source": "foto"
+      },
+      {
+        "tag": "perfil",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-cabello-africano",
+    "name": "Playera Blanca para Mujer de Cabello Africano",
+    "category": "Arte y frases",
+    "tags": [
+      "retrato",
+      "afro",
+      "perfil"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Cabello Africano",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-cabello-africano/playera-blanca-para-mujer-de-cabello-africano-05.webp",
+      "contactSheet": "sheet-07.jpg",
+      "observation": "Retrato de perfil con cabello voluminoso y formas de color."
+    },
+    "tagEvidence": [
+      {
+        "tag": "retrato",
+        "source": "foto"
+      },
+      {
+        "tag": "afro",
+        "source": "foto"
+      },
+      {
+        "tag": "perfil",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-ancla-de-arbol",
+    "name": "Playera Blanca para Mujer de Ancla de Arbol",
+    "category": "Naturaleza y hongos",
+    "tags": [
+      "árboles",
+      "anclas",
+      "dibujo lineal"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Ancla de Arbol",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-ancla-de-arbol/playera-blanca-para-mujer-de-ancla-de-arbol-05.webp",
+      "contactSheet": "sheet-07.jpg",
+      "observation": "Árbol cuyas raíces forman un ancla."
+    },
+    "tagEvidence": [
+      {
+        "tag": "árboles",
+        "source": "foto"
+      },
+      {
+        "tag": "anclas",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "dibujo lineal",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-alien-hip-hop",
+    "name": "Playera Blanca para Mujer de Alien Hip Hop",
+    "category": "Aliens y espacio",
+    "tags": [
+      "aliens",
+      "hip hop",
+      "gafas"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Alien Hip Hop",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-alien-hip-hop/playera-blanca-para-mujer-de-alien-hip-hop-05.webp",
+      "contactSheet": "sheet-07.jpg",
+      "observation": "Alien verde con gafas en composición circular."
+    },
+    "tagEvidence": [
+      {
+        "tag": "aliens",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "hip hop",
+        "source": "nombre"
+      },
+      {
+        "tag": "gafas",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-atrapasuenos-rosa",
+    "name": "Playera Blanca para Mujer de Atrapasuenos Rosa",
+    "category": "Raíces y símbolos",
+    "tags": [
+      "atrapasueños",
+      "plumas",
+      "rosa"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Atrapasuenos Rosa",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-atrapasuenos-rosa/playera-blanca-para-mujer-de-atrapasuenos-rosa-05.webp",
+      "contactSheet": "sheet-07.jpg",
+      "observation": "Atrapasueños rosa con plumas colgantes."
+    },
+    "tagEvidence": [
+      {
+        "tag": "atrapasueños",
+        "source": "nombre"
+      },
+      {
+        "tag": "plumas",
+        "source": "foto"
+      },
+      {
+        "tag": "rosa",
+        "source": "nombre y foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-alien-con-corazon",
+    "name": "Playera Blanca para Mujer de Alien con Corazon",
+    "category": "Aliens y espacio",
+    "tags": [
+      "aliens",
+      "corazones",
+      "amarillo"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Alien con Corazon",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-alien-con-corazon/playera-blanca-para-mujer-de-alien-con-corazon-05.webp",
+      "contactSheet": "sheet-07.jpg",
+      "observation": "Alien amarillo sosteniendo corazón rosa."
+    },
+    "tagEvidence": [
+      {
+        "tag": "aliens",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "corazones",
+        "source": "foto"
+      },
+      {
+        "tag": "amarillo",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-arbol-de-la-vida",
+    "name": "Playera Blanca para Mujer de Arbol de la Vida",
+    "category": "Raíces y símbolos",
+    "tags": [
+      "árbol de la vida",
+      "círculos",
+      "dibujo lineal"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Arbol de la Vida",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-arbol-de-la-vida/playera-blanca-para-mujer-de-arbol-de-la-vida-05.webp",
+      "contactSheet": "sheet-07.jpg",
+      "observation": "Árbol dentro de emblema circular negro."
+    },
+    "tagEvidence": [
+      {
+        "tag": "árbol de la vida",
+        "source": "nombre"
+      },
+      {
+        "tag": "círculos",
+        "source": "foto"
+      },
+      {
+        "tag": "dibujo lineal",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-cabeza-de-buda",
+    "name": "Playera Blanca para Mujer de Cabeza de Buda",
+    "category": "Raíces y símbolos",
+    "tags": [
+      "Buda",
+      "retrato",
+      "magenta"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Cabeza de Buda",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-cabeza-de-buda/playera-blanca-para-mujer-de-cabeza-de-buda-05.webp",
+      "contactSheet": "sheet-07.jpg",
+      "observation": "Cabeza de Buda en magenta."
+    },
+    "tagEvidence": [
+      {
+        "tag": "Buda",
+        "source": "nombre"
+      },
+      {
+        "tag": "retrato",
+        "source": "foto"
+      },
+      {
+        "tag": "magenta",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-cafe-vino",
+    "name": "Playera Blanca para Mujer de Cafe Vino",
+    "category": "Arte y frases",
+    "tags": [
+      "café",
+      "vino",
+      "humor"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Cafe Vino",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-cafe-vino/playera-blanca-para-mujer-de-cafe-vino-05.webp",
+      "contactSheet": "sheet-07.jpg",
+      "observation": "Taza de café y copa de vino con rostros."
+    },
+    "tagEvidence": [
+      {
+        "tag": "café",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "vino",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "humor",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-calaveras",
+    "name": "Playera Blanca para Mujer de Calaveras",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "cuernos",
+      "verde"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Calaveras",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-calaveras/playera-blanca-para-mujer-de-calaveras-05.webp",
+      "contactSheet": "sheet-07.jpg",
+      "observation": "Cráneo verde con cuernos bajo otro morado."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "cuernos",
+        "source": "foto"
+      },
+      {
+        "tag": "verde",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-calaveras-cool",
+    "name": "Playera Blanca para Mujer de Calaveras Cool",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "círculos",
+      "amarillo"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Calaveras Cool",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-calaveras-cool/playera-blanca-para-mujer-de-calaveras-cool-05.webp",
+      "contactSheet": "sheet-07.jpg",
+      "observation": "Cráneo con fondo circular verde y amarillo."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "círculos",
+        "source": "foto"
+      },
+      {
+        "tag": "amarillo",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-calavera-con-libro",
+    "name": "Playera Blanca para Mujer de Calavera con Libro",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "libros",
+      "lectura"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Calavera con Libro",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-calavera-con-libro/playera-blanca-para-mujer-de-calavera-con-libro-05.webp",
+      "contactSheet": "sheet-07.jpg",
+      "observation": "Esqueleto tras libro abierto."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "libros",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "lectura",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-calavera-con-rosas",
+    "name": "Playera Blanca para Mujer de Calavera con Rosas",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "rosas",
+      "flores"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Calavera con Rosas",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-calavera-con-rosas/playera-blanca-para-mujer-de-calavera-con-rosas-05.webp",
+      "contactSheet": "sheet-07.jpg",
+      "observation": "Cráneo con rosas rosadas y hojas verdes."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "rosas",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "flores",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-calavera-rockera",
+    "name": "Playera Blanca para Mujer de Calavera Rockera",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "rock",
+      "sombrero"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Calavera Rockera",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-calavera-rockera/playera-blanca-para-mujer-de-calavera-rockera-05.webp",
+      "contactSheet": "sheet-07.jpg",
+      "observation": "Cráneo oscuro con sombrero y acentos rosa."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "rock",
+        "source": "nombre"
+      },
+      {
+        "tag": "sombrero",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-calavera-abstracta",
+    "name": "Playera Blanca para Mujer de Calavera Abstracta",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "abstracto",
+      "magenta"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Calavera Abstracta",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-calavera-abstracta/playera-blanca-para-mujer-de-calavera-abstracta-05.webp",
+      "contactSheet": "sheet-07.jpg",
+      "observation": "Cráneo con manchas magenta."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "abstracto",
+        "source": "foto"
+      },
+      {
+        "tag": "magenta",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-calavera-con-hongos-alucinante",
+    "name": "Playera Blanca para Mujer de Calavera con Hongos Alucinante",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "hongos",
+      "psicodelia"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Calavera con Hongos Alucinante",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-calavera-con-hongos-alucinante/playera-blanca-para-mujer-de-calavera-con-hongos-alucinante-05.webp",
+      "contactSheet": "sheet-07.jpg",
+      "observation": "Cráneo azul con hongos y goteos multicolor."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "hongos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "psicodelia",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-calavera",
+    "name": "Playera Blanca para Mujer de Calavera",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "círculos",
+      "rojo"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Calavera",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-calavera/playera-blanca-para-mujer-de-calavera-05.webp",
+      "contactSheet": "sheet-07.jpg",
+      "observation": "Cráneo beige dentro de marco circular rojo."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "círculos",
+        "source": "foto"
+      },
+      {
+        "tag": "rojo",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-caligrafia-arabe",
+    "name": "Playera Blanca para Mujer de Caligrafia Arabe",
+    "category": "Arte y frases",
+    "tags": [
+      "caligrafía árabe",
+      "tipografía",
+      "turquesa"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Caligrafia Arabe",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-caligrafia-arabe/playera-blanca-para-mujer-de-caligrafia-arabe-05.webp",
+      "contactSheet": "sheet-07.jpg",
+      "observation": "Composición caligráfica en gris y turquesa; no se traduce el texto."
+    },
+    "tagEvidence": [
+      {
+        "tag": "caligrafía árabe",
+        "source": "nombre"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      },
+      {
+        "tag": "turquesa",
+        "source": "foto"
+      }
+    ],
+    "confidence": "media",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-calavera-punk",
+    "name": "Playera Blanca para Mujer de Calavera Punk",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "punk",
+      "magenta"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Calavera Punk",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-calavera-punk/playera-blanca-para-mujer-de-calavera-punk-05.webp",
+      "contactSheet": "sheet-07.jpg",
+      "observation": "Cráneo con cresta sobre trazos magenta."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "punk",
+        "source": "nombre"
+      },
+      {
+        "tag": "magenta",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-calavera-yoga",
+    "name": "Playera Blanca para Mujer de Calavera Yoga",
+    "category": "Calaveras",
+    "tags": [
+      "esqueletos",
+      "yoga",
+      "meditación"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Calavera Yoga",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-calavera-yoga/playera-blanca-para-mujer-de-calavera-yoga-05.webp",
+      "contactSheet": "sheet-08.jpg",
+      "observation": "Esqueleto sentado con piernas cruzadas."
+    },
+    "tagEvidence": [
+      {
+        "tag": "esqueletos",
+        "source": "foto"
+      },
+      {
+        "tag": "yoga",
+        "source": "nombre"
+      },
+      {
+        "tag": "meditación",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-diseno-de-otomi",
+    "name": "Playera Blanca para Mujer de Diseno de Otomi",
+    "category": "Raíces y símbolos",
+    "tags": [
+      "otomí",
+      "flores",
+      "simetría"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Diseno de Otomi",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-diseno-de-otomi/playera-blanca-para-mujer-de-diseno-de-otomi-05.webp",
+      "contactSheet": "sheet-08.jpg",
+      "observation": "Motivo floral multicolor simétrico."
+    },
+    "tagEvidence": [
+      {
+        "tag": "otomí",
+        "source": "nombre"
+      },
+      {
+        "tag": "flores",
+        "source": "foto"
+      },
+      {
+        "tag": "simetría",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-cannabis-retro",
+    "name": "Playera Blanca para Mujer de Cannabis Retro",
+    "category": "Naturaleza y hongos",
+    "tags": [
+      "cannabis",
+      "retro",
+      "geometría"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Cannabis Retro",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-cannabis-retro/playera-blanca-para-mujer-de-cannabis-retro-05.webp",
+      "contactSheet": "sheet-08.jpg",
+      "observation": "Hoja de cannabis sobre bloques de color tenue."
+    },
+    "tagEvidence": [
+      {
+        "tag": "cannabis",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "retro",
+        "source": "nombre"
+      },
+      {
+        "tag": "geometría",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-craneo-con-rosas",
+    "name": "Playera Blanca para Mujer de Craneo con Rosas",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "rosas",
+      "dibujo lineal"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Craneo con Rosas",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-craneo-con-rosas/playera-blanca-para-mujer-de-craneo-con-rosas-05.webp",
+      "contactSheet": "sheet-08.jpg",
+      "observation": "Cráneo delineado con rosas sobre la frente."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "foto"
+      },
+      {
+        "tag": "rosas",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "dibujo lineal",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-chica-con-caballo",
+    "name": "Playera Blanca para Mujer de Chica con Caballo",
+    "category": "Animales",
+    "tags": [
+      "caballos",
+      "retrato",
+      "perfil"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Chica con Caballo",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-chica-con-caballo/playera-blanca-para-mujer-de-chica-con-caballo-05.webp",
+      "contactSheet": "sheet-08.jpg",
+      "observation": "Cabeza de caballo junto a una figura humana."
+    },
+    "tagEvidence": [
+      {
+        "tag": "caballos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "retrato",
+        "source": "foto"
+      },
+      {
+        "tag": "perfil",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-diseno-otomi-rosa",
+    "name": "Playera Blanca para Mujer de Diseno Otomi Rosa",
+    "category": "Raíces y símbolos",
+    "tags": [
+      "otomí",
+      "flores",
+      "rosa"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Diseno Otomi Rosa",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-diseno-otomi-rosa/playera-blanca-para-mujer-de-diseno-otomi-rosa-05.webp",
+      "contactSheet": "sheet-08.jpg",
+      "observation": "Motivos florales simétricos en rosa y verde."
+    },
+    "tagEvidence": [
+      {
+        "tag": "otomí",
+        "source": "nombre"
+      },
+      {
+        "tag": "flores",
+        "source": "foto"
+      },
+      {
+        "tag": "rosa",
+        "source": "nombre y foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-llegada-de-alien",
+    "name": "Playera Blanca para Mujer de Llegada de Alien",
+    "category": "Aliens y espacio",
+    "tags": [
+      "aliens",
+      "platillo volador",
+      "abducción"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Llegada de Alien",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-llegada-de-alien/playera-blanca-para-mujer-de-llegada-de-alien-05.webp",
+      "contactSheet": "sheet-08.jpg",
+      "observation": "Platillo volador con haz de luz turquesa."
+    },
+    "tagEvidence": [
+      {
+        "tag": "aliens",
+        "source": "nombre"
+      },
+      {
+        "tag": "platillo volador",
+        "source": "foto"
+      },
+      {
+        "tag": "abducción",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-gracias-universo",
+    "name": "Playera Blanca para Mujer de Gracias Universo",
+    "category": "Aliens y espacio",
+    "tags": [
+      "universo",
+      "planetas",
+      "tipografía"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Gracias Universo",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-gracias-universo/playera-blanca-para-mujer-de-gracias-universo-05.webp",
+      "contactSheet": "sheet-08.jpg",
+      "observation": "Planetas dentro de círculo oscuro con texto."
+    },
+    "tagEvidence": [
+      {
+        "tag": "universo",
+        "source": "nombre"
+      },
+      {
+        "tag": "planetas",
+        "source": "foto"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-mano-de-fatima-con-elefante",
+    "name": "Playera Blanca para Mujer de Mano de Fatima con Elefante",
+    "category": "Raíces y símbolos",
+    "tags": [
+      "mano de Fátima",
+      "elefantes",
+      "ornamental"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Mano de Fatima con Elefante",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-mano-de-fatima-con-elefante/playera-blanca-para-mujer-de-mano-de-fatima-con-elefante-05.webp",
+      "contactSheet": "sheet-08.jpg",
+      "observation": "Silueta de mano decorada con rostro de elefante."
+    },
+    "tagEvidence": [
+      {
+        "tag": "mano de Fátima",
+        "source": "nombre"
+      },
+      {
+        "tag": "elefantes",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "ornamental",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-guerrero-jaguar-azteca",
+    "name": "Playera Blanca para Mujer de Guerrero Jaguar Azteca",
+    "category": "Raíces y símbolos",
+    "tags": [
+      "jaguar",
+      "azteca",
+      "guerrero"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Guerrero Jaguar Azteca",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-guerrero-jaguar-azteca/playera-blanca-para-mujer-de-guerrero-jaguar-azteca-05.webp",
+      "contactSheet": "sheet-08.jpg",
+      "observation": "Cabeza de jaguar con tocado ornamental."
+    },
+    "tagEvidence": [
+      {
+        "tag": "jaguar",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "azteca",
+        "source": "nombre"
+      },
+      {
+        "tag": "guerrero",
+        "source": "nombre"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-lobo-azul-huichol",
+    "name": "Playera Blanca para Mujer de Lobo Azul Huichol",
+    "category": "Raíces y símbolos",
+    "tags": [
+      "lobos",
+      "huichol",
+      "azul"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Lobo Azul Huichol",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-lobo-azul-huichol/playera-blanca-para-mujer-de-lobo-azul-huichol-05.webp",
+      "contactSheet": "sheet-08.jpg",
+      "observation": "Cabeza de lobo con patrones azules."
+    },
+    "tagEvidence": [
+      {
+        "tag": "lobos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "huichol",
+        "source": "nombre"
+      },
+      {
+        "tag": "azul",
+        "source": "nombre y foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-flores-de-otomi",
+    "name": "Playera Blanca para Mujer de Flores de Otomi",
+    "category": "Raíces y símbolos",
+    "tags": [
+      "otomí",
+      "flores",
+      "multicolor"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Flores de Otomi",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-flores-de-otomi/playera-blanca-para-mujer-de-flores-de-otomi-05.webp",
+      "contactSheet": "sheet-08.jpg",
+      "observation": "Composición floral multicolor simétrica."
+    },
+    "tagEvidence": [
+      {
+        "tag": "otomí",
+        "source": "nombre"
+      },
+      {
+        "tag": "flores",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "multicolor",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-otomi-con-flores",
+    "name": "Playera Blanca para Mujer de Otomi con Flores",
+    "category": "Raíces y símbolos",
+    "tags": [
+      "otomí",
+      "flores",
+      "ramas"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Otomi con Flores",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-otomi-con-flores/playera-blanca-para-mujer-de-otomi-con-flores-05.webp",
+      "contactSheet": "sheet-08.jpg",
+      "observation": "Ramas y flores multicolor en composición simétrica."
+    },
+    "tagEvidence": [
+      {
+        "tag": "otomí",
+        "source": "nombre"
+      },
+      {
+        "tag": "flores",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "ramas",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-otomi",
+    "name": "Playera Blanca para Mujer de Otomi",
+    "category": "Raíces y símbolos",
+    "tags": [
+      "otomí",
+      "flores",
+      "simetría"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Otomi",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-otomi/playera-blanca-para-mujer-de-otomi-05.webp",
+      "contactSheet": "sheet-08.jpg",
+      "observation": "Flores y formas vegetales de colores."
+    },
+    "tagEvidence": [
+      {
+        "tag": "otomí",
+        "source": "nombre"
+      },
+      {
+        "tag": "flores",
+        "source": "foto"
+      },
+      {
+        "tag": "simetría",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-escultura-de-se-diferente-bebe",
+    "name": "Playera Blanca para Mujer de Escultura de Se diferente Bebe",
+    "category": "Arte y frases",
+    "tags": [
+      "esculturas",
+      "tipografía",
+      "rayas"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Escultura de Se diferente Bebe",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-escultura-de-se-diferente-bebe/playera-blanca-para-mujer-de-escultura-de-se-diferente-bebe-05.webp",
+      "contactSheet": "sheet-08.jpg",
+      "observation": "Cuatro bustos de colores sobre rayas y BE DIFFERENT BABE."
+    },
+    "tagEvidence": [
+      {
+        "tag": "esculturas",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      },
+      {
+        "tag": "rayas",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-no-mas-arte-aburrido",
+    "name": "Playera Blanca para Mujer de No Mas Arte Aburrido",
+    "category": "Arte y frases",
+    "tags": [
+      "esculturas",
+      "tipografía",
+      "multicolor"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de No Mas Arte Aburrido",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-no-mas-arte-aburrido/playera-blanca-para-mujer-de-no-mas-arte-aburrido-05.webp",
+      "contactSheet": "sheet-08.jpg",
+      "observation": "Bustos de colores y texto NO MORE BORING ART."
+    },
+    "tagEvidence": [
+      {
+        "tag": "esculturas",
+        "source": "foto"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      },
+      {
+        "tag": "multicolor",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-nasa-multicolor",
+    "name": "Playera Blanca para Mujer de Nasa Multicolor",
+    "category": "Aliens y espacio",
+    "tags": [
+      "NASA",
+      "tipografía",
+      "multicolor"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Nasa Multicolor",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-nasa-multicolor/playera-blanca-para-mujer-de-nasa-multicolor-05.webp",
+      "contactSheet": "sheet-08.jpg",
+      "observation": "NASA repetido verticalmente en distintos colores."
+    },
+    "tagEvidence": [
+      {
+        "tag": "NASA",
+        "source": "nombre"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      },
+      {
+        "tag": "multicolor",
+        "source": "nombre y foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-necesitas-cafe",
+    "name": "Playera Blanca para Mujer de Necesitas Cafe",
+    "category": "Arte y frases",
+    "tags": [
+      "café",
+      "frases",
+      "tipografía"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Necesitas Cafe",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-necesitas-cafe/playera-blanca-para-mujer-de-necesitas-cafe-05.webp",
+      "contactSheet": "sheet-08.jpg",
+      "observation": "Texto ALL YOU NEED IS COFFEE en negro."
+    },
+    "tagEvidence": [
+      {
+        "tag": "café",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "frases",
+        "source": "foto"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-leon-colorido",
+    "name": "Playera Blanca para Mujer de Leon Colorido",
+    "category": "Animales",
+    "tags": [
+      "leones",
+      "multicolor",
+      "geometría"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Leon Colorido",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-leon-colorido/playera-blanca-para-mujer-de-leon-colorido-05.webp",
+      "contactSheet": "sheet-08.jpg",
+      "observation": "Cabeza de león con líneas de colores."
+    },
+    "tagEvidence": [
+      {
+        "tag": "leones",
+        "source": "foto"
+      },
+      {
+        "tag": "multicolor",
+        "source": "foto"
+      },
+      {
+        "tag": "geometría",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-otomi-con-paloma",
+    "name": "Playera Blanca para Mujer de Otomi con Paloma",
+    "category": "Raíces y símbolos",
+    "tags": [
+      "otomí",
+      "palomas",
+      "flores"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Otomi con Paloma",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-otomi-con-paloma/playera-blanca-para-mujer-de-otomi-con-paloma-05.webp",
+      "contactSheet": "sheet-08.jpg",
+      "observation": "Aves y flores multicolor en patrón simétrico."
+    },
+    "tagEvidence": [
+      {
+        "tag": "otomí",
+        "source": "nombre"
+      },
+      {
+        "tag": "palomas",
+        "source": "nombre"
+      },
+      {
+        "tag": "flores",
+        "source": "foto"
+      }
+    ],
+    "confidence": "media",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-saludos-humanos",
+    "name": "Playera Blanca para Mujer de Saludos Humanos",
+    "category": "Aliens y espacio",
+    "tags": [
+      "aliens",
+      "gafas",
+      "magenta"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Saludos Humanos",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-saludos-humanos/playera-blanca-para-mujer-de-saludos-humanos-05.webp",
+      "contactSheet": "sheet-09.jpg",
+      "observation": "Cabeza de alien magenta con gafas y banda de texto."
+    },
+    "tagEvidence": [
+      {
+        "tag": "aliens",
+        "source": "foto"
+      },
+      {
+        "tag": "gafas",
+        "source": "foto"
+      },
+      {
+        "tag": "magenta",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-peligro-en-tu-taza",
+    "name": "Playera Blanca para Mujer de Peligro en tu Taza",
+    "category": "Arte y frases",
+    "tags": [
+      "café",
+      "calaveras",
+      "humor"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Peligro en tu Taza",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-peligro-en-tu-taza/playera-blanca-para-mujer-de-peligro-en-tu-taza-05.webp",
+      "contactSheet": "sheet-09.jpg",
+      "observation": "Taza verde rodeada de pequeñas calaveras."
+    },
+    "tagEvidence": [
+      {
+        "tag": "café",
+        "source": "foto"
+      },
+      {
+        "tag": "calaveras",
+        "source": "foto"
+      },
+      {
+        "tag": "humor",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-woman-africana",
+    "name": "Playera Blanca para Mujer de Woman Africana",
+    "category": "Arte y frases",
+    "tags": [
+      "retrato",
+      "turbante",
+      "perfil"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Woman Africana",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-woman-africana/playera-blanca-para-mujer-de-woman-africana-05.webp",
+      "contactSheet": "sheet-09.jpg",
+      "observation": "Retrato de perfil con turbante multicolor."
+    },
+    "tagEvidence": [
+      {
+        "tag": "retrato",
+        "source": "foto"
+      },
+      {
+        "tag": "turbante",
+        "source": "foto"
+      },
+      {
+        "tag": "perfil",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-revolucion-bitcoin",
+    "name": "Playera Blanca Revolucion Bitcoin",
+    "category": "Bitcoin",
+    "tags": [
+      "bitcoin",
+      "puño",
+      "tipografía"
+    ],
+    "evidence": {
+      "name": "Playera Blanca Revolucion Bitcoin",
+      "photo": "/catalogo/playera-blanca-revolucion-bitcoin/playera-blanca-revolucion-bitcoin-05.webp",
+      "contactSheet": "sheet-09.jpg",
+      "observation": "Puño naranja con símbolo de Bitcoin."
+    },
+    "tagEvidence": [
+      {
+        "tag": "bitcoin",
+        "source": "nombre"
+      },
+      {
+        "tag": "puño",
+        "source": "foto"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-skate",
+    "name": "Playera Blanca para Mujer de Skate",
+    "category": "Deportes",
+    "tags": [
+      "skate",
+      "tablas",
+      "retro"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Skate",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-skate/playera-blanca-para-mujer-de-skate-05.webp",
+      "contactSheet": "sheet-09.jpg",
+      "observation": "Tabla vertical y figuras de skate ante círculo rosado."
+    },
+    "tagEvidence": [
+      {
+        "tag": "skate",
+        "source": "nombre"
+      },
+      {
+        "tag": "tablas",
+        "source": "foto"
+      },
+      {
+        "tag": "retro",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-truco-de-caballos",
+    "name": "Playera Blanca para Mujer de Truco de Caballos",
+    "category": "Animales",
+    "tags": [
+      "caballos",
+      "fantasía",
+      "dibujo lineal"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Truco de Caballos",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-truco-de-caballos/playera-blanca-para-mujer-de-truco-de-caballos-05.webp",
+      "contactSheet": "sheet-09.jpg",
+      "observation": "Composición de caballos superpuestos en tonos sepia."
+    },
+    "tagEvidence": [
+      {
+        "tag": "caballos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "fantasía",
+        "source": "foto"
+      },
+      {
+        "tag": "dibujo lineal",
+        "source": "foto"
+      }
+    ],
+    "confidence": "media",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-soy-una-chica-cosmica",
+    "name": "Playera Blanca para Mujer de Soy una Chica Cosmica",
+    "category": "Aliens y espacio",
+    "tags": [
+      "espacio",
+      "planetas",
+      "tipografía"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Soy una Chica Cosmica",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-soy-una-chica-cosmica/playera-blanca-para-mujer-de-soy-una-chica-cosmica-05.webp",
+      "contactSheet": "sheet-09.jpg",
+      "observation": "Gráfica espacial con planetas y letras sobre fondo negro."
+    },
+    "tagEvidence": [
+      {
+        "tag": "espacio",
+        "source": "foto"
+      },
+      {
+        "tag": "planetas",
+        "source": "foto"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-sigue-sonando",
+    "name": "Playera Blanca para Mujer de Sigue Sonando",
+    "category": "Arte y frases",
+    "tags": [
+      "atrapasueños",
+      "plumas",
+      "frases"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Sigue Sonando",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-sigue-sonando/playera-blanca-para-mujer-de-sigue-sonando-05.webp",
+      "contactSheet": "sheet-09.jpg",
+      "observation": "Atrapasueños con plumas y texto KEEP ON DREAMING."
+    },
+    "tagEvidence": [
+      {
+        "tag": "atrapasueños",
+        "source": "foto"
+      },
+      {
+        "tag": "plumas",
+        "source": "foto"
+      },
+      {
+        "tag": "frases",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-se-diferente-bebe",
+    "name": "Playera Blanca para Mujer de Se diferente Bebe",
+    "category": "Arte y frases",
+    "tags": [
+      "esculturas",
+      "tipografía",
+      "rayas"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Se diferente Bebe",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-se-diferente-bebe/playera-blanca-para-mujer-de-se-diferente-bebe-05.webp",
+      "contactSheet": "sheet-09.jpg",
+      "observation": "Bustos de colores sobre rayas y BE DIFFERENT BABE."
+    },
+    "tagEvidence": [
+      {
+        "tag": "esculturas",
+        "source": "foto"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      },
+      {
+        "tag": "rayas",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-tatuaje-colorido",
+    "name": "Playera Blanca para Mujer Tatuaje Colorido",
+    "category": "Arte y frases",
+    "tags": [
+      "tatuaje",
+      "corazones",
+      "flores",
+      "multicolor"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer Tatuaje Colorido",
+      "photo": "/catalogo/playera-blanca-para-mujer-tatuaje-colorido/playera-blanca-para-mujer-tatuaje-colorido-05.webp",
+      "contactSheet": "sheet-09.jpg",
+      "observation": "Composición de motivos de tatuaje con corazón, flor y rayos."
+    },
+    "tagEvidence": [
+      {
+        "tag": "tatuaje",
+        "source": "nombre"
+      },
+      {
+        "tag": "corazones",
+        "source": "foto"
+      },
+      {
+        "tag": "flores",
+        "source": "foto"
+      },
+      {
+        "tag": "multicolor",
+        "source": "foto"
+      }
+    ],
+    "confidence": "media",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-tres-calaveras",
+    "name": "Playera Blanca tres Calaveras",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "composición múltiple",
+      "sepia"
+    ],
+    "evidence": {
+      "name": "Playera Blanca tres Calaveras",
+      "photo": "/catalogo/playera-blanca-tres-calaveras/playera-blanca-tres-calaveras-05.webp",
+      "contactSheet": "sheet-09.jpg",
+      "observation": "Tres cráneos superpuestos en tonos sepia."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "composición múltiple",
+        "source": "foto"
+      },
+      {
+        "tag": "sepia",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-hombre-blanca-calavera-cool",
+    "name": "Playera Hombre Blanca Calavera Cool",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "círculos",
+      "rojo"
+    ],
+    "evidence": {
+      "name": "Playera Hombre Blanca Calavera Cool",
+      "photo": "/catalogo/playera-hombre-blanca-calavera-cool/playera-hombre-blanca-calavera-cool-05.webp",
+      "contactSheet": "sheet-09.jpg",
+      "observation": "Cráneo beige dentro de marco circular rojo."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "círculos",
+        "source": "foto"
+      },
+      {
+        "tag": "rojo",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-hombre-blanca-calavera-punk",
+    "name": "Playera Hombre Blanca Calavera Punk",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "punk",
+      "magenta"
+    ],
+    "evidence": {
+      "name": "Playera Hombre Blanca Calavera Punk",
+      "photo": "/catalogo/playera-hombre-blanca-calavera-punk/playera-hombre-blanca-calavera-punk-05.webp",
+      "contactSheet": "sheet-09.jpg",
+      "observation": "Cráneo con cresta sobre trazos magenta."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "punk",
+        "source": "nombre"
+      },
+      {
+        "tag": "magenta",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "blanca-calavera-remolinos",
+    "name": "Blanca Calavera Remolinos",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "remolinos",
+      "ornamental"
+    ],
+    "evidence": {
+      "name": "Blanca Calavera Remolinos",
+      "photo": "/catalogo/blanca-calavera-remolinos/blanca-calavera-remolinos-05.webp",
+      "contactSheet": "sheet-09.jpg",
+      "observation": "Cráneo formado por trazos y adornos negros."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "remolinos",
+        "source": "nombre"
+      },
+      {
+        "tag": "ornamental",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-calavera",
+    "name": "Playera Blanca Calavera",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "flores",
+      "amarillo"
+    ],
+    "evidence": {
+      "name": "Playera Blanca Calavera",
+      "photo": "/catalogo/playera-blanca-calavera/playera-blanca-calavera-04.webp",
+      "contactSheet": "sheet-09.jpg",
+      "observation": "Cráneo amarillo rodeado de formas florales y hojas."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "flores",
+        "source": "foto"
+      },
+      {
+        "tag": "amarillo",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-bosque-calavera",
+    "name": "Playera Blanca Bosque Calavera",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "bosque",
+      "turquesa"
+    ],
+    "evidence": {
+      "name": "Playera Blanca Bosque Calavera",
+      "photo": "/catalogo/playera-blanca-bosque-calavera/playera-blanca-bosque-calavera-05.webp",
+      "contactSheet": "sheet-09.jpg",
+      "observation": "Cráneo turquesa con árboles en la parte superior."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "bosque",
+        "source": "nombre"
+      },
+      {
+        "tag": "turquesa",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-calavera-luna",
+    "name": "Playera Blanca Calavera Luna",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "Luna",
+      "oscuro"
+    ],
+    "evidence": {
+      "name": "Playera Blanca Calavera Luna",
+      "photo": "/catalogo/playera-blanca-calavera-luna/playera-blanca-calavera-luna-05.webp",
+      "contactSheet": "sheet-09.jpg",
+      "observation": "Cráneo y paisaje oscuro en composición circular."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "Luna",
+        "source": "nombre"
+      },
+      {
+        "tag": "oscuro",
+        "source": "foto"
+      }
+    ],
+    "confidence": "media",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-calavera-dj",
+    "name": "Playera Blanca Calavera Dj",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "DJ",
+      "audífonos"
+    ],
+    "evidence": {
+      "name": "Playera Blanca Calavera Dj",
+      "photo": "/catalogo/playera-blanca-calavera-dj/playera-blanca-calavera-dj-05.webp",
+      "contactSheet": "sheet-09.jpg",
+      "observation": "Cráneo turquesa con audífonos."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "DJ",
+        "source": "nombre"
+      },
+      {
+        "tag": "audífonos",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-chica-sexy-de-navidad-para-hombre",
+    "name": "Playera Blanca de Chica Sexy de Navidad para Hombre",
+    "category": "Navidad y fiestas",
+    "tags": [
+      "gorro navideño",
+      "rojo",
+      "ilustración de personaje"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Chica Sexy de Navidad para Hombre",
+      "photo": "/catalogo/playera-blanca-de-chica-sexy-de-navidad-para-hombre/playera-blanca-de-chica-sexy-de-navidad-para-hombre-05.webp",
+      "contactSheet": "sheet-09.jpg",
+      "observation": "Personaje con vestido rojo y gorro navideño."
+    },
+    "tagEvidence": [
+      {
+        "tag": "gorro navideño",
+        "source": "foto"
+      },
+      {
+        "tag": "rojo",
+        "source": "foto"
+      },
+      {
+        "tag": "ilustración de personaje",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-de-mujer-alien",
+    "name": "Playera Blanca de Mujer Alien",
+    "category": "Aliens y espacio",
+    "tags": [
+      "aliens",
+      "planetas",
+      "morado"
+    ],
+    "evidence": {
+      "name": "Playera Blanca de Mujer Alien",
+      "photo": "/catalogo/playera-blanca-de-mujer-alien/playera-blanca-de-mujer-alien-04.webp",
+      "contactSheet": "sheet-09.jpg",
+      "observation": "Rostro alienígena verde sobre círculo espacial morado."
+    },
+    "tagEvidence": [
+      {
+        "tag": "aliens",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "planetas",
+        "source": "foto"
+      },
+      {
+        "tag": "morado",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-alien-psychedelic",
+    "name": "Playera Blanca para Hombre de Alien Psychedelic",
+    "category": "Aliens y espacio",
+    "tags": [
+      "aliens",
+      "hongos",
+      "psicodelia",
+      "carita sonriente"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Alien Psychedelic",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-alien-psychedelic/playera-blanca-para-hombre-de-alien-psychedelic-05.webp",
+      "contactSheet": "sheet-10.jpg",
+      "observation": "Alien con hongos y carita amarilla sonriente."
+    },
+    "tagEvidence": [
+      {
+        "tag": "aliens",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "hongos",
+        "source": "foto"
+      },
+      {
+        "tag": "psicodelia",
+        "source": "foto"
+      },
+      {
+        "tag": "carita sonriente",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-bitcoin-de-oro",
+    "name": "Playera Blanca para Hombre de Bitcoin de Oro",
+    "category": "Bitcoin",
+    "tags": [
+      "bitcoin",
+      "moneda",
+      "dorado"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Bitcoin de Oro",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-bitcoin-de-oro/playera-blanca-para-hombre-de-bitcoin-de-oro-04.webp",
+      "contactSheet": "sheet-10.jpg",
+      "observation": "Moneda dorada con símbolo Bitcoin."
+    },
+    "tagEvidence": [
+      {
+        "tag": "bitcoin",
+        "source": "nombre"
+      },
+      {
+        "tag": "moneda",
+        "source": "foto"
+      },
+      {
+        "tag": "dorado",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-astronauta-dj",
+    "name": "Playera Blanca para Hombre de Astronauta DJ",
+    "category": "Música",
+    "tags": [
+      "astronautas",
+      "DJ",
+      "tornamesas"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Astronauta DJ",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-astronauta-dj/playera-blanca-para-hombre-de-astronauta-dj-04.webp",
+      "contactSheet": "sheet-10.jpg",
+      "observation": "Astronauta frente a tornamesas."
+    },
+    "tagEvidence": [
+      {
+        "tag": "astronautas",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "DJ",
+        "source": "nombre"
+      },
+      {
+        "tag": "tornamesas",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-calavera-con-hongos-alucinante",
+    "name": "Playera Blanca para Hombre de Calavera con Hongos Alucinante",
+    "category": "Calaveras",
+    "tags": [
+      "calaveras",
+      "hongos",
+      "morado"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Calavera con Hongos Alucinante",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-calavera-con-hongos-alucinante/playera-blanca-para-hombre-de-calavera-con-hongos-alucinante-05.webp",
+      "contactSheet": "sheet-10.jpg",
+      "observation": "Cráneo violeta con hongos a su alrededor."
+    },
+    "tagEvidence": [
+      {
+        "tag": "calaveras",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "hongos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "morado",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-che-fc",
+    "name": "Playera Blanca para Hombre de CHE FC",
+    "category": "Arte y frases",
+    "tags": [
+      "CHE FC",
+      "retrato",
+      "tipografía"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de CHE FC",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-che-fc/playera-blanca-para-hombre-de-che-fc-05.webp",
+      "contactSheet": "sheet-10.jpg",
+      "observation": "Retrato con boina y letras CHE FC sobre rojo; sin atribuir licencia ni club deportivo."
+    },
+    "tagEvidence": [
+      {
+        "tag": "CHE FC",
+        "source": "nombre"
+      },
+      {
+        "tag": "retrato",
+        "source": "foto"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      }
+    ],
+    "confidence": "media",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-chica-dark",
+    "name": "Playera Blanca para Hombre de Chica Dark",
+    "category": "Arte y frases",
+    "tags": [
+      "dark",
+      "fantasía",
+      "pentagrama"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Chica Dark",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-chica-dark/playera-blanca-para-hombre-de-chica-dark-05.webp",
+      "contactSheet": "sheet-10.jpg",
+      "observation": "Personaje con cuernos y vestido rojo ante estrella de cinco puntas."
+    },
+    "tagEvidence": [
+      {
+        "tag": "dark",
+        "source": "nombre"
+      },
+      {
+        "tag": "fantasía",
+        "source": "foto"
+      },
+      {
+        "tag": "pentagrama",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-cubo-en-el-espacio",
+    "name": "Playera Blanca para Hombre de Cubo en el Espacio",
+    "category": "Aliens y espacio",
+    "tags": [
+      "cubos",
+      "geometría",
+      "planetas"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Cubo en el Espacio",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-cubo-en-el-espacio/playera-blanca-para-hombre-de-cubo-en-el-espacio-05.webp",
+      "contactSheet": "sheet-10.jpg",
+      "observation": "Cubo violeta en escena espacial con esferas."
+    },
+    "tagEvidence": [
+      {
+        "tag": "cubos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "geometría",
+        "source": "foto"
+      },
+      {
+        "tag": "planetas",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-gatos-psicodelicos",
+    "name": "Playera Blanca para Hombre de Gatos Psicodelicos",
+    "category": "Animales",
+    "tags": [
+      "gatos",
+      "psicodelia",
+      "multicolor"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Gatos Psicodelicos",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-gatos-psicodelicos/playera-blanca-para-hombre-de-gatos-psicodelicos-05.webp",
+      "contactSheet": "sheet-10.jpg",
+      "observation": "Rostros felinos en composición multicolor simétrica."
+    },
+    "tagEvidence": [
+      {
+        "tag": "gatos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "psicodelia",
+        "source": "foto"
+      },
+      {
+        "tag": "multicolor",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-no-bpm-limit",
+    "name": "Playera Blanca para Hombre de NO BPM LIMIT",
+    "category": "Música",
+    "tags": [
+      "BPM",
+      "tipografía",
+      "letras negras"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de NO BPM LIMIT",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-no-bpm-limit/playera-blanca-para-hombre-de-no-bpm-limit-04.webp",
+      "contactSheet": "sheet-10.jpg",
+      "observation": "Texto NO BPM LIMIT en tres líneas negras."
+    },
+    "tagEvidence": [
+      {
+        "tag": "BPM",
+        "source": "nombre"
+      },
+      {
+        "tag": "tipografía",
+        "source": "foto"
+      },
+      {
+        "tag": "letras negras",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-parkour",
+    "name": "Playera Blanca para Hombre de Parkour",
+    "category": "Deportes",
+    "tags": [
+      "parkour",
+      "siluetas",
+      "salto"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Parkour",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-parkour/playera-blanca-para-hombre-de-parkour-05.webp",
+      "contactSheet": "sheet-10.jpg",
+      "observation": "Silueta invertida en salto sobre letras PARKOUR."
+    },
+    "tagEvidence": [
+      {
+        "tag": "parkour",
+        "source": "nombre"
+      },
+      {
+        "tag": "siluetas",
+        "source": "foto"
+      },
+      {
+        "tag": "salto",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-de-skate-urbano",
+    "name": "Playera Blanca para Hombre de Skate Urbano",
+    "category": "Deportes",
+    "tags": [
+      "skate",
+      "tablas",
+      "salto"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre de Skate Urbano",
+      "photo": "/catalogo/playera-blanca-para-hombre-de-skate-urbano/playera-blanca-para-hombre-de-skate-urbano-04.webp",
+      "contactSheet": "sheet-10.jpg",
+      "observation": "Figura saltando sobre tabla de skate."
+    },
+    "tagEvidence": [
+      {
+        "tag": "skate",
+        "source": "nombre"
+      },
+      {
+        "tag": "tablas",
+        "source": "foto"
+      },
+      {
+        "tag": "salto",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-hombre-diamantes-en-el-cielo",
+    "name": "Playera Blanca para Hombre Diamantes en el Cielo",
+    "category": "Arte y frases",
+    "tags": [
+      "ojos",
+      "flores",
+      "psicodelia"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Hombre Diamantes en el Cielo",
+      "photo": "/catalogo/playera-blanca-para-hombre-diamantes-en-el-cielo/playera-blanca-para-hombre-diamantes-en-el-cielo-05.webp",
+      "contactSheet": "sheet-10.jpg",
+      "observation": "Ojo gigante con flores y formas ondulantes; no se infiere joyería del nombre."
+    },
+    "tagEvidence": [
+      {
+        "tag": "ojos",
+        "source": "foto"
+      },
+      {
+        "tag": "flores",
+        "source": "foto"
+      },
+      {
+        "tag": "psicodelia",
+        "source": "foto"
+      }
+    ],
+    "confidence": "media",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-alien-meditando",
+    "name": "Playera Blanca para Mujer de Alien Meditando",
+    "category": "Aliens y espacio",
+    "tags": [
+      "aliens",
+      "meditación",
+      "naranja"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Alien Meditando",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-alien-meditando/playera-blanca-para-mujer-de-alien-meditando-05.webp",
+      "contactSheet": "sheet-10.jpg",
+      "observation": "Figura alienígena naranja sentada sobre disco rojo."
+    },
+    "tagEvidence": [
+      {
+        "tag": "aliens",
+        "source": "nombre"
+      },
+      {
+        "tag": "meditación",
+        "source": "foto"
+      },
+      {
+        "tag": "naranja",
+        "source": "foto"
+      }
+    ],
+    "confidence": "media",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-leona-con-rosas",
+    "name": "Playera Blanca para Mujer de Leona con Rosas",
+    "category": "Animales",
+    "tags": [
+      "leona",
+      "rosas",
+      "dibujo lineal"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Leona con Rosas",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-leona-con-rosas/playera-blanca-para-mujer-de-leona-con-rosas-05.webp",
+      "contactSheet": "sheet-10.jpg",
+      "observation": "Cabeza de leona con corona de rosas."
+    },
+    "tagEvidence": [
+      {
+        "tag": "leona",
+        "source": "nombre"
+      },
+      {
+        "tag": "rosas",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "dibujo lineal",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-gato-con-aliens",
+    "name": "Playera Blanca para Mujer de Gato con Aliens",
+    "category": "Animales",
+    "tags": [
+      "gatos",
+      "ojos",
+      "aliens"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Gato con Aliens",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-gato-con-aliens/playera-blanca-para-mujer-de-gato-con-aliens-04.webp",
+      "contactSheet": "sheet-10.jpg",
+      "observation": "Gato naranja con múltiples ojos y figuras verdes."
+    },
+    "tagEvidence": [
+      {
+        "tag": "gatos",
+        "source": "nombre y foto"
+      },
+      {
+        "tag": "ojos",
+        "source": "foto"
+      },
+      {
+        "tag": "aliens",
+        "source": "nombre"
+      }
+    ],
+    "confidence": "media",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-para-mujer-de-solo-psycho",
+    "name": "Playera Blanca para Mujer de Solo Psycho",
+    "category": "Arte y frases",
+    "tags": [
+      "esculturas",
+      "gafas",
+      "psicodelia"
+    ],
+    "evidence": {
+      "name": "Playera Blanca para Mujer de Solo Psycho",
+      "photo": "/catalogo/playera-blanca-para-mujer-de-solo-psycho/playera-blanca-para-mujer-de-solo-psycho-04.webp",
+      "contactSheet": "sheet-10.jpg",
+      "observation": "Busto con gafas espirales amarillas y texto JUST PSYCHO."
+    },
+    "tagEvidence": [
+      {
+        "tag": "esculturas",
+        "source": "foto"
+      },
+      {
+        "tag": "gafas",
+        "source": "foto"
+      },
+      {
+        "tag": "psicodelia",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  },
+  {
+    "id": "playera-blanca-tocando",
+    "name": "Playera Blanca Tocando",
+    "category": "Música",
+    "tags": [
+      "batería",
+      "esqueletos",
+      "murciélagos"
+    ],
+    "evidence": {
+      "name": "Playera Blanca Tocando",
+      "photo": "/catalogo/playera-blanca-tocando/playera-blanca-tocando-04.webp",
+      "contactSheet": "sheet-10.jpg",
+      "observation": "Esqueleto tocando batería bajo murciélagos."
+    },
+    "tagEvidence": [
+      {
+        "tag": "batería",
+        "source": "foto"
+      },
+      {
+        "tag": "esqueletos",
+        "source": "foto"
+      },
+      {
+        "tag": "murciélagos",
+        "source": "foto"
+      }
+    ],
+    "confidence": "alta",
+    "reviewed": true
+  }
+]

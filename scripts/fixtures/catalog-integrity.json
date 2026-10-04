@@ -1,0 +1,24 @@
+{
+  "baselineCommit": "73007c652df87a180954681fb2a107de5929a9db",
+  "driveSha256": "0217f1b95a91996539a0795a9942db8883494982a26d3a25493152ea27a2a792",
+  "legacy": {
+    "id": "gato-cosmico",
+    "name": "Gato Cósmico",
+    "price": 199,
+    "compareAtPrice": 299,
+    "sizes": [
+      "CH",
+      "M",
+      "G",
+      "EG"
+    ],
+    "images": [
+      "/catalogo/gato-cosmico/01.webp",
+      "/catalogo/gato-cosmico/02.webp",
+      "/catalogo/gato-cosmico/03.webp",
+      "/catalogo/gato-cosmico/04.webp",
+      "/catalogo/gato-cosmico/05.webp"
+    ],
+    "cover": "/catalogo/gato-cosmico/05.webp"
+  }
+}
