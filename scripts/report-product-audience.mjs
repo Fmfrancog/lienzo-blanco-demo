@@ -1,0 +1,25 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import assert from 'node:assert/strict';
+import { matchesAudience } from '../src/lib/product-audience.ts';
+const out = process.env.EVIDENCE_DIR || '/opt/data/plur-audience';
+fs.mkdirSync(out, { recursive: true });
+const bytes = fs.readFileSync(new URL('../src/data/drive-products.json', import.meta.url));
+const fixture = JSON.parse(fs.readFileSync(new URL('./fixtures/catalog-integrity.json', import.meta.url)));
+const products = [fixture.legacy, ...JSON.parse(bytes)];
+const rows = products.map(p => {
+  const labels = ['Hombre', 'Mujer'].filter(a => matchesAudience(p.name, a));
+  assert(labels.length <= 1, `Ambiguous source: ${p.id}`);
+  return { id: p.id, name: p.name, audience: labels[0] || 'No especificado', evidence: labels[0] ? 'Palabra explícita en nombre original' : 'Nombre sin indicación', source: p.id === 'gato-cosmico' ? 'legacy' : 'drive-products.json' };
+});
+const counts = Object.fromEntries(['Hombre', 'Mujer', 'No especificado'].map(a => [a, rows.filter(r => r.audience === a).length]));
+const sha256 = crypto.createHash('sha256').update(bytes).digest('hex');
+assert.equal(sha256, fixture.driveSha256);
+assert.equal(rows.length, 197);
+assert.equal(new Set(rows.map(r => r.id)).size, 197);
+const report = { total: rows.length, counts, sha256, rule: 'Solo palabras hombre/mujer en nombre original; sin inferencia visual ni Unisex.', rows };
+fs.writeFileSync(`${out}/classification.json`, JSON.stringify(report, null, 2));
+const fields = ['id', 'name', 'audience', 'evidence', 'source'];
+const csv = value => `"${String(value).replaceAll('"', '""')}"`;
+fs.writeFileSync(`${out}/classification.csv`, [fields.join(','), ...rows.map(row => fields.map(f => csv(row[f])).join(','))].join('\n') + '\n');
+console.log(JSON.stringify({ total: rows.length, counts, sha256 }, null, 2));

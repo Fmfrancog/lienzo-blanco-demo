@@ -3,6 +3,7 @@
 import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import { getCoverImageIndex } from "@/lib/product-cover";
+import { audiences, matchesAudience, type Audience } from "@/lib/product-audience";
 import { ArrowDown, ArrowRight, Check, Menu, Minus, Plus, Search, ShoppingBag, User, X } from "lucide-react";
 import { formatPrice, Product, storeContent, type Collection } from "@/data/store-content";
 
@@ -78,6 +79,7 @@ export function ShirtStore() {
   const [query, setQuery] = useState("");
   const searchInput = useRef<HTMLInputElement>(null);
   const [collection, setCollection] = useState<Collection>("Todos");
+  const [audience, setAudience] = useState<Audience>("Todos");
   const [dialog, setDialog] = useState<DialogName>(null);
   const [selected, setSelected] = useState<Product>(storeContent.products[0]);
   const [size, setSize] = useState("M");
@@ -90,8 +92,8 @@ export function ShirtStore() {
   const filtered = useMemo(() => storeContent.products.filter((product) => {
     const matchesCollection = collection === "Todos" || product.collection === collection;
     const haystack = normalizeSearch(`${product.name} ${product.collection} ${product.description} ${product.story} ${product.tags.join(" ")}`);
-    return matchesCollection && haystack.includes(normalizeSearch(query));
-  }), [collection, query]);
+    return matchesCollection && matchesAudience(product.name, audience) && haystack.includes(normalizeSearch(query));
+  }), [collection, audience, query]);
   const cartCount = cart.reduce((sum, line) => sum + line.quantity, 0);
   const cartTotal = cart.reduce((sum, line) => sum + line.product.price * line.quantity, 0);
 
@@ -103,7 +105,8 @@ export function ShirtStore() {
   useEffect(() => { if (!toast) return; const timer = window.setTimeout(() => setToast(""), 2600); return () => window.clearTimeout(timer); }, [toast]);
 
   const openProduct = (product: Product) => { setSelected(product); setSize("M"); setQuantity(1); setDialog("product"); };
-  const clearSearch = () => { setQuery(""); setCollection("Todos"); searchInput.current?.focus({ preventScroll: true }); };
+  const resetCatalog = () => { setQuery(""); setCollection("Todos"); setAudience("Todos"); };
+  const clearSearch = () => { resetCatalog(); searchInput.current?.focus({ preventScroll: true }); };
   const submitSearch = (event: FormEvent) => {
     event.preventDefault();
     setMobileOpen(false);
@@ -147,7 +150,7 @@ export function ShirtStore() {
       </div>
       <div className="header-search shell">
         <form className="search" role="search" aria-label="Buscar en todo el catálogo" onSubmit={submitSearch}>
-          <input ref={searchInput} type="search" aria-label="Buscar diseños" aria-describedby="search-status" placeholder="Buscar productos" enterKeyHint="search" value={query} onChange={(e)=>{setQuery(e.target.value);setCollection("Todos");}}/>
+          <input ref={searchInput} type="search" aria-label="Buscar diseños" aria-describedby="search-status" placeholder="Buscar productos" enterKeyHint="search" value={query} onChange={(e)=>{setQuery(e.target.value);setCollection("Todos");setAudience("Todos");}}/>
           {query && <button type="button" className="search-clear" aria-label="Limpiar búsqueda" onClick={clearSearch}><X aria-hidden="true"/></button>}
           <button type="submit" className="search-submit" aria-label="Buscar productos"><Search aria-hidden="true"/><span>Buscar</span></button>
         </form>
@@ -166,9 +169,12 @@ export function ShirtStore() {
       <section id="colecciones" className="section shell"><header className="section-head"><div><span className="kicker">ENCUENTRA TU DISEÑO</span><h2>Colecciones</h2></div><p>Elige por dónde empezar. Cada diseño tiene su propia galería.</p></header><div className="collection-grid">{storeContent.collections.map((item)=><button data-action={`filter-collection-${item.number}`} className="collection-card" key={item.name} onClick={()=>{setQuery(""); setCollection(item.filter); scrollToId("catalogo");}}><span>{item.number}</span><div><h3>{item.name}</h3><p>{item.description}</p></div><ArrowRight/></button>)}</div></section>
 
       <section id="catalogo" className="section catalog shell"><header className="section-head"><div><span className="kicker">CATÁLOGO COMPLETO</span><h2>Encuentra el tuyo.</h2></div><p>{filtered.length} {filtered.length === 1 ? "diseño" : "diseños"} · precios MXN</p></header>
-        <p className="filter-help">Explora por tema · cantidades del catálogo completo</p>
+        <p className="filter-help" id="audience-help">Hombre y Mujer según el nombre original. Los {storeContent.products.filter((product) => !matchesAudience(product.name, "Hombre") && !matchesAudience(product.name, "Mujer")).length} diseños sin indicación están en Todos.</p>
+        <div className="audience-filters" role="group" aria-label="Filtrar por Hombre o Mujer" aria-describedby="audience-help">{audiences.map((item) => <button key={item} data-action={`audience-${item.toLowerCase()}`} aria-pressed={audience === item} onClick={() => { setQuery(""); setAudience(item); }}>{item}<span className="filter-count">{storeContent.products.filter((product) => matchesAudience(product.name, item)).length}</span></button>)}</div>
+        <p className="filter-help">Combina con un tema · cantidades del catálogo completo</p>
+        {(audience !== "Todos" || collection !== "Todos" || query) && <button className="reset-filters" onClick={resetCatalog}>Restablecer filtros</button>}
         <div className="filters" role="group" aria-label="Filtrar por categoría">{storeContent.categories.map((item)=><button data-action={`filter-${item.toLowerCase()}`} aria-pressed={collection===item} className={collection===item?"active":""} key={item} onClick={()=>{setQuery("");setCollection(item);}}>{item}<span className="filter-count">{item === "Todos" ? storeContent.products.length : storeContent.products.filter((product) => product.collection === item).length}</span></button>)}</div>
-        {filtered.length ? <div className="product-grid">{filtered.map((product)=><article className="product-card" data-testid="product-card" data-product-id={product.id} key={product.id}><button data-action={`open-product-art-${product.id}`} className="product-art-button" onClick={()=>openProduct(product)} aria-label={`Vista de camiseta ${product.name}`}><ProductArtwork product={product}/><span className="product-number">{String(storeContent.products.indexOf(product)+1).padStart(2,"0")}</span></button><div className="product-info"><div><span>{product.collection}</span><h3>{product.name}</h3></div><ProductPrice product={product} compact /></div><p>{product.description}</p><ProductTags product={product} compact/><button data-action={`open-product-${product.id}`} className="card-action" onClick={()=>openProduct(product)}>Ver diseño <ArrowRight/></button></article>)}</div> : <div className="empty-state"><h3>No encontramos esa gráfica.</h3><p>Prueba otra palabra o vuelve a ver todos los diseños.</p><button data-action="clear-search" className="button button--dark" onClick={()=>{setQuery("");setCollection("Todos");}}>Restablecer catálogo</button></div>}
+        {filtered.length ? <div className="product-grid">{filtered.map((product)=><article className="product-card" data-testid="product-card" data-product-id={product.id} key={product.id}><button data-action={`open-product-art-${product.id}`} className="product-art-button" onClick={()=>openProduct(product)} aria-label={`Vista de camiseta ${product.name}`}><ProductArtwork product={product}/><span className="product-number">{String(storeContent.products.indexOf(product)+1).padStart(2,"0")}</span></button><div className="product-info"><div><span>{product.collection}</span><h3>{product.name}</h3></div><ProductPrice product={product} compact /></div><p>{product.description}</p><ProductTags product={product} compact/><button data-action={`open-product-${product.id}`} className="card-action" onClick={()=>openProduct(product)}>Ver diseño <ArrowRight/></button></article>)}</div> : <div className="empty-state"><h3>No encontramos esa gráfica.</h3><p>Prueba otra palabra o vuelve a ver todos los diseños.</p><button data-action="clear-search" className="button button--dark" onClick={resetCatalog}>Restablecer catálogo</button></div>}
       </section>
 
       <section id="personaliza" className="custom-section"><div className="shell custom-grid"><div><span className="kicker">{storeContent.customizer.eyebrow}</span><h2>{storeContent.customizer.title}</h2><p>{storeContent.customizer.body}</p><button data-action="open-customizer" className="button button--light" onClick={()=>setDialog("custom")}>Abrir simulador <ArrowRight/></button></div><div className="custom-poster"><span>TU MENSAJE</span><strong>AQUÍ</strong><small>tinta coral / frente / 18 × 12 cm</small></div></div></section>

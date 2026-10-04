@@ -100,6 +100,10 @@ svg { display: block; }
 .collection-card svg { width: 22px; }
 .catalog { border-top: 1px solid var(--line); }
 .filter-help { margin: 0 0 14px; color: var(--muted); font-size: 13px; }
+.audience-filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+.audience-filters button { min-height: 44px; padding: 10px 18px; border: 1px solid var(--ink); border-radius: 6px; background: transparent; font-weight: 600; }
+.audience-filters button[aria-pressed="true"], .audience-filters button:hover { background: var(--ink); color: white; }
+.reset-filters { display: block; min-height: 44px; margin: 0 0 12px; padding: 8px 0; text-decoration: underline; background: transparent; border: 0; }
 .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 38px; }
 .filter-count { margin-left: 8px; font-size: 12px; font-variant-numeric: tabular-nums; opacity: .75; }
 .product-tags { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; padding: 0; margin: 0 0 16px; }
