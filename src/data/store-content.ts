@@ -1,5 +1,7 @@
 import driveCatalog from "./drive-products.json";
 import productTaxonomy from "./product-taxonomy.json";
+import productCopy from "./product-copy.json";
+const descriptionsById: Readonly<Record<string, string>> = productCopy;
 
 export const thematicCategories = ["Calaveras", "Navidad y fiestas", "Raíces y símbolos", "Aliens y espacio", "Arte y frases", "Animales", "Música", "Naturaleza y hongos", "Deportes", "Bitcoin"] as const;
 export type Collection = "Todos" | typeof thematicCategories[number];
@@ -52,7 +54,9 @@ export const storeContent = {
   ].map((product): Product => {
     const taxonomy = taxonomyById.get(product.id);
     if (!taxonomy) throw new Error(`Falta clasificación para ${product.id}`);
-    return { ...product, collection: taxonomy.category as Product["collection"], tags: taxonomy.tags };
+    const description = descriptionsById[product.id];
+    if (!description) throw new Error(`Falta descripción visual para ${product.id}`);
+    return { ...product, description, story: "", collection: taxonomy.category as Product["collection"], tags: taxonomy.tags };
   }),
   customizer: {
     eyebrow: "ESTUDIO ABIERTO",

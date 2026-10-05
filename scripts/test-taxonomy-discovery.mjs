@@ -6,6 +6,7 @@ const base = process.env.BASE_URL || 'http://127.0.0.1:3011';
 const out = process.env.EVIDENCE_DIR || '/opt/data/plur-taxonomy/local';
 fs.mkdirSync(out, { recursive: true });
 const rows = JSON.parse(fs.readFileSync(new URL('../src/data/product-taxonomy.json', import.meta.url)));
+const copy = JSON.parse(fs.readFileSync(new URL('../src/data/product-copy.json', import.meta.url)));
 const source = JSON.parse(fs.readFileSync(new URL('../src/data/drive-products.json', import.meta.url)));
 const { legacy } = JSON.parse(fs.readFileSync(new URL('./fixtures/catalog-integrity.json', import.meta.url)));
 const products = [legacy, ...source];
@@ -42,6 +43,7 @@ try {
   for (const [i, row] of rows.entries()) {
     const card = snapshot[i], product = products[i];
     assert.equal(card.name, product.name);
+    assert.equal(card.description, copy[row.id], `${row.id} exact card copy`);
     assert.equal(card.category, row.category);
     assert.deepEqual(card.tags, row.tags.slice(0, 2));
     assert.equal(card.cover, row.evidence.photo);
@@ -49,6 +51,8 @@ try {
     assert.equal(card.compare, `$${product.compareAtPrice}`);
     await page.locator(`[data-action="open-product-${row.id}"]`).click();
     const modal = page.getByRole('dialog');
+    assert.equal(await modal.locator('.detail-copy > p').textContent(), copy[row.id], `${row.id} exact modal copy`);
+    assert.equal(await modal.locator('blockquote').count(), 0, 'No empty or unsupported story');
     assert.deepEqual(await modal.locator('.product-tags li').allTextContents(), row.tags);
     assert.equal(await page.getByTestId('gallery-main-image').getAttribute('src'), row.evidence.photo);
     assert.equal(await page.getByTestId('gallery-thumbnail').count(), product.images.length);
@@ -57,14 +61,14 @@ try {
     await page.getByTestId('gallery-thumbnail').last().click();
     assert.equal(await page.getByTestId('gallery-main-image').getAttribute('src'), product.images.at(-1));
     await page.keyboard.press('Escape');
-    report.products.push({ id: row.id, category: row.category, cardTags: card.tags, modalTags: row.tags, cover: card.cover, price: product.price, gallery: product.images.length, status: 'pass' });
+    report.products.push({ id: row.id, category: row.category, cardTags: card.tags, modalTags: row.tags, cover: card.cover, price: product.price, gallery: product.images.length, description: copy[row.id], cardCopyExact: true, modalCopyExact: true, status: 'pass' });
   }
   fs.writeFileSync(`${out}/progress.json`, JSON.stringify(report, null, 2));
   const search = page.getByRole('searchbox', { name: 'Buscar diseños' });
   for (const tag of new Set(rows.flatMap(r => r.tags))) {
     const query = normalize(tag);
     await search.fill(query);
-    const expected = rows.filter((row, i) => normalize(`${row.name} ${row.category} ${snapshot[i].description} ${products[i].story || 'Un visitante felino cruza una órbita de color para observar el mundo desde otra frecuencia.'} ${row.tags.join(' ')}`).includes(query)).map(r => r.id);
+    const expected = rows.filter((row, i) => normalize(`${row.name} ${row.category} ${snapshot[i].description}  ${row.tags.join(' ')}`).includes(query)).map(r => r.id);
     assert.deepEqual(await ids(), expected, `search ${tag} must match complete searchable fields`);
     assert.equal(await search.evaluate(el => el === document.activeElement), true);
     report.tagsSearched.push({ tag, results: expected.length });
