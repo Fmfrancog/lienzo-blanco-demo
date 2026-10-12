@@ -1,0 +1,22 @@
+.info-site { background: var(--paper); color: var(--ink); min-height: 100vh; }
+.info-site a { color: inherit; }
+.info-header { max-width: 1180px; margin: auto; padding: 28px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px; border-bottom: 1px solid var(--line); }
+.info-header a { text-decoration: none; }
+.info-layout { max-width: 1180px; margin: auto; padding: 48px 24px 72px; display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 54px; }
+.info-nav { align-self: start; display: flex; flex-direction: column; gap: 6px; }
+.info-nav a { padding: 12px; border-radius: 4px; text-decoration: none; font-size: 14px; }
+.info-nav a[aria-current="page"] { background: var(--ink); color: white; }
+.info-nav a:hover { text-decoration: underline; }
+.info-article { min-width: 0; max-width: 760px; overflow-wrap: anywhere; }
+.info-article h1 { font-size: clamp(32px, 4vw, 52px); line-height: 1.12; margin: 10px 0 20px; letter-spacing: -.03em; }
+.info-intro { font-size: 20px; line-height: 1.6; padding-bottom: 28px; border-bottom: 1px solid var(--line); }
+.info-article section { margin-top: 32px; }
+.info-article h2 { font-size: 23px; line-height: 1.3; margin-bottom: 14px; }
+.info-article p { line-height: 1.8; margin-bottom: 16px; }
+.info-contact { margin-top: 44px; padding: 24px; background: #eeeae4; display: grid; gap: 12px; }
+.info-contact a { text-decoration: underline; }
+.info-contact small { line-height: 1.6; }
+.info-footer { padding: 32px 24px; text-align: center; }
+.info-footer a { display: inline-block; margin-top: 12px; text-decoration: underline; }
+.info-site a:focus-visible { outline: 3px solid #db674c; outline-offset: 4px; }
+@media(max-width: 720px) { .info-layout { grid-template-columns: minmax(0, 1fr); padding: 24px 20px 48px; gap: 30px; } .info-nav { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); } .info-nav .kicker { grid-column: 1 / -1; } .info-nav a { font-size: 13px; } .info-header { padding: 24px 20px; } .info-header > a:last-child { font-size: 13px; } }

@@ -68,13 +68,13 @@ export const storeContent = {
     eyebrow: "ACERCA DE PLUR",
     title: "El diseño es tuyo. La elección, también.",
     paragraphs: [
-      "PLUR reúne este catálogo de playeras para que explores sus gráficas, fotografías y tallas en un solo lugar.",
-      "Selecciona tus diseños y tallas. La bolsa indica si el pago está disponible y muestra el envío antes de continuar.",
+      "Somos una marca inspirada en el amor a la música psicodélica. Vemos la ropa como un lienzo para expresar libertad y revivir los momentos que nos mueven.",
+      "Nos apasiona el diseño y realizamos nuestras impresiones. Trabajamos por la comodidad, la calidad y la larga duración, con respeto por el medio ambiente como parte de nuestros valores.",
     ],
     facts: ["Catálogo fotográfico", "Tallas indicadas por producto", "Precios en pesos mexicanos"],
   },
   shipping: "Envío de $199 MXN para 1 o 2 playeras. Envío gratis a partir de 3 playeras. Entrega de 2 a 5 días hábiles a partir de tu compra.",
-  returns: "Las condiciones de devolución están por confirmar. No se generan guías ni reembolsos reales.",
+  returns: "Solicita devoluciones dentro de 15 días desde tu compra en atencion@plur.com.mx o WhatsApp 55 7461 5455. Consulta la Política de devoluciones para conocer condiciones, procedimiento y tus derechos.",
   faq: [
     { question: "¿Estas camisetas existen?", answer: "El catálogo contiene fotografías de los diseños proporcionados. Las categorías y etiquetas describen sus temas, no materiales, licencias ni existencias. La disponibilidad y las medidas deben confirmarse antes de comprar." },
     { question: "¿Puedo pagar?", answer: "Sí, de 1 a 5 playeras mediante Links de Mercado Pago. Descarga el resumen con tus diseños, tallas y dirección; envíalo por correo a PLUR y confirma disponibilidad y entrega antes de pagar. La confirmación del pedido y pago es manual. PLUR no solicita números de tarjeta." },
@@ -84,8 +84,8 @@ export const storeContent = {
   footer: {
     columns: [
       { title: "Explora", links: ["Catálogo", "Colecciones", "Personaliza"] },
-      { title: "Información", links: ["Envíos", "Devoluciones", "Preguntas frecuentes"] },
-      { title: "Marca", links: ["Nosotros", "Proceso", "Contacto"] },
+      { title: "Información", links: ["Envíos", "Política de devoluciones", "Preguntas frecuentes", "Aviso de privacidad", "Términos y condiciones", "Política de cookies"] },
+      { title: "Marca", links: ["Sobre nosotros", "Contacto"] },
     ],
     legal: "© 2026 PLUR. Precios en MXN. El envío se desglosa antes de pagar.",
   },
