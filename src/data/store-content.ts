@@ -76,8 +76,8 @@ export const storeContent = {
   shipping: "Envío de $199 MXN para 1 o 2 playeras. Envío gratis a partir de 3 playeras. Entrega de 2 a 5 días hábiles a partir de tu compra.",
   returns: "Solicita devoluciones dentro de 15 días desde tu compra en atencion@plur.com.mx o WhatsApp 55 7461 5455. Consulta la Política de devoluciones para conocer condiciones, procedimiento y tus derechos.",
   faq: [
-    { question: "¿Estas camisetas existen?", answer: "El catálogo contiene fotografías de los diseños proporcionados. Las categorías y etiquetas describen sus temas, no materiales, licencias ni existencias. La disponibilidad y las medidas deben confirmarse antes de comprar." },
-    { question: "¿Puedo pagar?", answer: "Sí, de 1 a 5 playeras mediante Links de Mercado Pago. Descarga el resumen con tus diseños, tallas y dirección; envíalo por correo a PLUR y confirma disponibilidad y entrega antes de pagar. La confirmación del pedido y pago es manual. PLUR no solicita números de tarjeta." },
+    { question: "¿Estas camisetas existen?", answer: "Imprimimos nuestras playeras y los diseños del catálogo están disponibles para producción. Elige las tallas indicadas en cada producto. Puedes consultar medidas si tienes dudas, sin necesidad de autorización previa para realizar tu pedido." },
+    { question: "¿Puedo pagar?", answer: "Sí, de 1 a 5 playeras mediante Links de Mercado Pago. Completa tus datos: guardamos el pedido y abrimos Mercado Pago sin esperar autorización de PLUR. El folio acredita el registro, no el pago. La verificación del pago es manual y PLUR no solicita números de tarjeta." },
     { question: "¿Cómo elijo talla?", answer: "Elige entre las tallas indicadas en cada producto. El catálogo fotográfico ofrece CH, M, G y EG; confirma medidas y disponibilidad antes de comprar." },
   ],
   account: { title: "Cuenta de demostración", body: "Aquí vivirían tus favoritos, pedidos y direcciones. No se crea ninguna cuenta real.", action: "Simular acceso" },

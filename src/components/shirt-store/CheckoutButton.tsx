@@ -1,73 +1,33 @@
 "use client";
-
-import { useState, type FormEvent } from "react";
+import { useEffect, useState, type FormEvent } from "react";
+import Link from "next/link";
 import { paymentQuote } from "@/lib/payment-links";
 import "./checkout.css";
-
 export type CheckoutItem = { id: string; name: string; size: string; quantity: number };
-
+const API = "https://plur-pagos.fmfrancog03.workers.dev/link-orders";
+const STORAGE = "plur-link-order-attempt-v1";
+type Attempt = { key: string; token: string; fingerprint: string; orderId?: string };
+type Receipt = { orderId: string; status: string; quantity: number; totalCents: number; paymentUrl?: string };
+async function digest(value: string) { return Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256", new TextEncoder().encode(value))), b => b.toString(16).padStart(2,"0")).join(""); }
+function loadAttempt(): Attempt | null { const raw = localStorage.getItem(STORAGE); if (!raw) return null; const data = JSON.parse(raw); if (typeof data.key !== "string" || typeof data.token !== "string" || typeof data.fingerprint !== "string") throw new Error("No se pudo leer tu intento anterior. Contacta a PLUR antes de pagar otra vez."); return data; }
+function saveAttempt(attempt: Attempt) { const raw=JSON.stringify(attempt); localStorage.setItem(STORAGE,raw); if(localStorage.getItem(STORAGE)!==raw) throw new Error("Permite el almacenamiento del navegador para conservar la referencia de tu pedido."); }
+function validReceipt(data: Receipt) { const q=paymentQuote(data.quantity);return /^[a-f0-9-]{36}$/.test(data.orderId)&&q&&q.total*100===data.totalCents&&["registered","paid","cancelled"].includes(data.status)&&(data.status!=="registered"||data.paymentUrl===q.href); }
 export function CheckoutButton({ items }: { items: CheckoutItem[] }) {
-  const [name, setName] = useState("");
-  const [address, setAddress] = useState("");
-  const [reference, setReference] = useState("");
-  const [saved, setSaved] = useState(false);
-  const [sent, setSent] = useState(false);
-  const [error, setError] = useState("");
-  const quantity = items.reduce((sum, item) => sum + item.quantity, 0);
-  const quote = paymentQuote(quantity);
-  const contact = "fmfrancog03@gmail.com";
-  const invalidate = () => { setSaved(false); setSent(false); };
-
-  function download(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    if (!quote || !name.trim() || !address.trim()) return;
-    setError("");
-    try {
-      const id = reference || `PLUR-${crypto.randomUUID()}`;
-      const text = [
-        "PLUR — RESUMEN DEL PEDIDO (NO ES COMPROBANTE DE PAGO)",
-        `Referencia local: ${id}`, `Nombre: ${name.trim()}`,
-        `Dirección de entrega: ${address.trim()}`, "",
-        ...items.map(item => `${item.name} | Talla ${item.size} | Cantidad ${item.quantity} | $199 MXN c/u | ID ${item.id}`),
-        "", `Productos: $${quote.subtotal} MXN`, `Envío: $${quote.shipping} MXN`, `Total: $${quote.total} MXN`,
-        "", `Envía este archivo a ${contact} y confirma disponibilidad y entrega antes de pagar.`,
-        "La tienda confirma manualmente el pedido y el pago. Este archivo no acredita un pago ni crea un pedido en un servidor.",
-        "Conserva esta referencia y el comprobante de Mercado Pago para que la tienda pueda relacionarlos.",
-      ].join("\n");
-      const url = URL.createObjectURL(new Blob([text], { type: "text/plain;charset=utf-8" }));
-      const anchor = document.createElement("a");
-      anchor.href = url;
-      anchor.download = `${id}.txt`;
-      document.body.appendChild(anchor);
-      anchor.click();
-      anchor.remove();
-      window.setTimeout(() => URL.revokeObjectURL(url), 1000);
-      setReference(id);
-      setSaved(true);
-    } catch {
-      setError("No se pudo preparar la descarga. Intenta de nuevo antes de pagar.");
-      invalidate();
-    }
-  }
-
-  if (!quote) return <div data-testid="checkout-limit"><p>Para más de 5 playeras necesitas atención de PLUR. No hay un enlace de pago automático para esta cantidad.</p><a href={`mailto:${contact}`}>Solicitar atención: {contact}</a><p>No dividas el pedido ni pagues un importe diferente sin confirmar con la tienda.</p></div>;
-
-  return <div className="checkout-manual">
-    <p><strong>1. Prepara y descarga tu pedido</strong></p>
-    <p>Envío gratis a partir de 3 playeras. La descarga contiene tus diseños, tallas, cantidades y dirección. Tus datos no se guardan en un servidor de PLUR ni se envían al enlace de pago. Conserva el archivo en un lugar seguro; al cerrar este formulario tendrás que volver a capturar tus datos.</p>
-    <form className="custom-form" onSubmit={download}>
-      <label>Nombre completo<input autoComplete="name" required maxLength={120} value={name} onChange={event => { setName(event.target.value); invalidate(); }}/></label>
-      <label>Dirección de entrega<textarea autoComplete="street-address" required minLength={15} maxLength={700} rows={4} placeholder="Calle, número, colonia, ciudad, estado y código postal de México" value={address} onChange={event => { setAddress(event.target.value); invalidate(); }}/></label>
-      <button type="submit" className="button button--dark button--wide">Descargar resumen del pedido</button>
-    </form>
-    {error && <p role="alert">{error}</p>}
-    {saved && <div>
-      <p><strong>2. Envía el resumen a PLUR antes de pagar</strong></p>
-      <p>Revisa que el archivo se descargó. Abre tu correo, adjunta el archivo y envíalo a <strong>{contact}</strong>. Si no tienes una app de correo, usa tu correo web. Este botón solo abre un borrador: no adjunta ni envía nada automáticamente.</p>
-      <a data-action="send-order" className="button button--dark button--wide" href={`mailto:${contact}?subject=${encodeURIComponent(`Pedido ${reference}`)}&body=${encodeURIComponent(`Adjunta el resumen ${reference}.txt antes de enviar. Quiero confirmar disponibilidad, tallas y entrega antes de pagar.`)}`}>Abrir correo para enviar pedido</a>
-      <label className="checkout-confirm"><input type="checkbox" checked={sent} onChange={event => setSent(event.target.checked)}/>Ya envié el resumen del pedido a PLUR y confirmé disponibilidad y entrega con la tienda.</label>
-      {sent && <a data-action="checkout" className="button button--coral button--wide" href={quote.href} target="_blank" rel="noopener noreferrer">Pagar ${quote.total} MXN en Mercado Pago</a>}
-    </div>}
-    <p data-testid="checkout-status"><strong>Confirmación manual.</strong> Abrir Mercado Pago o volver a PLUR no confirma un pago. PLUR no consulta el estado automáticamente. No pagues otra vez si ya lo hiciste; conserva tu resumen y el comprobante de Mercado Pago y comunícate con la tienda usando la misma referencia. La tienda debe verificar el pago antes de confirmar el pedido.</p>
-  </div>;
+ const [name,setName]=useState("");const [email,setEmail]=useState("");const [phone,setPhone]=useState("");const [address,setAddress]=useState("");const [consent,setConsent]=useState(false);
+ const [ready,setReady]=useState(false);const [busy,setBusy]=useState(false);const [error,setError]=useState("");const [receipt,setReceipt]=useState<Receipt|null>(null);
+ const quantity=items.reduce((sum,item)=>sum+item.quantity,0),quote=paymentQuote(quantity);
+ useEffect(()=>{let active=true;async function check(){try{const h=await fetch(API+"/health",{signal:AbortSignal.timeout(12000)});const data=await h.json();if(!h.ok||data.version!=="link-orders-v1"||data.ready!==true)throw new Error("El registro está temporalmente no disponible. No se ha abierto ningún pago.");const attempt=loadAttempt();if(attempt?.orderId){const r=await fetch(API+"/"+attempt.orderId,{headers:{Authorization:"Bearer "+attempt.token},signal:AbortSignal.timeout(12000)});const saved=await r.json();if(!r.ok||!validReceipt(saved))throw new Error("Hay un pedido anterior que no pudimos consultar. No vuelvas a pagar; contacta a PLUR con tu referencia.");if(active)setReceipt(saved);}if(active)setReady(true);}catch(e){if(active)setError(e instanceof Error?e.message:"No se pudo consultar el registro");}}check();return()=>{active=false;};},[]);
+ async function submit(event: FormEvent<HTMLFormElement>){event.preventDefault();if(!quote||!ready||busy||!consent)return;setBusy(true);setError("");try{
+  const payload={items:items.map(({id,size,quantity})=>({id,size,quantity})),customer:{name:name.trim(),email:email.trim(),phone:phone.trim(),address:address.trim()},consent:true,expectedTotalCents:quote.total*100};
+  const fingerprint=await digest(JSON.stringify(payload));let attempt=loadAttempt();if(attempt&&attempt.fingerprint!==fingerprint)throw new Error("Ya existe un intento con otros datos. Para evitar pedidos duplicados, contacta a PLUR antes de iniciar otro.");if(!attempt){attempt={key:crypto.randomUUID(),token:Array.from(crypto.getRandomValues(new Uint8Array(32)),b=>b.toString(16).padStart(2,"0")).join(""),fingerprint};saveAttempt(attempt);}
+  const r=await fetch(API,{method:"POST",headers:{"Content-Type":"application/json","Idempotency-Key":attempt.key,"X-Order-Token":attempt.token},body:JSON.stringify(payload),signal:AbortSignal.timeout(20000)});const data=await r.json();if(!r.ok)throw new Error(data.error||"No se confirmó el guardado. Reintenta con los mismos datos.");if(!validReceipt(data)||data.status!=="registered"||data.paymentUrl!==quote.href)throw new Error("Respuesta de registro no válida. No pagues; contacta a PLUR.");
+  saveAttempt({...attempt,orderId:data.orderId});setReceipt(data);window.location.assign(data.paymentUrl);
+ }catch(e){setError(e instanceof Error?e.message:"No se confirmó el registro. Reintenta con los mismos datos; no pagues por otro medio.");}finally{setBusy(false);}}
+ function newOrder(){if(!window.confirm("Esto inicia otro pedido. No lo uses para repetir un pago pendiente. ¿Quieres hacer una compra independiente?"))return;try{localStorage.removeItem(STORAGE);setReceipt(null);setError("");}catch{setError("No se pudo preparar un nuevo pedido.");}}
+ if(receipt)return <div className="checkout-manual"><h3>{receipt.status==="paid"?"Pago verificado por PLUR":receipt.status==="cancelled"?"Pedido cancelado":"Pedido registrado"}</h3><p>Folio: <strong>{receipt.orderId}</strong></p><p>{receipt.quantity} playeras · Total ${(receipt.totalCents/100).toFixed(2)} MXN</p><p>Ya recibimos los datos de este pedido. No necesitas enviarlos por correo ni esperar autorización para pagar. Guarda tu folio y conserva el comprobante de Mercado Pago.</p>{receipt.status==="registered"&&<><p><strong>El registro no es una confirmación de pago.</strong> Si ya pagaste, no vuelvas a hacerlo. PLUR verificará el movimiento antes de preparar el envío.</p><a className="button button--coral button--wide" href={receipt.paymentUrl} rel="noreferrer">Continuar al pago solo si aún no has pagado</a></>}<button className="button button--dark button--wide" onClick={newOrder}>Preparar un pedido diferente</button><p><a href="mailto:atencion@plur.com.mx">Ayuda: atencion@plur.com.mx</a></p></div>;
+ if(quantity===0)return error ? <p role="alert">{error}</p> : null;
+ if(!quote)return <div data-testid="checkout-limit"><p>El pago en línea admite de 1 a 5 playeras. Para una cantidad mayor contacta a PLUR.</p><a href="mailto:atencion@plur.com.mx">Solicitar atención</a></div>;
+ return <div className="checkout-manual"><h3>Datos de tu pedido</h3><p>Guardaremos tus diseños, tallas, cantidades y dirección antes de abrir Mercado Pago. No necesitas esperar una respuesta de PLUR.</p><p>Entrega de 2 a 5 días hábiles a partir de tu compra. Envío gratis a partir de 3 playeras.</p>
+ <form className="custom-form" onSubmit={submit}><fieldset disabled={busy||!ready}><label>Nombre completo<input required autoComplete="name" minLength={3} maxLength={120} value={name} onChange={e=>setName(e.target.value)}/></label><label>Correo electrónico para tu pedido<input required type="email" autoComplete="email" maxLength={200} value={email} onChange={e=>setEmail(e.target.value)}/></label><label>Teléfono de contacto<input required type="tel" autoComplete="tel" minLength={10} maxLength={20} value={phone} onChange={e=>setPhone(e.target.value)}/></label><label>Dirección completa de entrega<textarea required autoComplete="street-address" minLength={15} maxLength={700} rows={4} placeholder="Calle, número, colonia, ciudad, estado y código postal" value={address} onChange={e=>setAddress(e.target.value)}/></label><label className="checkout-confirm"><input data-testid="order-consent" type="checkbox" required checked={consent} onChange={e=>setConsent(e.target.checked)}/>He revisado mis datos y acepto su uso para procesar y entregar este pedido conforme al <Link href="/aviso-de-privacidad/" target="_blank" rel="noopener noreferrer">Aviso de privacidad</Link>.</label><button data-action="register-and-pay" type="submit" disabled={!consent} className="button button--coral button--wide">{busy?"Guardando pedido…":`Registrar y pagar $${quote.total} MXN`}</button></fieldset></form>
+ {error&&<p role="alert">{error}</p>}<p>La confirmación del pago sigue siendo manual; no es una autorización previa para comprar. Conserva el folio y el comprobante. Si el registro falla, no se abrirá Mercado Pago. En este navegador guardamos únicamente identificadores de recuperación, no tu dirección ni datos de contacto.</p></div>;
 }
