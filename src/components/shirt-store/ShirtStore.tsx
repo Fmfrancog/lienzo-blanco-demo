@@ -139,7 +139,7 @@ export function ShirtStore() {
 
   return <>
     <header className="site-header">
-      <div className="demo-bar">{storeContent.demoNotice}</div>
+      <div className="demo-bar" data-testid="shipping-banner"><strong>{storeContent.demoNotice}</strong><span>Entrega de 2 a 5 días hábiles a partir de tu compra</span></div>
       <div className="header-main shell">
         <button data-action="home" className="brand" onClick={() => scrollToId("inicio")} aria-label="PLUR, ir al inicio"><span className="brand-wordmark">{storeContent.brand.name}</span><span className="brand-descriptor">PLAYERAS<br/>CON DISEÑO</span></button>
         <nav className={`main-nav ${mobileOpen ? "main-nav--open" : ""}`} aria-label="Navegación principal">{storeContent.navigation.map((label) => <button data-action={`nav-${label.toLowerCase()}`} key={label} onClick={() => navigate(label)}>{label}</button>)}</nav>

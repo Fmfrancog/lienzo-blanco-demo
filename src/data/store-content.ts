@@ -73,7 +73,7 @@ export const storeContent = {
     ],
     facts: ["Catálogo fotográfico", "Tallas indicadas por producto", "Precios en pesos mexicanos"],
   },
-  shipping: "Envío de $199 MXN para 1 o 2 playeras. Envío gratis a partir de 3 playeras. Los tiempos de entrega deben confirmarse con la tienda.",
+  shipping: "Envío de $199 MXN para 1 o 2 playeras. Envío gratis a partir de 3 playeras. Entrega de 2 a 5 días hábiles a partir de tu compra.",
   returns: "Las condiciones de devolución están por confirmar. No se generan guías ni reembolsos reales.",
   faq: [
     { question: "¿Estas camisetas existen?", answer: "El catálogo contiene fotografías de los diseños proporcionados. Las categorías y etiquetas describen sus temas, no materiales, licencias ni existencias. La disponibilidad y las medidas deben confirmarse antes de comprar." },

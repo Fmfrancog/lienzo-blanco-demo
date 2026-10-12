@@ -20,7 +20,9 @@ svg { display: block; }
 .kicker { display: block; margin-bottom: 12px; font-size: 11px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
 
 .site-header { position: sticky; z-index: 50; top: 0; background: var(--paper); border-bottom: 1px solid var(--line); }
-.demo-bar { padding: 7px 16px; background: var(--ink); color: white; text-align: center; font-size: 10px; font-weight: 600; letter-spacing: .09em; }
+.demo-bar { padding: 9px 16px; background: var(--ink); color: white; text-align: center; font-size: 13px; font-weight: 600; line-height: 1.5; }
+.demo-bar strong, .demo-bar span { display: block; }
+.demo-bar span { font-size: 12px; font-weight: 400; }
 .header-main { min-height: 74px; display: grid; grid-template-columns: auto 1fr auto; gap: 28px; align-items: center; }
 .brand { display: flex; gap: 12px; align-items: center; padding: 0; border: 0; background: transparent; font-family: Georgia, serif; font-size: 22px; }
 .brand-wordmark { font: 950 42px/.9 Arial, sans-serif; letter-spacing: -.085em; }
@@ -266,7 +268,7 @@ legend, .quantity > span { margin-bottom: 10px; font-size: 11px; font-weight: 80
   .detail-grid, .customizer { grid-template-columns: 1fr; }
 }
 @media (max-width: 520px) {
-  .demo-bar { font-size: 8px; }
+  .demo-bar { font-size: 13px; }
   .brand-descriptor { display: none; }
   .header-tools { gap: 2px; }
   .tool-button { padding-inline: 7px; }
