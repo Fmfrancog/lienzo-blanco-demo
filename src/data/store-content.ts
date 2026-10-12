@@ -26,9 +26,9 @@ export const storeContent = {
     name: "PLUR",
     mark: "PLUR",
     tagline: "Una camiseta blanca. Infinitas formas de decir algo.",
-    description: "Catálogo fotográfico. El carrito es local y no procesa pagos; consulta disponibilidad antes de comprar.",
+    description: "Playeras con diseño. Consulta las tallas y revisa el total de tu pedido en la bolsa.",
   },
-  demoNotice: "CATÁLOGO FOTOGRÁFICO · SIN PAGOS REALES",
+  demoNotice: "Envío gratis a partir de 3 playeras",
   announcements: [
     "Explora los diseños · encuentra el tuyo",
     "Catálogo fotográfico: CH · M · G · EG · consulta disponibilidad",
@@ -69,15 +69,15 @@ export const storeContent = {
     title: "El diseño es tuyo. La elección, también.",
     paragraphs: [
       "PLUR reúne este catálogo de playeras para que explores sus gráficas, fotografías y tallas en un solo lugar.",
-      "Puedes probar la bolsa de compras, pero todavía no se generan pedidos ni se procesan pagos. Confirma disponibilidad y medidas antes de comprar.",
+      "Selecciona tus diseños y tallas. La bolsa indica si el pago está disponible y muestra el envío antes de continuar.",
     ],
-    facts: ["Catálogo fotográfico", "Tallas indicadas por producto", "0 transacciones reales"],
+    facts: ["Catálogo fotográfico", "Tallas indicadas por producto", "Precios en pesos mexicanos"],
   },
-  shipping: "Envíos aún no habilitados. Costos y tiempos por confirmar.",
+  shipping: "Envío de $199 MXN para 1 o 2 playeras. Envío gratis a partir de 3 playeras. Los tiempos de entrega deben confirmarse con la tienda.",
   returns: "Las condiciones de devolución están por confirmar. No se generan guías ni reembolsos reales.",
   faq: [
-    { question: "¿Estas camisetas existen?", answer: "El catálogo contiene fotografías de los diseños proporcionados. Las categorías y etiquetas describen sus temas, no materiales, licencias ni existencias. La disponibilidad debe confirmarse; el carrito no realiza pedidos reales." },
-    { question: "¿Puedo pagar?", answer: "No. El carrito es una simulación local y nunca solicita datos bancarios." },
+    { question: "¿Estas camisetas existen?", answer: "El catálogo contiene fotografías de los diseños proporcionados. Las categorías y etiquetas describen sus temas, no materiales, licencias ni existencias. La disponibilidad y las medidas deben confirmarse antes de comprar." },
+    { question: "¿Puedo pagar?", answer: "Sí, de 1 a 5 playeras mediante Links de Mercado Pago. Descarga el resumen con tus diseños, tallas y dirección; envíalo por correo a PLUR y confirma disponibilidad y entrega antes de pagar. La confirmación del pedido y pago es manual. PLUR no solicita números de tarjeta." },
     { question: "¿Cómo elijo talla?", answer: "Elige entre las tallas indicadas en cada producto. El catálogo fotográfico ofrece CH, M, G y EG; confirma medidas y disponibilidad antes de comprar." },
   ],
   account: { title: "Cuenta de demostración", body: "Aquí vivirían tus favoritos, pedidos y direcciones. No se crea ninguna cuenta real.", action: "Simular acceso" },
@@ -85,9 +85,9 @@ export const storeContent = {
     columns: [
       { title: "Explora", links: ["Catálogo", "Colecciones", "Personaliza"] },
       { title: "Información", links: ["Envíos", "Devoluciones", "Preguntas frecuentes"] },
-      { title: "Marca", links: ["Nosotros", "Proceso", "Contacto demo"] },
+      { title: "Marca", links: ["Nosotros", "Proceso", "Contacto"] },
     ],
-    legal: "© 2026 PLUR. Catálogo fotográfico; carrito de demostración sin pagos reales.",
+    legal: "© 2026 PLUR. Precios en MXN. El envío se desglosa antes de pagar.",
   },
 };
 

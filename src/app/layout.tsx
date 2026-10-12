@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "PLUR | Playeras con diseño",
-  description: "Explora el catálogo fotográfico de playeras PLUR. Diseños, galerías y tallas por producto. Bolsa de demostración, sin pagos reales.",
+  description: "Explora playeras PLUR, diseños y tallas por producto. Envío gratis a partir de 3 playeras. Prepara tu pedido en la bolsa y paga con Mercado Pago.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
