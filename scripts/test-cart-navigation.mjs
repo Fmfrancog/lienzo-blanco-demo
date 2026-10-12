@@ -1,0 +1,6 @@
+import assert from 'node:assert/strict';
+import {chromium} from 'playwright';import c from '@sparticuz/chromium';
+const b=await chromium.launch({args:c.args.filter(a=>a!=='--single-process'),executablePath:await c.executablePath(),headless:true});
+try{const p=await b.newPage();await p.goto(process.env.BASE_URL||'http://127.0.0.1:3044',{waitUntil:'networkidle'});await p.locator('[data-action="open-product-gato-cosmico"]').click();await p.locator('[data-action="select-size-G"]').click();await p.locator('[data-action="add-to-cart"]').click();
+for(const slug of ['terminos-y-condiciones','aviso-de-privacidad','politica-de-devoluciones']){await p.locator(`footer a[href="/${slug}/"]`).click();await p.waitForURL(`**/${slug}/`);await p.locator('.info-header a[href="/"]').first().click();await p.waitForURL(url=>url.pathname==='/');assert.match(await p.locator('[data-action="open-cart"]').getAttribute('aria-label'),/1 artículos/);}
+await p.locator('[data-action="open-cart"]').click();assert.match(await p.locator('.cart-lines').innerText(),/Talla G/);assert.match(await p.locator('[data-testid="cart-grand-total"]').innerText(),/398/);console.log('PASS: carrito, talla y total conservados al volver de tres políticas; sin almacenamiento persistente');}finally{await b.close();}

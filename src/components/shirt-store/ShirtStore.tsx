@@ -5,13 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { infoLinkMap } from "@/data/info-pages";
 import { CheckoutButton } from "./CheckoutButton";
+import { useCart } from "./CartProvider";
 import { getCoverImageIndex } from "@/lib/product-cover";
 import { audiences, matchesAudience, type Audience } from "@/lib/product-audience";
 import { ArrowDown, ArrowRight, Check, Menu, Minus, Plus, Search, ShoppingBag, User, X } from "lucide-react";
 import { formatPrice, Product, storeContent, type Collection } from "@/data/store-content";
 
 type DialogName = "product" | "cart" | "account" | "help" | "custom" | null;
-type CartLine = { product: Product; size: string; quantity: number };
+
 
 const scrollToId = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
 const normalizeSearch = (value: string) => value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
@@ -87,7 +88,7 @@ export function ShirtStore() {
   const [selected, setSelected] = useState<Product>(storeContent.products[0]);
   const [size, setSize] = useState("M");
   const [quantity, setQuantity] = useState(1);
-  const [cart, setCart] = useState<CartLine[]>([]);
+  const { cart, setCart } = useCart();
   const [toast, setToast] = useState("");
   const [newsletter, setNewsletter] = useState("");
   const [mobileOpen, setMobileOpen] = useState(false);
