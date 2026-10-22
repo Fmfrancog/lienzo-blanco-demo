@@ -80,7 +80,7 @@ export const storeContent = {
     { question: "¿Puedo pagar?", answer: "Sí, de 1 a 5 playeras mediante Links de Mercado Pago. Completa tus datos: guardamos el pedido y abrimos Mercado Pago sin esperar autorización de PLUR. El folio acredita el registro, no el pago. La verificación del pago es manual y PLUR no solicita números de tarjeta." },
     { question: "¿Cómo elijo talla?", answer: "Elige entre las tallas indicadas en cada producto. El catálogo fotográfico ofrece CH, M, G y EG; confirma medidas y disponibilidad antes de comprar." },
   ],
-  account: { title: "Cuenta de demostración", body: "Aquí vivirían tus favoritos, pedidos y direcciones. No se crea ninguna cuenta real.", action: "Simular acceso" },
+
   footer: {
     columns: [
       { title: "Explora", links: ["Catálogo", "Colecciones", "Personaliza"] },
