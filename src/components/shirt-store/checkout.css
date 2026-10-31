@@ -5,7 +5,24 @@
 .checkout-manual textarea { min-height: 84px; resize: vertical; }
 .checkout-manual .delivery-address { min-width: 0; margin: 0; padding: 24px 0 0; border: 0; border-top: 1px solid var(--line); }
 .delivery-address legend { font-size: 20px; font-weight: 700; padding: 0 8px 0 0; text-transform: none; letter-spacing: normal; }
-.address-field--exterior label, .address-field--interior label { min-height: 45px; }
+.address-field--exterior label, .address-field--interior label { display: block; min-height: 45px; }
+.checkout-manual .delivery-address { padding: 20px; border: 1px solid #dedbd3; border-radius: 12px; background: #faf9f6; }
+.delivery-address legend { padding: 0 8px; }
+.checkout-manual .address-intro { margin: 0; font-size: 16px; font-weight: 600; }
+.address-intro span { display: block; margin-top: 6px; color: #62605a; font-size: 14px; font-weight: 400; }
+.address-group-title { display: flex; align-items: center; gap: 10px; margin: 8px 0 18px; font-size: 16px; line-height: 1.4; letter-spacing: normal; }
+.address-group-title span { display: grid; place-items: center; flex: 0 0 28px; height: 28px; border-radius: 50%; background: var(--ink); color: white; font-size: 13px; }
+.checkout-manual .delivery-address :is(input,select,textarea) { border-color: #a4a29c; border-radius: 8px; min-height: 50px; box-shadow: 0 1px 2px #00000008; }
+.checkout-manual .delivery-address input::placeholder, .checkout-manual .delivery-address textarea::placeholder { color: #73716b; opacity: 1; }
+.address-sn { border: 0; background: transparent; color: var(--ink); cursor: pointer; min-height: 44px; padding: 8px 0; text-decoration: underline; text-underline-offset: 3px; font-size: 14px; font-weight: 600; }
+.address-sn:focus-visible { outline: 3px solid #2460a7; outline-offset: 2px; }
+.address-preview { margin-top: 20px; padding: 16px; background: #edf1e9; border: 1px solid #d6ddce; border-radius: 8px; overflow-wrap: anywhere; }
+.address-preview strong { display: block; font-size: 15px; }
+.checkout-manual .address-preview p { margin: 8px 0; line-height: 1.6; font-size: 15px; }
+.address-preview small { font-size: 13px; color: #50584a; }
+@media (max-width: 600px) { .checkout-manual .delivery-address { padding: 16px 12px; } }
+@media (max-width: 360px) { .delivery-address .address-field--exterior, .delivery-address .address-field--interior { grid-column: 1 / -1; } }
+
 .checkout-manual .address-help { display: block; margin: 8px 0 0; font-size: 14px; font-weight: 400; line-height: 1.5; color: #555; }
 .address-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 16px; margin: 20px 0; }
 .address-field { min-width: 0; grid-column: 1 / -1; }
