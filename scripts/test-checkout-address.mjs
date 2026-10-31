@@ -12,7 +12,7 @@ try {
   let calls=0, payload;
   if(!process.env.LIVE_CHECK) await page.route('**/link-orders/health',r=>r.fulfill({json:{version:'link-orders-v1',ready:true}}));
   await page.route('**/link-orders',r=>{calls++;payload=r.request().postDataJSON();return r.fulfill({status:503,json:{error:'Mock only: no order created'}});});
-  await page.goto(base);await page.locator('[data-action="open-product-gato-cosmico"]').click();await page.locator('[data-action="add-to-cart"]').click();await page.locator('[data-action="open-cart"]').click();
+  await page.goto(base);await page.locator('[data-action="open-product-gato-cosmico"]').click();await page.locator('[data-action="select-size-M"]').click();await page.locator('[data-action="add-to-cart"]').click();await page.locator('[data-action="open-cart"]').click();
   const field=name=>page.getByLabel(name,{exact:true});
   await field('Calle').waitFor({timeout:5000});
   await field('Nombre completo').fill('Cliente Prueba');await field('Correo electrónico para tu pedido').fill('prueba@example.test');await field('Teléfono de contacto').fill('5512345678');

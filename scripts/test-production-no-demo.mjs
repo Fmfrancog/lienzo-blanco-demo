@@ -40,7 +40,7 @@ try {
     await page.screenshot({ path: `${dir}/${width}-account.png` });
     await page.keyboard.press('Escape');
     await page.locator('[data-action="open-product-gato-cosmico"]').click();
-    await page.locator('[data-action="add-to-cart"]').click();
+    await page.locator('[data-action="select-size-M"]').click();await page.locator('[data-action="add-to-cart"]').click();
     await page.locator('[data-action="open-cart"]').click();
     await page.getByLabel('Calle', { exact: true }).waitFor();
     await page.locator('[data-action="register-and-pay"]').waitFor();

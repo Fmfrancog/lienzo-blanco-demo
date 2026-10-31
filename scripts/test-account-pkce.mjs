@@ -13,7 +13,7 @@ try {
   await p.route('**/account/orders',r=>r.fulfill({json:{orders:[],hasMore:false}}));
   await p.route('**/link-orders/health',r=>r.fulfill({json:{version:'link-orders-v1',ready:true}}));
   await p.route('**/link-orders',r=>{posts++;return r.abort();});
-  await p.goto(base);await p.locator('[data-action="open-product-gato-cosmico"]').click();await p.locator('[data-action="add-to-cart"]').click();await p.locator('[data-action="open-cart"]').click();
+  await p.goto(base);await p.locator('[data-action="open-product-gato-cosmico"]').click();await p.locator('[data-action="select-size-M"]').click();await p.locator('[data-action="add-to-cart"]').click();await p.locator('[data-action="open-cart"]').click();
   await p.getByRole('button',{name:'Iniciar sesión con Google antes de comprar',exact:true}).click();
   await p.waitForURL('**/auth/v1/authorize**');assert.equal(authorize.searchParams.get('provider'),'google');assert.equal(authorize.searchParams.get('code_challenge_method'),'s256');
   const callback=new URL(authorize.searchParams.get('redirect_to'));assert.equal(callback.origin,base);callback.searchParams.set('code','synthetic-code');callback.searchParams.set('keep','yes');

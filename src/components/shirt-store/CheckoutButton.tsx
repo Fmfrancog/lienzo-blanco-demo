@@ -4,22 +4,23 @@ import Link from "next/link";
 import { useAccount } from "./AccountProvider";
 import { paymentQuote } from "@/lib/payment-links";
 import "./checkout.css";
+import { OrderReceipt, type Receipt } from "./OrderReceipt";
 import { DeliveryAddress } from "./DeliveryAddress";
 export type CheckoutItem = { id: string; name: string; size: string; quantity: number };
 const API = "https://plur-pagos.fmfrancog03.workers.dev/link-orders";
 const STORAGE = "plur-link-order-attempt-v1";
 type Attempt = { key: string; token: string; fingerprint: string; accountId?: string; orderId?: string };
-type Receipt = { orderId: string; status: string; quantity: number; totalCents: number; paymentUrl?: string };
+type CheckoutProps = { items: CheckoutItem[]; onViewOrders?: () => void };
 async function digest(value: string) { return Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256", new TextEncoder().encode(value))), b => b.toString(16).padStart(2,"0")).join(""); }
 function loadAttempt(): Attempt | null { const raw = localStorage.getItem(STORAGE); if (!raw) return null; const data = JSON.parse(raw); if (typeof data.key !== "string" || typeof data.token !== "string" || typeof data.fingerprint !== "string") throw new Error("No se pudo leer tu intento anterior. Contacta a PLUR antes de pagar otra vez."); return data; }
 function saveAttempt(attempt: Attempt) { const raw=JSON.stringify(attempt); localStorage.setItem(STORAGE,raw); if(localStorage.getItem(STORAGE)!==raw) throw new Error("Permite el almacenamiento del navegador para conservar la referencia de tu pedido."); }
 function validReceipt(data: Receipt) { const q=paymentQuote(data.quantity);return /^[a-f0-9-]{36}$/.test(data.orderId)&&q&&q.total*100===data.totalCents&&["registered","paid","cancelled"].includes(data.status)&&(data.status!=="registered"||data.paymentUrl===q.href); }
-export function CheckoutButton({ items }: { items: CheckoutItem[] }) {
+export function CheckoutButton({ items, onViewOrders }: CheckoutProps) {
  const { session, loading } = useAccount();
  if (loading) return <p role="status">Consultando sesión antes del pedido…</p>;
- return <CheckoutForm key={session?.user.id || "guest"} items={items} />;
+ return <CheckoutForm key={session?.user.id || "guest"} items={items} onViewOrders={onViewOrders} />;
 }
-function CheckoutForm({ items }: { items: CheckoutItem[] }) {
+function CheckoutForm({ items, onViewOrders }: CheckoutProps) {
  const { session, accessToken, login } = useAccount();
  const [name,setName]=useState("");const [email,setEmail]=useState("");const [phone,setPhone]=useState("");const [address,setAddress]=useState("");const [consent,setConsent]=useState(false);
  const [ready,setReady]=useState(false);const [busy,setBusy]=useState(false);const [error,setError]=useState("");const [receipt,setReceipt]=useState<Receipt|null>(null);
@@ -33,7 +34,7 @@ function CheckoutForm({ items }: { items: CheckoutItem[] }) {
   saveAttempt({...attempt,orderId:data.orderId});setReceipt(data);window.location.assign(data.paymentUrl);
  }catch(e){setError(e instanceof Error?e.message:"No se confirmó el registro. Reintenta con los mismos datos; no pagues por otro medio.");}finally{setBusy(false);}}
  function newOrder(){if(!window.confirm("Esto inicia otro pedido. No lo uses para repetir un pago pendiente. ¿Quieres hacer una compra independiente?"))return;try{localStorage.removeItem(STORAGE);setReceipt(null);setError("");}catch{setError("No se pudo preparar un nuevo pedido.");}}
- if(receipt)return <div className="checkout-manual"><h3>{receipt.status==="paid"?"Pago verificado por PLUR":receipt.status==="cancelled"?"Pedido cancelado":"Pedido registrado"}</h3><p>Folio: <strong>{receipt.orderId}</strong></p><p>{receipt.quantity} playeras · Total ${(receipt.totalCents/100).toFixed(2)} MXN</p><p>Ya recibimos los datos de este pedido. No necesitas enviarlos por correo ni esperar autorización para pagar. Guarda tu folio y conserva el comprobante de Mercado Pago.</p>{receipt.status==="registered"&&<><p><strong>El registro no es una confirmación de pago.</strong> Si ya pagaste, no vuelvas a hacerlo. PLUR verificará el movimiento antes de preparar el envío.</p><a className="button button--coral button--wide" href={receipt.paymentUrl} rel="noreferrer">Continuar al pago solo si aún no has pagado</a></>}<button className="button button--dark button--wide" onClick={newOrder}>Preparar un pedido diferente</button><p><a href="mailto:atencion@plur.com.mx">Ayuda: atencion@plur.com.mx</a></p></div>;
+ if(receipt)return <OrderReceipt receipt={receipt} onNewOrder={newOrder} onViewOrders={session ? onViewOrders : undefined} />;
  if(quantity===0)return error ? <p role="alert">{error}</p> : null;
  if(!quote)return <div data-testid="checkout-limit"><p>El pago en línea admite de 1 a 5 playeras. Para una cantidad mayor contacta a PLUR.</p><a href="mailto:atencion@plur.com.mx">Solicitar atención</a></div>;
  return <div className="checkout-manual"><h3>Datos de tu pedido</h3>{session ? <p>Este pedido se vinculará a {session.user.email || "tu cuenta"}. Solo las compras registradas con esta sesión aparecerán en tu historial.</p> : <><p>Estás comprando como invitado. No necesitas una cuenta para pagar; este pedido no se añadirá después a un historial por coincidencia de correo.</p><button type="button" className="button button--line" disabled={busy} onClick={login}>Iniciar sesión con Google antes de comprar</button></>}<p>Guardaremos tus diseños, tallas, cantidades y dirección antes de abrir Mercado Pago. No necesitas esperar una respuesta de PLUR.</p><p>Entrega de 2 a 5 días hábiles a partir de tu compra. Envío gratis a partir de 3 playeras.</p>

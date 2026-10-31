@@ -16,3 +16,31 @@
 .checkout-manual .custom-form .checkout-confirm { display: flex; align-items: flex-start; gap: 12px; margin: 0; font-size: 14px; font-weight: 400; line-height: 1.6; cursor: pointer; }
 .checkout-confirm input { margin-top: 2px; flex-shrink: 0; width: 22px; height: 22px; min-height: 22px; }
 .checkout-manual a { overflow-wrap: anywhere; }
+.empty-state:has(.order-receipt) { padding: 0; }
+.empty-state:has(.order-receipt) > :not(.order-receipt), .modal:has(.order-receipt) > :is(.cart-lines, .cart-total, .bundle-progress) { display: none; }
+.order-receipt { text-align: left; min-width: 0; padding: 24px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+.order-receipt h3 { font-size: clamp(24px, 4vw, 32px); line-height: 1.15; margin: 10px 0; letter-spacing: -.03em; }
+.order-receipt p { line-height: 1.55; margin: 12px 0; }
+.receipt-folio { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px; margin-top: 24px; }
+.receipt-folio label, .receipt-copy-status { grid-column: 1 / -1; font-size: 14px; }
+.receipt-folio label { font-weight: 700; }
+.receipt-folio textarea { resize: none; overflow-wrap: anywhere; line-height: 1.5; width: 100%; min-width: 0; padding: 12px 8px; border: 1px solid var(--line); border-radius: 4px; background: var(--paper); color: var(--ink); font: 13px monospace; }
+.receipt-copy-status { line-height: 1.5; }
+.receipt-totals { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; padding: 18px 0; border-block: 1px solid var(--line); }
+.receipt-totals dt { font-size: 13px; line-height: 1.4; }
+.receipt-totals dd { margin: 8px 0 0; font-size: 24px; font-weight: 750; }
+.receipt-payment { padding: 16px; background: #fff5e5; border: 1px solid #d7b885; border-radius: 6px; }
+.receipt-payment p { margin: 0 0 16px; font-size: 14px; }
+.receipt-payment strong { display: block; margin-bottom: 6px; }
+.receipt-actions { display: grid; gap: 12px; margin-top: 20px; }
+.order-receipt .button { white-space: normal; text-align: center; line-height: 1.4; min-height: 44px; }
+.order-receipt .receipt-help { margin: 20px 0 0; font-size: 13px; overflow-wrap: anywhere; }
+.order-receipt :is(textarea, button, a):focus-visible { outline: 3px solid #2460a7; outline-offset: 3px; }
+.bundle-progress { padding: 16px; margin: 20px 0; border: 1px solid var(--line); border-radius: 6px; background: #f3f5ed; }
+.bundle-progress p { margin: 0 0 12px; line-height: 1.5; }
+.button:disabled { opacity: .55; cursor: not-allowed; }
+@media (max-width: 600px) {
+  .order-receipt { padding: 16px; }
+  .receipt-folio { grid-template-columns: minmax(0, 1fr); }
+  .receipt-payment { padding: 12px; }
+}

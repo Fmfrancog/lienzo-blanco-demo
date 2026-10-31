@@ -1,0 +1,31 @@
+import assert from 'node:assert/strict';
+import { chromium } from 'playwright';
+import c from '@sparticuz/chromium';
+const browser = await chromium.launch({args:c.args.filter(a=>!['--single-process','--disable-web-security'].includes(a)),executablePath:await c.executablePath(),headless:true});
+const base=process.env.BASE_URL||'http://127.0.0.1:3044';
+try {
+ const p=await browser.newPage();
+ await p.route('https://plur-pagos.fmfrancog03.workers.dev/**',r=>r.fulfill({json:{version:'link-orders-v1',ready:true}}));
+ await p.goto(base);
+ await p.locator('[data-action="open-product-gato-cosmico"]').click();
+ assert.equal(await p.locator('[data-testid="product-size"][aria-pressed="true"]').count(),0,'size must be chosen explicitly');
+ assert.equal(await p.locator('[data-action="add-to-cart"]').isDisabled(),true);
+ await p.locator('[data-action="increase-product-quantity"]').click();
+ await p.locator('[data-action="select-size-G"]').click();
+ await p.locator('[data-action="add-to-cart"]').click();
+ await p.locator('[data-action="open-cart"]').click();
+ assert.match(await p.locator('.cart-line').innerText(),/Talla G/);
+ assert.equal(await p.locator('.line-quantity b').innerText(),'2');
+ assert.match(await p.locator('[data-testid="bundle-progress"]').innerText({timeout:3000}),/Te falta 1 playera/);
+ assert.match(await p.locator('[data-testid="bundle-progress"]').innerText(),/597/);
+ await p.getByRole('button',{name:'Elegir otro diseño',exact:true}).click();
+ await p.locator('[data-action="open-product-gato-cosmico"]').click();
+ assert.equal(await p.locator('[data-action="add-to-cart"]').isDisabled(),true);
+ await p.locator('[data-action="select-size-M"]').click();await p.locator('[data-action="add-to-cart"]').click();await p.locator('[data-action="open-cart"]').click();
+ assert.match(await p.locator('[data-testid="bundle-progress"]').innerText(),/Envío gratis aplicado/);
+ assert.match(await p.locator('[data-testid="cart-grand-total"]').innerText(),/597/);
+ assert.equal(await p.locator('.cart-line').count(),2);
+ await p.locator('[data-action="decrease-cart-gato-cosmico"]').last().click();
+ assert.match(await p.locator('[data-testid="bundle-progress"]').innerText(),/Te falta 1 playera/);
+ console.log('PASS explicit size and quantity preservation');
+} finally {await browser.close();}
