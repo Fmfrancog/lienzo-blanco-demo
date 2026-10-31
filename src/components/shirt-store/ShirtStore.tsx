@@ -12,6 +12,10 @@ import { audiences, matchesAudience, type Audience } from "@/lib/product-audienc
 import { ArrowDown, ArrowRight, Check, Menu, Minus, Plus, Search, ShoppingBag, User, X } from "lucide-react";
 import { formatPrice, Product, storeContent, type Collection } from "@/data/store-content";
 
+// Editorial selection: varied themes, not a sales or traffic ranking.
+const featuredIds = ["gato-cosmico", "blanca-calavera-psicodelica", "playera-blanca-para-hombre-de-alien-verde-meditando", "playera-blanca-para-mujer-de-diseno-otomi-rosa", "playera-blanca-para-hombre-de-mictlan", "playera-blanca-para-mujer-de-leona-con-rosas"];
+const featuredProducts = featuredIds.flatMap(id => storeContent.products.filter(product => product.id === id));
+
 type DialogName = "product" | "cart" | "account" | "help" | null;
 
 
@@ -83,6 +87,7 @@ function Modal({ name, title, onClose, children, className = "" }: { name: strin
 export function ShirtStore() {
   const [query, setQuery] = useState("");
   const searchInput = useRef<HTMLInputElement>(null);
+  const featuredTrack = useRef<HTMLDivElement>(null);
   const [collection, setCollection] = useState<Collection>("Todos");
   const [audience, setAudience] = useState<Audience>("Todos");
   const [dialog, setDialog] = useState<DialogName>(null);
@@ -166,6 +171,20 @@ export function ShirtStore() {
       <section className="hero shell">
         <div className="hero-copy"><span className="kicker">{storeContent.hero.eyebrow}</span><h1>{storeContent.hero.title}</h1><p>{storeContent.hero.body}</p><div className="button-row"><button data-action="hero-explore" className="button button--dark" onClick={() => scrollToId("catalogo")}>{storeContent.hero.primary}<ArrowDown/></button><button data-action="hero-customize" className="button button--line" onClick={() => setDialog("help")}>{storeContent.hero.secondary}<ArrowRight/></button></div></div>
         <div className="hero-stage" aria-label="Una mirada al catálogo">{storeContent.products.slice(0, 2).map((product) => <button className="hero-feature" key={product.id} onClick={() => openProduct(product)} aria-label={`Explorar ${product.name}`}><ProductArtwork product={product} large/><span className="hero-caption"><span>{product.name}</span><ArrowRight aria-hidden="true"/></span></button>)}</div>
+      </section>
+
+      <section className="section shell featured-section" aria-labelledby="featured-title" role="region">
+        <header className="section-head"><div><span className="kicker">SELECCIÓN PLUR</span><h2 id="featured-title">Destacados</h2><p>Distintos estilos para encontrar el tuyo.</p></div><div className="featured-controls">
+          <button className="icon-button" aria-label="Destacados anteriores" aria-controls="featured-track" onClick={() => featuredTrack.current?.scrollBy({left: -featuredTrack.current.clientWidth, behavior: "smooth"})}><ArrowRight className="featured-back" aria-hidden="true"/></button>
+          <button className="icon-button" aria-label="Siguientes destacados" aria-controls="featured-track" onClick={() => featuredTrack.current?.scrollBy({left: featuredTrack.current.clientWidth, behavior: "smooth"})}><ArrowRight aria-hidden="true"/></button>
+        </div></header>
+        <div id="featured-track" ref={featuredTrack} className="featured-track" tabIndex={0} aria-label="Diseños destacados; desliza para explorar">
+          {featuredProducts.map(product => <article className="product-card featured-card" data-testid="featured-card" key={product.id}>
+            <button className="product-art-button" onClick={() => openProduct(product)} aria-label={`Explorar destacado ${product.name}`}><ProductArtwork product={product}/></button>
+            <div className="product-info"><div><span>{product.collection}</span><h3>{product.name}</h3></div><ProductPrice product={product} compact/></div>
+            <button className="card-action" onClick={() => openProduct(product)}>Ver diseño <ArrowRight aria-hidden="true"/></button>
+          </article>)}
+        </div>
       </section>
 
       <div className="catalog-note shell"><span>{storeContent.products.length} diseños para explorar</span><span>Fotografías por producto</span><span>Precios en MXN</span></div>
