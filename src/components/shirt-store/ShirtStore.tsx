@@ -12,7 +12,7 @@ import { audiences, matchesAudience, type Audience } from "@/lib/product-audienc
 import { ArrowDown, ArrowRight, Check, Menu, Minus, Plus, Search, ShoppingBag, User, X } from "lucide-react";
 import { formatPrice, Product, storeContent, type Collection } from "@/data/store-content";
 
-type DialogName = "product" | "cart" | "account" | "help" | "custom" | null;
+type DialogName = "product" | "cart" | "account" | "help" | null;
 
 
 const scrollToId = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -91,7 +91,6 @@ export function ShirtStore() {
   const [quantity, setQuantity] = useState(1);
   const { cart, setCart } = useCart();
   const [toast, setToast] = useState("");
-  const [newsletter, setNewsletter] = useState("");
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const filtered = useMemo(() => storeContent.products.filter((product) => {
@@ -122,7 +121,6 @@ export function ShirtStore() {
   const navigate = (label: string) => {
     setMobileOpen(false);
     if (label === "Ayuda") return setDialog("help");
-    if (label === "Personaliza") return scrollToId("personaliza");
     if (label === "Nosotros") return scrollToId("nosotros");
     scrollToId(label === "Colecciones" ? "colecciones" : "catalogo");
   };
@@ -135,9 +133,8 @@ export function ShirtStore() {
     setDialog(null); setToast(`${selected.name} · talla ${size} agregada a tu bolsa`);
   };
   const updateLine = (index: number, delta: number) => setCart((current) => current.flatMap((line, i) => i !== index ? [line] : line.quantity + delta > 0 ? [{ ...line, quantity: line.quantity + delta }] : []));
-  const submitNewsletter = (event: FormEvent) => { event.preventDefault(); setToast(`Gracias. ${newsletter} quedó en la lista demo.`); setNewsletter(""); };
   const footerAction = (link: string) => {
-    if (["Catálogo", "Colecciones", "Personaliza", "Nosotros"].includes(link)) return navigate(link);
+    if (["Catálogo", "Colecciones", "Nosotros"].includes(link)) return navigate(link);
     setDialog("help"); setToast(`Abriendo información: ${link}`);
   };
 
@@ -183,11 +180,9 @@ export function ShirtStore() {
         {filtered.length ? <div className="product-grid">{filtered.map((product)=><article className="product-card" data-testid="product-card" data-product-id={product.id} key={product.id}><button data-action={`open-product-art-${product.id}`} className="product-art-button" onClick={()=>openProduct(product)} aria-label={`Vista de camiseta ${product.name}`}><ProductArtwork product={product}/><span className="product-number">{String(storeContent.products.indexOf(product)+1).padStart(2,"0")}</span></button><div className="product-info"><div><span>{product.collection}</span><h3>{product.name}</h3></div><ProductPrice product={product} compact /></div><ProductTags product={product} compact/><button data-action={`open-product-${product.id}`} className="card-action" onClick={()=>openProduct(product)}>Ver diseño <ArrowRight/></button></article>)}</div> : <div className="empty-state"><h3>No encontramos esa gráfica.</h3><p>Prueba otra palabra o vuelve a ver todos los diseños.</p><button data-action="clear-search" className="button button--dark" onClick={resetCatalog}>Restablecer catálogo</button></div>}
       </section>
 
-      <section id="personaliza" className="custom-section"><div className="shell custom-grid"><div><span className="kicker">{storeContent.customizer.eyebrow}</span><h2>{storeContent.customizer.title}</h2><p>{storeContent.customizer.body}</p><button data-action="open-customizer" className="button button--light" onClick={()=>setDialog("custom")}>Abrir simulador <ArrowRight/></button></div><div className="custom-poster"><span>TU MENSAJE</span><strong>AQUÍ</strong><small>tinta coral / frente / 18 × 12 cm</small></div></div></section>
 
       <section id="nosotros" className="section about shell"><div className="about-copy"><span className="kicker">{storeContent.about.eyebrow}</span><h2>{storeContent.about.title}</h2>{storeContent.about.paragraphs.map((p)=><p key={p}>{p}</p>)}</div><div className="facts">{storeContent.about.facts.map((fact,i)=><div key={fact}><strong>0{i+1}</strong><span>{fact}</span></div>)}</div></section>
 
-      <section className="newsletter shell"><div><span className="kicker">CORREO DE MUESTRA</span><h2>Noticias que no saturan.</h2><p>Recibe lanzamientos ficticios y notas de diseño. Sin envío real.</p></div><form onSubmit={submitNewsletter}><label><span>Correo electrónico</span><input required type="email" aria-label="Correo para novedades" placeholder="tu@correo.mx" value={newsletter} onChange={(e)=>setNewsletter(e.target.value)}/></label><button data-action="submit-newsletter" className="button button--dark" type="submit">Suscribirme</button></form></section>
     </main>
 
     <footer><div className="shell footer-grid"><div className="footer-brand"><h2 className="brand-wordmark">{storeContent.brand.name}</h2><p>{storeContent.brand.description}</p></div>{storeContent.footer.columns.map((column)=><div className="footer-column" key={column.title}><h3>{column.title}</h3>{column.links.map((link)=>infoLinkMap[link] ? <Link data-action={`footer-${link.toLowerCase().replaceAll(" ","-")}`} key={link} href={infoLinkMap[link]}>{link}</Link> : <button data-action={`footer-${link.toLowerCase().replaceAll(" ","-")}`} key={link} onClick={()=>footerAction(link)}>{link}</button>)}</div>)}</div><div className="shell footer-bottom"><span>{storeContent.footer.legal}</span><button data-action="back-to-top" onClick={()=>scrollToId("inicio")}>Volver arriba ↑</button></div></footer>
@@ -200,14 +195,6 @@ export function ShirtStore() {
 
     {dialog === "help" && <Modal name="Centro de ayuda" title="¿Qué necesitas saber?" onClose={()=>setDialog(null)}><div className="help-copy"><details><summary>Envíos</summary><p>{storeContent.shipping}</p></details><details><summary>Devoluciones</summary><p>{storeContent.returns}</p></details>{storeContent.faq.map((item)=><details key={item.question}><summary>{item.question}</summary><p>{item.answer}</p></details>)}<a data-action="help-contact" className="button button--dark button--wide" href="mailto:atencion@plur.com.mx">Contacto: atencion@plur.com.mx</a><p><Link href="/politica-de-devoluciones/">Ver política de devoluciones</Link> · <Link href="/contacto/">WhatsApp y contacto</Link></p><p>Se abre tu aplicación de correo. Debes enviar el mensaje; no se envía automáticamente.</p></div></Modal>}
 
-    {dialog === "custom" && <Modal name="Personalizador de demostración" title="Boceta tu camiseta" onClose={()=>setDialog(null)}><Customizer onDone={(message)=>{setDialog(null);setToast(message);}}/></Modal>}
     {toast && <div className="toast" role="status"><Check/>{toast}</div>}
   </>;
-}
-
-function Customizer({ onDone }: { onDone: (message: string) => void }) {
-  const [phrase, setPhrase] = useState("MI IDEA");
-  const [color, setColor] = useState("#ef6a5b");
-  const [position, setPosition] = useState("Centro");
-  return <div className="customizer"><div className="custom-preview"><div className="mini-shirt"><strong style={{color}}>{phrase || "TU IDEA"}</strong></div><span>{position} · vista frontal</span></div><div className="custom-form"><label>Frase<input maxLength={18} value={phrase} onChange={(e)=>setPhrase(e.target.value.toUpperCase())}/></label><fieldset><legend>Color de tinta</legend><div className="swatches">{["#ef6a5b","#171717","#2460a7","#377b65"].map((item)=><button data-action={`custom-color-${item.slice(1)}`} aria-label={`Tinta ${item}`} aria-pressed={color===item} key={item} style={{background:item}} onClick={()=>setColor(item)}/>)}</div></fieldset><fieldset><legend>Ubicación</legend><div className="position-buttons">{["Centro","Bolsillo","Espalda"].map((item)=><button data-action={`custom-position-${item.toLowerCase()}`} aria-pressed={position===item} key={item} onClick={()=>setPosition(item)}>{item}</button>)}</div></fieldset><button data-action="save-custom-concept" className="button button--coral button--wide" disabled={!phrase.trim()} onClick={()=>onDone(`Concepto “${phrase}” guardado localmente.`)}>Guardar concepto demo</button></div></div>;
 }

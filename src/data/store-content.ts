@@ -33,7 +33,7 @@ export const storeContent = {
     "Explora los diseños · encuentra el tuyo",
     "Catálogo fotográfico: CH · M · G · EG · consulta disponibilidad",
   ],
-  navigation: ["Catálogo", "Colecciones", "Personaliza", "Nosotros", "Ayuda"],
+  navigation: ["Catálogo", "Colecciones", "Nosotros", "Ayuda"],
   hero: {
     eyebrow: "PLUR / PLAYERAS CON DISEÑO",
     title: "No pases desapercibido.",
@@ -58,12 +58,6 @@ export const storeContent = {
     if (!description) throw new Error(`Falta descripción visual para ${product.id}`);
     return { ...product, description, story: "", collection: taxonomy.category as Product["collection"], tags: taxonomy.tags };
   }),
-  customizer: {
-    eyebrow: "ESTUDIO ABIERTO",
-    title: "Hazla únicamente tuya.",
-    body: "Elige una frase, un color de tinta y una ubicación. Esta simulación prepara tu concepto sin procesar archivos ni pagos.",
-    prompts: ["Una frase breve", "Un símbolo", "Una fecha importante"],
-  },
   about: {
     eyebrow: "ACERCA DE PLUR",
     title: "El diseño es tuyo. La elección, también.",
@@ -83,7 +77,7 @@ export const storeContent = {
 
   footer: {
     columns: [
-      { title: "Explora", links: ["Catálogo", "Colecciones", "Personaliza"] },
+      { title: "Explora", links: ["Catálogo", "Colecciones"] },
       { title: "Información", links: ["Envíos", "Política de devoluciones", "Preguntas frecuentes", "Aviso de privacidad", "Términos y condiciones", "Política de cookies"] },
       { title: "Marca", links: ["Sobre nosotros", "Contacto"] },
     ],
