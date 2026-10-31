@@ -9,7 +9,7 @@ import { CheckoutButton } from "./CheckoutButton";
 import { useCart } from "./CartProvider";
 import { getCoverImageIndex } from "@/lib/product-cover";
 import { audiences, matchesAudience, type Audience } from "@/lib/product-audience";
-import { ArrowDown, ArrowRight, Check, Menu, Minus, Plus, Search, ShoppingBag, User, X } from "lucide-react";
+import { ArrowRight, Check, Menu, Minus, Plus, Search, ShoppingBag, User, X } from "lucide-react";
 import { formatPrice, Product, storeContent, type Collection } from "@/data/store-content";
 
 // Editorial selection: varied themes, not a sales or traffic ranking.
@@ -168,11 +168,6 @@ export function ShirtStore() {
     </header>
 
     <main id="inicio">
-      <section className="hero shell">
-        <div className="hero-copy"><span className="kicker">{storeContent.hero.eyebrow}</span><h1>{storeContent.hero.title}</h1><p>{storeContent.hero.body}</p><div className="button-row"><button data-action="hero-explore" className="button button--dark" onClick={() => scrollToId("catalogo")}>{storeContent.hero.primary}<ArrowDown/></button><button data-action="hero-customize" className="button button--line" onClick={() => setDialog("help")}>{storeContent.hero.secondary}<ArrowRight/></button></div></div>
-        <div className="hero-stage" aria-label="Una mirada al catálogo">{storeContent.products.slice(0, 2).map((product) => <button className="hero-feature" key={product.id} onClick={() => openProduct(product)} aria-label={`Explorar ${product.name}`}><ProductArtwork product={product} large/><span className="hero-caption"><span>{product.name}</span><ArrowRight aria-hidden="true"/></span></button>)}</div>
-      </section>
-
       <section className="section shell featured-section" aria-labelledby="featured-title" role="region">
         <header className="section-head"><div><span className="kicker">SELECCIÓN PLUR</span><h2 id="featured-title">Destacados</h2><p>Distintos estilos para encontrar el tuyo.</p></div><div className="featured-controls">
           <button className="icon-button" aria-label="Destacados anteriores" aria-controls="featured-track" onClick={() => featuredTrack.current?.scrollBy({left: -featuredTrack.current.clientWidth, behavior: "smooth"})}><ArrowRight className="featured-back" aria-hidden="true"/></button>
