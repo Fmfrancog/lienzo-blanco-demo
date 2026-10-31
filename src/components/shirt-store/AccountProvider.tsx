@@ -2,6 +2,37 @@
 
 import { createContext, useContext, useEffect, useState } from "react";
 import { createClient, type Session, type SupabaseClient } from "@supabase/supabase-js";
+import { authDiagnostic, clearAuthCallback } from "@/lib/auth-diagnostics";
+
+// Share the SDK initialization result across React effect replays, not sessions.
+let callbackInitialization: Promise<string> | undefined;
+function initializeAccount() {
+  if (!callbackInitialization) callbackInitialization = (async () => {
+    const url = new URL(window.location.href);
+    const hash = new URLSearchParams(url.hash.slice(1));
+    const param = (key: string) => url.searchParams.get(key) || hash.get(key) || undefined;
+    const hasError = ["error", "error_code", "error_description"].some(key => url.searchParams.has(key) || hash.has(key));
+    const hasCode = !!param("code");
+    let diagnostic = "";
+    if (hasError) {
+      diagnostic = authDiagnostic(param("error_code") || param("error"), param("error_description"));
+      clearAuthCallback();
+    }
+    try {
+      // initialize() reuses the constructor's promise: never exchange the code twice.
+      const { error } = await authClient().auth.initialize();
+      if (!diagnostic && error) diagnostic = authDiagnostic(error.code);
+      // SDK skips PKCE detection without a verifier, returning no init error.
+      if (!diagnostic && hasCode && new URL(window.location.href).searchParams.has("code")) {
+        diagnostic = authDiagnostic("missing_verifier");
+      }
+      return diagnostic;
+    } finally {
+      if (hasCode || hasError) clearAuthCallback();
+    }
+  })();
+  return callbackInitialization;
+}
 
 type Account = { session: Session | null; loading: boolean; error: string; login: () => Promise<void>; logout: () => Promise<void>; accessToken: () => Promise<string | null> };
 const Context = createContext<Account | null>(null);
@@ -19,22 +50,17 @@ export function AccountProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     let active = true;
     try {
-      const url = new URL(window.location.href);
-      const hash = new URLSearchParams(url.hash.slice(1));
-      if (url.searchParams.has("error") || hash.has("error")) {
-        setError("No se pudo iniciar sesión con Google. Inténtalo de nuevo.");
-        for (const key of ["error", "error_code", "error_description"]) { url.searchParams.delete(key); hash.delete(key); }
-        url.hash = hash.toString();
-        window.history.replaceState(null, "", url.pathname + url.search + url.hash);
-      }
+      const initialization = initializeAccount();
       const auth = authClient().auth;
       const { data: { subscription } } = auth.onAuthStateChange((_event, next) => {
         if (active) { setSession(next); setLoading(false); }
       });
-      auth.getSession().then(({ data, error }) => {
+      initialization.then(async diagnostic => {
+        const { data, error } = await auth.getSession();
         if (!active) return;
         setSession(data.session); setLoading(false);
-        if (error) setError("No se pudo recuperar la sesión. Vuelve a iniciar sesión.");
+        if (diagnostic) setError(diagnostic);
+        else if (error) setError("No se pudo recuperar la sesión. Vuelve a iniciar sesión.");
       }).catch(() => { if (active) { setLoading(false); setError("No se pudo recuperar la sesión."); } });
       return () => { active = false; subscription.unsubscribe(); };
     } catch { setLoading(false); setError("Permite el almacenamiento de sesión para iniciar sesión con Google."); }
