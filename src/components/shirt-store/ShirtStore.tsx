@@ -127,7 +127,7 @@ export function ShirtStore() {
     setMobileOpen(false);
     if (label === "Ayuda") return setDialog("help");
     if (label === "Nosotros") return scrollToId("nosotros");
-    scrollToId(label === "Colecciones" ? "colecciones" : "catalogo");
+    scrollToId("catalogo");
   };
   const addToCart = () => {
     if (!size) return;
@@ -140,7 +140,7 @@ export function ShirtStore() {
   };
   const updateLine = (index: number, delta: number) => setCart((current) => current.flatMap((line, i) => i !== index ? [line] : line.quantity + delta > 0 ? [{ ...line, quantity: line.quantity + delta }] : []));
   const footerAction = (link: string) => {
-    if (["Catálogo", "Colecciones", "Nosotros"].includes(link)) return navigate(link);
+    if (["Catálogo", "Nosotros"].includes(link)) return navigate(link);
     setDialog("help"); setToast(`Abriendo información: ${link}`);
   };
 
@@ -184,7 +184,7 @@ export function ShirtStore() {
 
       <div className="catalog-note shell"><span>{storeContent.products.length} diseños para explorar</span><span>Fotografías por producto</span><span>Precios en MXN</span></div>
 
-      <section id="colecciones" className="section shell"><header className="section-head"><div><span className="kicker">ENCUENTRA TU DISEÑO</span><h2>Colecciones</h2></div><p>Elige por dónde empezar. Cada diseño tiene su propia galería.</p></header><div className="collection-grid">{storeContent.collections.map((item)=><button data-action={`filter-collection-${item.number}`} className="collection-card" key={item.name} onClick={()=>{setQuery(""); setCollection(item.filter); scrollToId("catalogo");}}><span>{item.number}</span><div><h3>{item.name}</h3><p>{item.description}</p></div><ArrowRight/></button>)}</div></section>
+
 
       <section id="catalogo" className="section catalog shell"><header className="section-head"><div><span className="kicker">CATÁLOGO COMPLETO</span><h2>Encuentra el tuyo.</h2></div><p>{filtered.length} {filtered.length === 1 ? "diseño" : "diseños"} · precios MXN</p></header>
         <p className="filter-help" id="audience-help">Hombre y Mujer según el nombre original. Los {storeContent.products.filter((product) => !matchesAudience(product.name, "Hombre") && !matchesAudience(product.name, "Mujer")).length} diseños sin indicación están en Todos.</p>

@@ -33,7 +33,7 @@ export const storeContent = {
     "Explora los diseños · encuentra el tuyo",
     "Catálogo fotográfico: CH · M · G · EG · consulta disponibilidad",
   ],
-  navigation: ["Catálogo", "Colecciones", "Nosotros", "Ayuda"],
+  navigation: ["Catálogo", "Nosotros", "Ayuda"],
   hero: {
     eyebrow: "PLUR / PLAYERAS CON DISEÑO",
     title: "No pases desapercibido.",
@@ -77,7 +77,7 @@ export const storeContent = {
 
   footer: {
     columns: [
-      { title: "Explora", links: ["Catálogo", "Colecciones"] },
+      { title: "Explora", links: ["Catálogo"] },
       { title: "Información", links: ["Envíos", "Política de devoluciones", "Preguntas frecuentes", "Aviso de privacidad", "Términos y condiciones", "Política de cookies"] },
       { title: "Marca", links: ["Sobre nosotros", "Contacto"] },
     ],
