@@ -154,6 +154,7 @@ footer { padding-top: 70px; background: var(--ink); color: white; }
 .footer-bottom { display: flex; justify-content: space-between; gap: 30px; margin-top: 70px; padding-block: 22px; border-top: 1px solid #444; color: #aaa; font-size: 11px; }
 .footer-bottom button { color: white; }
 
+
 .modal-backdrop { position: fixed; z-index: 100; inset: 0; display: grid; place-items: center; padding: 24px; background: rgba(23,23,21,.76); }
 .modal { width: min(100%, 650px); max-height: min(90vh, 900px); overflow: auto; padding: 28px; background: var(--paper); border: 1px solid var(--ink); box-shadow: 0 24px 80px #0004; border-radius: 8px; }
 .product-modal { width: min(100%, 1050px); }
@@ -279,9 +280,7 @@ legend, .quantity > span { margin-bottom: 10px; font-size: 11px; font-weight: 80
   .product-info { flex-direction: column; align-items: flex-start; gap: 8px; }
   .product-info h3 { font-size: 14px; line-height: 1.4; overflow-wrap: anywhere; }
   .product-card > p { min-height: auto; }
-  .footer-grid { grid-template-columns: 1fr 1fr; }
   .footer-brand { grid-column: 1 / -1; }
-  .footer-bottom { flex-direction: column; }
   .modal-backdrop { padding: 10px; }
   .modal { padding: 16px; box-shadow: 0 12px 40px #0004; }
   .modal__head { top: -16px; gap: 12px; margin-bottom: 18px; }
@@ -295,4 +294,14 @@ legend, .quantity > span { margin-bottom: 10px; font-size: 11px; font-weight: 80
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+
+@media (max-width: 600px) {
+  footer { padding-top: 36px; }
+  .footer-grid { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .footer-column { min-width: 0; padding-top: 20px; border-top: 1px solid #444; }
+  .footer-column h3 { margin: 0 0 12px; }
+  .footer-column a, .footer-column button { display: flex; align-items: center; min-height: 44px; padding: 10px 0; text-align: left; line-height: 1.5; overflow-wrap: anywhere; }
+  .footer-bottom { flex-direction: column; margin-top: 32px; gap: 16px; line-height: 1.6; }
+  .footer-bottom button { align-self: flex-start; min-height: 44px; }
 }

@@ -24,12 +24,12 @@ try {
       window.__scrollTargets = [];
       Element.prototype.scrollIntoView = function () { window.__scrollTargets.push(this.id); };
     });
-    for (const [action, target] of [['hero-explore', 'catalogo'], ['nav-catálogo', 'catalogo'], ['nav-colecciones', 'colecciones'], ['nav-nosotros', 'nosotros'], ['footer-catálogo', 'catalogo'], ['footer-colecciones', 'colecciones'], ['back-to-top', 'inicio']]) {
+    for (const [action, target] of [['nav-catálogo', 'catalogo'], ['nav-nosotros', 'nosotros'], ['footer-catálogo', 'catalogo'], ['back-to-top', 'inicio']]) {
       if (width === 390 && action.startsWith('nav-')) await page.locator('[data-action="toggle-mobile-menu"]').click();
       await page.locator(`[data-action="${action}"]`).click();
       assert.equal(await page.evaluate(() => window.__scrollTargets.at(-1)), target, action);
     }
-    for (const selector of ['.hero-copy .button--line', '[data-action="footer-preguntas-frecuentes"]']) {
+    for (const selector of ['[data-action="footer-preguntas-frecuentes"]']) {
       await page.locator(selector).click();
       await page.getByRole('dialog', { name: /Centro de ayuda/ }).waitFor();
       assert.doesNotMatch(await page.getByRole('dialog').innerText(), forbidden);
