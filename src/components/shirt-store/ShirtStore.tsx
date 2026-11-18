@@ -146,7 +146,7 @@ export function ShirtStore() {
 
   return <>
     <header className="site-header">
-      <div className="demo-bar" data-testid="shipping-banner"><strong>{storeContent.demoNotice}</strong><span>Entrega de 2 a 5 días hábiles a partir de tu compra</span></div>
+      <div className="demo-bar" data-testid="shipping-banner"><strong>{storeContent.demoNotice}</strong><span>Entrega de 2 a 5 días hábiles a partir de tu compra</span><span className="offer-badge offer-badge--bar">-33% en todo el catálogo</span></div>
       <div className="header-main shell">
         <button data-action="home" className="brand" onClick={() => scrollToId("inicio")} aria-label="PLUR, ir al inicio"><span className="brand-wordmark">{storeContent.brand.name}</span><span className="brand-descriptor">PLAYERAS<br/>CON DISEÑO</span></button>
         <nav className={`main-nav ${mobileOpen ? "main-nav--open" : ""}`} aria-label="Navegación principal">{storeContent.navigation.map((label) => <button data-action={`nav-${label.toLowerCase()}`} key={label} onClick={() => navigate(label)}>{label}</button>)}</nav>
@@ -175,14 +175,14 @@ export function ShirtStore() {
         </div></header>
         <div id="featured-track" ref={featuredTrack} className="featured-track" tabIndex={0} aria-label="Diseños destacados; desliza para explorar">
           {featuredProducts.map(product => <article className="product-card featured-card" data-testid="featured-card" key={product.id}>
-            <button className="product-art-button" onClick={() => openProduct(product)} aria-label={`Explorar destacado ${product.name}`}><ProductArtwork product={product}/></button>
+            <button className="product-art-button" onClick={() => openProduct(product)} aria-label={`Explorar destacado ${product.name}`}><ProductArtwork product={product}/>{product.compareAtPrice ? <span className="offer-badge offer-badge--art">-33%</span> : null}</button>
             <div className="product-info"><div><span>{product.collection}</span><h3>{product.name}</h3></div><ProductPrice product={product} compact/></div>
             <button className="card-action" onClick={() => openProduct(product)}>Ver diseño <ArrowRight aria-hidden="true"/></button>
           </article>)}
         </div>
       </section>
 
-      <div className="catalog-note shell"><span>{storeContent.products.length} diseños para explorar</span><span>Fotografías por producto</span><span>Precios en MXN</span></div>
+      <div className="catalog-note shell"><span>{storeContent.products.length} diseños para explorar</span><span>Fotografías por producto</span><span>Precios en MXN</span><span>Envío gratis con 3+ playeras</span></div>
 
 
 
@@ -192,7 +192,7 @@ export function ShirtStore() {
         <p className="filter-help">Combina con un tema · cantidades del catálogo completo</p>
         {(audience !== "Todos" || collection !== "Todos" || query) && <button className="reset-filters" onClick={resetCatalog}>Restablecer filtros</button>}
         <div className="filters" role="group" aria-label="Filtrar por categoría">{storeContent.categories.map((item)=><button data-action={`filter-${item.toLowerCase()}`} aria-pressed={collection===item} className={collection===item?"active":""} key={item} onClick={()=>{setQuery("");setCollection(item);}}>{item}<span className="filter-count">{item === "Todos" ? storeContent.products.length : storeContent.products.filter((product) => product.collection === item).length}</span></button>)}</div>
-        {filtered.length ? <div className="product-grid">{filtered.map((product)=><article className="product-card" data-testid="product-card" data-product-id={product.id} key={product.id}><button data-action={`open-product-art-${product.id}`} className="product-art-button" onClick={()=>openProduct(product)} aria-label={`Vista de camiseta ${product.name}`}><ProductArtwork product={product}/><span className="product-number">{String(storeContent.products.indexOf(product)+1).padStart(2,"0")}</span></button><div className="product-info"><div><span>{product.collection}</span><h3>{product.name}</h3></div><ProductPrice product={product} compact /></div><ProductTags product={product} compact/><button data-action={`open-product-${product.id}`} className="card-action" onClick={()=>openProduct(product)}>Ver diseño <ArrowRight/></button></article>)}</div> : <div className="empty-state"><h3>No encontramos esa gráfica.</h3><p>Prueba otra palabra o vuelve a ver todos los diseños.</p><button data-action="clear-search" className="button button--dark" onClick={resetCatalog}>Restablecer catálogo</button></div>}
+        {filtered.length ? <div className="product-grid">{filtered.map((product)=><article className="product-card" data-testid="product-card" data-product-id={product.id} key={product.id}><button data-action={`open-product-art-${product.id}`} className="product-art-button" onClick={()=>openProduct(product)} aria-label={`Vista de camiseta ${product.name}`}><ProductArtwork product={product}/>{product.compareAtPrice ? <span className="offer-badge offer-badge--art">-33%</span> : null}<span className="product-number">{String(storeContent.products.indexOf(product)+1).padStart(2,"0")}</span></button><div className="product-info"><div><span>{product.collection}</span><h3>{product.name}</h3></div><ProductPrice product={product} compact /></div><ProductTags product={product} compact/><button data-action={`open-product-${product.id}`} className="card-action" onClick={()=>openProduct(product)}>Ver diseño <ArrowRight/></button></article>)}</div> : <div className="empty-state"><h3>No encontramos esa gráfica.</h3><p>Prueba otra palabra o vuelve a ver todos los diseños.</p><button data-action="clear-search" className="button button--dark" onClick={resetCatalog}>Restablecer catálogo</button></div>}
       </section>
 
 
